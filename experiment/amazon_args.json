@@ -1,0 +1,1 @@
+{"dataset_name": "amazon", "device": "cuda", "epochs": 1000, "lr": 0.01, "weight_decay": 0.0001, "encoder_layer_num": 3, "hidden_size": 32, "layer_num": 1, "directed": true, "retrain_hard_samples": false, "save_hard_samples": false, "custom_train": true, "negative_sampling_ratio": 1}

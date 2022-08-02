@@ -1,0 +1,1 @@
+{"dataset_name": "shop_vrb", "device": "cuda", "epochs": 200, "lr": 0.01, "weight_decay": 0.0001, "encoder_layer_num": 3, "hidden_size": 16, "layer_num": 3, "directed": true}

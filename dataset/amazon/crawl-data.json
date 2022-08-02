@@ -1,0 +1,1360 @@
+[
+    {
+        "name": "bakingtray",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 0, 11, 0, 0, 3, 0, 0],
+                "prediction": [0, 0, 11, 0, 0, 3, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 1, 1, 0, 2, 0, 2, 0, 0, 5, 0, 0, 1, 1, 0, 0, 0, 1],
+                "prediction": [0, 1, 1, 0, 1, 0, 2, 0, 0, 6, 0, 0, 1, 1, 0, 1, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [0, 0, 0, 2, 0, 2, 0, 2, 1, 0, 2, 1, 1, 2, 0, 1, 0, 0, 0, 0],
+                "prediction": [1, 0, 0, 2, 1, 2, 1, 2, 2, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [14, 0, 0, 0, 0, 0, 0],
+                "prediction": [14, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [0, 0, 0, 0, 2, 0, 0, 1, 0, 0, 2, 2, 2, 4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [0, 1, 0, 0, 2, 0, 0, 2, 2, 3, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 1, 0, 0, 0, 0, 0, 2, 6, 3, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [2, 9, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 0, 14, 0, 0],
+                "prediction": [0, 0, 14, 0, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "bottle",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 1, 11, 0, 17, 0, 0, 0],
+                "prediction": [0, 1, 11, 0, 17, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [1, 5, 3, 0, 0, 2, 1, 0, 0, 5, 3, 0, 2, 3, 2, 2, 0, 0],
+                "prediction": [0, 4, 5, 0, 0, 1, 1, 0, 0, 5, 5, 0, 2, 3, 1, 2, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [0, 0, 1, 5, 3, 6, 3, 3, 2, 4, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 4, 3, 2, 7, 4, 3, 1, 2, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins":  [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [0, 0, 0, 3, 17, 8, 1],
+                "prediction": [0, 0, 0, 1, 19, 9, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [1, 0, 3, 2, 0, 1, 0, 1, 5, 9, 4, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 4, 3, 1, 2, 0, 0, 4, 7, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [1, 0, 4, 11, 4, 3, 3, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 6, 15, 1, 4, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [1, 0, 3, 10, 3, 6, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 16, 4, 2, 1, 1, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [29, 0, 0, 0, 0],
+                "prediction": [29, 0, 0, 0, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "bowl",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 0, 0, 0, 1, 0, 0, 3],
+                "prediction": [0, 0, 0, 0, 1, 0, 0, 3]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1],
+                "prediction": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [4, 0, 0, 0, 0, 0, 0],
+                "prediction": [4, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [1, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 0, 0, 4, 0],
+                "prediction": [0, 0, 0, 4, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "fork",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 0, 8, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 8, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 6, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [4, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [8, 0, 0, 0, 0, 0, 0],
+                "prediction": [8, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [1, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [5, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 0, 0, 8, 0],
+                "prediction": [0, 0, 0, 8, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "glass",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 7, 0, 0, 1, 0, 0, 0],
+                "prediction": [1, 6, 0, 0, 1, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 7, 0, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 0, 1, 2, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 3, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [0, 0, 0, 6, 2, 0, 0],
+                "prediction": [0, 0, 0, 8, 0, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [1, 0, 1, 0, 0, 0, 1, 2, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 2, 0, 1, 0, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [1, 0, 0, 2, 1, 1, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 0, 0, 2, 0, 2, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [1, 0, 0, 2, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 0, 0, 2, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [8, 0, 0, 0, 0],
+                "prediction": [8, 0, 0, 0, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "hammer",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 0, 22, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 22, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 2, 1, 0, 0, 0, 0, 0, 0, 17, 0, 0, 1, 1, 0, 0, 0, 0],
+                "prediction": [0, 2, 2, 0, 0, 0, 0, 0, 0, 17, 0, 0, 1, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [7, 0, 1, 0, 0, 0, 1, 1, 2, 1, 0, 3, 1, 3, 2, 0, 0, 0, 0, 0],
+                "prediction": [6, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 3, 2, 3, 1, 1, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [13, 0, 0, 5, 4, 0, 0],
+                "prediction": [13, 0, 0, 4, 5, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [2, 1, 2, 3, 1, 0, 0, 1, 1, 3, 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0],
+                "prediction": [1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 1, 1, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [2, 4, 1, 1, 3, 2, 5, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [2, 2, 2, 4, 2, 3, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [2, 8, 4, 2, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1],
+                "prediction": [2, 10, 6, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 0, 0, 0, 22],
+                "prediction": [0, 0, 0, 0, 22]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "kettle",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [1, 1, 17, 3, 6, 0, 0, 0],
+                "prediction": [0, 1, 18, 3, 6, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [1, 8, 0, 0, 1, 0, 0, 0, 0, 4, 0, 0, 1, 2, 2, 9, 0, 0],
+                "prediction": [0, 8, 0, 0, 1, 0, 0, 0, 0, 4, 0, 0, 1, 2, 2, 10, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 1, 5, 3, 8, 3, 4, 0, 1, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 0, 2, 3, 2, 9, 5, 3, 1, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [0, 0, 0, 1, 8, 19, 0],
+                "prediction": [0, 0, 0, 1, 6, 21, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [1, 0, 0, 1, 0, 0, 6, 10, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 1, 2, 2, 4, 8, 8, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [1, 0, 0, 1, 2, 5, 4, 5, 9, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 2, 1, 5, 3, 9, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [1, 0, 0, 4, 0, 2, 2, 3, 11, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 2, 0, 2, 6, 2, 10, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 28, 0, 0, 0],
+                "prediction": [0, 28, 0, 0, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "knife",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 0, 5, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 5, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0],
+                "prediction": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [3, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [5, 0, 0, 0, 0, 0, 0],
+                "prediction": [5, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [0, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 1, 0, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [3, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 0, 0, 5, 0],
+                "prediction": [0, 0, 0, 5, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "mug",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [8, 1, 3, 0, 0, 0, 1, 1],
+                "prediction": [8, 1, 2, 0, 1, 0, 1, 1]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 2, 2, 0, 0, 1, 0, 0, 0, 7, 0, 0, 1, 0, 0, 1, 0, 0],
+                "prediction": [0, 2, 2, 0, 0, 1, 0, 0, 0, 6, 0, 0, 1, 0, 0, 1, 0, 1]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [0, 0, 1, 1, 1, 0, 1, 5, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 1, 0, 0, 0, 1, 1, 4, 6, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [1, 0, 0, 13, 0, 0, 0],
+                "prediction": [1, 0, 0, 13, 0, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [1, 0, 0, 5, 2, 3, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 0, 0, 5, 2, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [1, 0, 0, 7, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 8, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [1, 0, 1, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 9, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [14, 0, 0, 0, 0],
+                "prediction": [14, 0, 0, 0, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "pan",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 0, 15, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 15, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 7, 0, 0, 0, 0, 1, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 7, 0, 0, 0, 0, 1, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 2, 2, 3, 0, 2, 0, 1, 0],
+                "prediction": [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 2, 3, 4, 0, 2, 0, 1, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [11, 0, 0, 0, 0, 3, 1],
+                "prediction": [12, 0, 0, 0, 0, 3, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 2, 1, 1, 3, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [1, 0, 0, 1, 0, 0, 0, 1, 3, 2, 4, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 1, 1, 2, 3, 5, 1, 2, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [1, 1, 7, 5, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 2, 6, 6, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 0, 15, 0, 0],
+                "prediction": [0, 0, 15, 0, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "plate",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [6, 1, 0, 0, 1, 0, 0, 0],
+                "prediction": [6, 1, 0, 0, 1, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 5, 0, 1],
+                "prediction": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 5, 0, 1]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0],
+                "prediction": [6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [8, 0, 0, 0, 0, 0, 0],
+                "prediction": [8, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [0, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 0, 0, 8, 0],
+                "prediction": [0, 0, 0, 8, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "sodacan",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 0, 6, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 6, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [4, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [5, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [3, 0, 0, 2, 0, 1, 0],
+                "prediction": [3, 0, 0, 2, 0, 1, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [1, 0, 1, 0, 1, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 0, 1, 0, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [1, 0, 0, 1, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [1, 0, 0, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [6, 0, 0, 0, 0],
+                "prediction": [6, 0, 0, 0, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "spoon",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 0, 6, 0, 0, 0, 0, 2],
+                "prediction": [0, 0, 6, 0, 0, 0, 0, 2]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 2, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 2, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [2, 1, 0, 1, 1, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [2, 2, 0, 0, 1, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [8, 0, 0, 0, 0, 0, 0],
+                "prediction": [8, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [2, 0, 0, 1, 0, 0, 2, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [2, 0, 0, 0, 0, 3, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [3, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [2, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [0, 0, 0, 8, 0],
+                "prediction": [0, 0, 0, 8, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    },
+    {
+        "name": "wineglass",
+        "properties": [
+            {
+                "prop_name": "Material",
+                "bins": ["ceramic", "glass", "metal", "other", "plastic", "silicone", "stone", "wood"],
+                "ground": [0, 6, 2, 0, 0, 0, 0, 0],
+                "prediction": [0, 5, 2, 0, 1, 0, 0, 0]
+            },
+            {
+                "prop_name": "Colour",
+                "bins": ["beige", "black", "blue", "brown", "gold", "green", "grey", "indigo", "orange", "other", "pink", "purple", "red", "silver", "transparent", "white", "wood", "yellow"],
+                "ground": [0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 0, 0, 1, 4, 0, 0, 0],
+                "prediction": [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 5, 0, 0, 0]
+            },
+            {
+                "prop_name": "Weight",
+                "bins": [0, 50, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 850, 1000, 1200, 1450, 1750, 2100, 2550, 3050],
+                "ground": [1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 2, 0, 1, 0, 1, 0, 0, 0, 0],
+                "prediction": [1, 0, 0, 0, 0, 2, 0, 0, 0, 1, 0, 1, 0, 1, 0, 2, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Volume",
+                "bins": [0, 9, 81, 243, 729, 2187, 6561],
+                "ground": [0, 0, 0, 6, 2, 0, 0],
+                "prediction": [0, 0, 0, 6, 2, 0, 0]
+            },
+            {
+                "prop_name": "Length",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 75, 78, 81, 87, 90, 93, 96],
+                "ground": [0, 0, 1, 2, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 0, 1, 3, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Width",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 93],
+                "ground": [0, 2, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 2, 1, 1, 0, 0, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Height",
+                "bins": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 87, 90],
+                "ground": [0, 2, 0, 2, 1, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                "prediction": [0, 2, 0, 2, 1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                "prop_name": "Functionality",
+                "bins": ["container", "home_appliance", "kitchenware", "tableware", "tool"],
+                "ground": [8, 0, 0, 0, 0],
+                "prediction": [8, 0, 0, 0, 0]
+            }
+        ],
+        "questions": [
+            {
+                "quest_name": "button",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "lid",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "fillable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "movable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "washable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "dissasemblable",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            },
+            {
+                "quest_name": "handle",
+                "bins": null,
+                "ground": null,
+                "prediction": null
+            }
+        ]
+    }
+]
