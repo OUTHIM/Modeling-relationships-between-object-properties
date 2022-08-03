@@ -34,8 +34,6 @@ class HeteroGNN(torch.nn.Module):
         # Each node type has an encoder
         # After updating node features, the BN and ReLU layers are set according to node types
         for node_type in hetero.node_types:
-            # self.encoder[node_type] = nn.Linear(hetero.num_node_features('name'),hidden_size)
-            # self.relus0[node_type] = nn.LeakyReLU()
             self.encoder_mlp[node_type] = self.initialize_encoder_mlp_layers(hetero.num_node_features('name'), hidden_size, encoder_layer_num)
             for i in range(num_layer_hop):
                 self.bns[i][node_type] = nn.BatchNorm1d(hidden_size)
