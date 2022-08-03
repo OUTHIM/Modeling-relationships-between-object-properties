@@ -24,9 +24,12 @@ from sklearn.utils import shuffle
 node_num = 1431
 num_levels = 10
 args = {
+    'custom_train': False,
+    'train_with_softmax': True,
+
     'dataset_name': 'amazon',
     "device": "cuda",
-    "epochs": 1000,
+    "epochs": 50,
     "lr": 0.01,
     "weight_decay": 1e-4,
     'encoder_layer_num': 3,
@@ -35,12 +38,11 @@ args = {
     'directed' : True,
     'retrain_hard_samples': False,
     'save_hard_samples': False,
-    'custom_train': True,
     'negative_sampling_ratio':1
     }
 
 # Load training data
-path = os.path.join(os.getcwd(), 'dataset/amazon\clean_data.csv')
+path = os.path.join(ROOT, 'dataset/amazon\clean_data.csv')
 df = pd.read_csv(path)
 df = df.drop(df.columns[0:3], axis=1)
 
@@ -91,4 +93,4 @@ hetero = HeteroGraph(G)
 start_training(
     hetero, args, save_path = FATHER, save_file=True, save_hard_samples=args['save_hard_samples'],
     retrain_hard_samples = args['retrain_hard_samples'], custom_train=args['custom_train'],
-    negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50)
+    negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = args['train_with_softmax'])

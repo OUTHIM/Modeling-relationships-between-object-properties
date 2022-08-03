@@ -15,18 +15,23 @@ class CustomDataset(Dataset):
         self.negative_sampling_ratio = negative_sampling_ratio
         self.sampling_epoch = sampling_epoch
         self.epoch_counter = 0
-        self.sampled_hetero = self.create_custom_dataset(hetero = copy.deepcopy(self.hetero), split_types=self.split_types, negative_sampling_ratio=self.negative_sampling_ratio)
 
+        edge_label = {}
+        self.sampled_hetero = copy.deepcopy(self.hetero[0])
+        for message_type in self.split_types:
+            sources = self.sampled_hetero.edge_label_index[message_type][0]
+            edge_label[message_type] = torch.ones(size = sources.shape) # positive labels
+        self.sampled_hetero.edge_label = edge_label
 
     def __len__(self):
         return len(self.hetero)
     
     def __getitem__(self, index):
-        self.epoch_counter += 1
         if self.negative_sampling:
             if self.epoch_counter % self.sampling_epoch == 0:
                 self.sampled_hetero = self.create_custom_dataset(hetero = copy.deepcopy(self.hetero), split_types=self.split_types, negative_sampling_ratio=self.negative_sampling_ratio)
-        
+            self.epoch_counter += 1
+
         return self.sampled_hetero
 
 

@@ -11,6 +11,7 @@ import json
 import pickle
 from torch.utils.data import DataLoader
 from deepsnap.batch import Batch
+import torch.nn.functional as F
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[1]  # root directory
@@ -20,6 +21,7 @@ if str(ROOT) not in sys.path:
     
 from model.heteGraphSAGE import HeteroGNN
 from utils.data_preprocessing import CustomDataset, process_dataset
+from model.softmax_heteGraphSAGE import softmax_HeteroGNN
 
 # Train function
 def train(model, dataloaders, optimizer, args, save_hard_samples, retrain_hard_samples, save_path):
@@ -108,8 +110,7 @@ def train(model, dataloaders, optimizer, args, save_hard_samples, retrain_hard_s
     else:
         return t_accu, v_accu, e_accu, model
 
-# Test function
-
+# For training on custom dataset with negative sampling
 def train_custom(model, dataloader, optimizer, args):
     for epoch in range(1, args['epochs'] + 1):
         for train_batch in dataloader:
@@ -141,6 +142,37 @@ def train_custom(model, dataloader, optimizer, args):
 
     return model
 
+# For training with softmax heteGraphSAGE
+def train_softmax(model, dataloader, optimizer, args):
+    print('Training with softmax model...')
+    for epoch in range(1, args['epochs'] + 1):
+        for train_batch in dataloader:
+            train_batch.to(args["device"])
+            model.train()
+            optimizer.zero_grad()
+            pred, y, _ = model(train_batch)
+            loss = model.loss(pred, y)
+            loss.backward()
+            optimizer.step()
+
+            acc = 0
+            # eval_batches = [train_batch, val_batch, test_batch]
+            model.eval()
+            num = 0
+            train_batch.to(args["device"])
+            pred, y, _ = model(train_batch)
+            for key in pred:
+                p = F.softmax(pred[key])
+                target = torch.reshape(y[key], (-1,1))
+                target_p = torch.gather(p, 1, target).cpu().detach().numpy()
+                acc += np.sum(target_p > 0.5)
+                num += len(p)
+            acc = acc / num
+
+            log = 'Current epoch: {:02d}/{} Train loss: {:.4f}, Train accuracy: {:.4f}'
+            print(log.format(epoch, args['epochs'], loss.item(), acc))
+
+    return model
 
 def test(model, dataloaders, args, epoch):
     hard_sample_threshold = 0.75
@@ -179,7 +211,7 @@ def test(model, dataloaders, args, epoch):
 
 ## arguments to tune the model
 def start_training(hetero, args, save_path, save_file = True, file_name = 'best_model',save_hard_samples = False, retrain_hard_samples = False, 
-                    custom_train = False, negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50):
+                    custom_train = False, negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = False):
 
     shop_vrb_split_types = [('name', 'name-color', 'color'), ('name', 'name-weight', 'weight'), ('name', 'name-movability', 'movability'), 
                             ('name', 'name-material', 'material'), ('name', 'name-shape', 'shape'), 
@@ -205,13 +237,21 @@ def start_training(hetero, args, save_path, save_file = True, file_name = 'best_
     encoder_layer_num = args['encoder_layer_num']
     split_types = amazon_split_types if args['dataset_name'] == 'amazon' else shop_vrb_split_types
 
-    model = HeteroGNN(HeteroSAGEConv, hetero, hidden_size, num_layer_hop, encoder_layer_num).to(args["device"])
+    if train_with_softmax:
+        model = softmax_HeteroGNN(HeteroSAGEConv, hetero, hidden_size, num_layer_hop, encoder_layer_num).to(args["device"])
+    else:
+        model = HeteroGNN(HeteroSAGEConv, hetero, hidden_size, num_layer_hop, encoder_layer_num).to(args["device"])
     optimizer = torch.optim.Adam(model.parameters(), lr=args['lr'], weight_decay=args['weight_decay'])
+    
     # train
     if custom_train:
         custom_dataset = CustomDataset([hetero], split_types, negative_sampling = negative_sampling, negative_sampling_ratio = negative_sampling_ratio, sampling_epoch = sampling_epoch)
         dataloader = DataLoader(custom_dataset, batch_size=1, collate_fn=Batch.collate())
         best_model = train_custom(model, dataloader, optimizer, args)
+    elif train_with_softmax:
+        custom_dataset = CustomDataset([hetero], split_types, negative_sampling = False)
+        dataloader = DataLoader(custom_dataset, batch_size=1, collate_fn=Batch.collate())
+        best_model = train_softmax(model, dataloader, optimizer, args)
     else:
         dataloaders = process_dataset(hetero, directed = args['directed'], split_types=split_types)
         if retrain_hard_samples:

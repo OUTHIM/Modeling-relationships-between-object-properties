@@ -8,6 +8,7 @@ import os
 import networkx as nx
 import json
 import numpy as np
+import torch.nn.functional as F
 
 from torch.utils.data import DataLoader
 from deepsnap.dataset import GraphDataset
@@ -20,7 +21,7 @@ if str(ROOT) not in sys.path:
     
 from model.heteGraphSAGE import HeteroGNN
 from utils import dataset_utils, data_preprocessing
-
+from model.softmax_heteGraphSAGE import softmax_HeteroGNN
 
 def get_attribute_to_predict(attributes, attribute_values):
     attribute_to_predict = []
@@ -29,7 +30,7 @@ def get_attribute_to_predict(attributes, attribute_values):
             attribute_to_predict.append(head)
     return attribute_to_predict
 
-def test_samples(samples, folder_path, dataset_name = 'amazon'):
+def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=False):
     # known attributes for the object
     shop_vrb_attribute_values = {
         'name': 18,
@@ -157,11 +158,17 @@ def test_samples(samples, folder_path, dataset_name = 'amazon'):
         tup = ('name', 'name-{0}'.format(attribute_name), attribute_name)
         name_node_idx = start_node_idx
         # generate the edge_label_index tensor for all the samples of the same attribute
-        for _ in range(len(samples)):
-            tensor = torch.Tensor([[name_node_idx for _ in range(len(test_graph.node_feature[attribute_name]))],[x for x in range(len(test_graph.node_feature[attribute_name]))]])
-            temp.append(tensor)
-            name_node_idx += 1
-        edge_label_index[tup] = torch.cat(temp, dim=-1)
+        if softmax_model:
+            # For each sample, we create a pair of edge_label_index to predict. 
+            # The ground truth target in this case is given an arbitrary number, which is therefore not correct target value.
+            tensor = torch.Tensor([[x for x in range(name_node_idx, name_node_idx + len(samples))], [0 for _ in range(len(samples))]])
+            edge_label_index[tup] = tensor
+        else:
+            for _ in range(len(samples)):
+                tensor = torch.Tensor([[name_node_idx for _ in range(len(test_graph.node_feature[attribute_name]))],[x for x in range(len(test_graph.node_feature[attribute_name]))]])
+                temp.append(tensor)
+                name_node_idx += 1
+            edge_label_index[tup] = torch.cat(temp, dim=-1)
 
         # print('\033[94m' + 'test use:' + '\033[0m', torch.cat(temp, dim=-1)[0,:50])
         # print('\033[94m' + 'Message type to predict:' + '\033[0m', tup)
@@ -186,35 +193,45 @@ def test_samples(samples, folder_path, dataset_name = 'amazon'):
 
     # print('\033[94m' + 'Edge label indices are:' + '\033[0m', edge_label_index)
 
-
     # %%%%%%%%%%%%%%%%%%%%%%%%%% Start to predict %%%%%%%%%%%%%%%%%%%%%%%%%%
-    # print(test_graph.edge_index)
-    # print(test_graph.node_feature['Weight']) # features dim of node in certain type
-    # print(test_graph.get_num_labels('shape'))
-
     hidden_size = args['hidden_size']
     num_layer_hop = args['layer_num']
     encoder_layer_num = args['encoder_layer_num']
-    model = HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
+    if softmax_model:
+        model = softmax_HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
+    else:
+        model = HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
     PATH = os.path.join(folder_path, '{0}_best.pth'.format(dataset_name))
     model.load_state_dict(torch.load(PATH))
-
     model.eval()
-    pred , corresponding_attr_values = model(test_graph.to('cpu'))
+    if softmax_model:
+        # The ground-truth edge label is useless in test mode
+        pred, _, corresponding_attr_values = model(test_graph.to('cpu'))
+    else:
+        pred , corresponding_attr_values = model(test_graph.to('cpu'))
     torch.set_printoptions(precision=2)
 
     results = []
     real_bins = []
     attr_names = []
-    for i in range(len(pred)):
-        result = torch.sigmoid(list(pred.items())[i][1]).detach().numpy()
-        results.append(result)
-        attr_names.append(list(corresponding_attr_values.items())[i][0][2])
-        # tile the real_bin to match the length of the predicted results
-        real_bin_piece = list(corresponding_attr_values.items())[i][1].detach().numpy()
-        tile_reps = len(result)/len(real_bin_piece)
-        real_bins.append(np.tile(real_bin_piece, tile_reps))
-        # most_likely_indices = np.argsort(result)[-5:]
+    if softmax_model:
+        for i in range(len(pred)):
+            result = F.softmax(list(pred.items())[i][1]).detach().numpy()
+            # print for test
+            print(result.shape)
+
+            result = result.reshape([1,-1]).squeeze()
+            results.append(result)
+            attr_names.append(list(corresponding_attr_values.items())[i][0][2])
+            real_bin_piece = list(corresponding_attr_values.items())[i][1].detach().numpy()
+            real_bins.append(real_bin_piece)
+    else:
+        for i in range(len(pred)):
+            result = torch.sigmoid(list(pred.items())[i][1]).detach().numpy()
+            results.append(result)
+            attr_names.append(list(corresponding_attr_values.items())[i][0][2])
+            real_bin_piece = list(corresponding_attr_values.items())[i][1].detach().numpy()
+            real_bins.append(real_bin_piece)
 
     quantization_num = len(test_graph.node_feature[attribute_name])
     return results, real_bins, attr_names, quantization_num

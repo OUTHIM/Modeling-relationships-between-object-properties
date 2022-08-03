@@ -4,9 +4,9 @@ import torch.nn.functional as F
 from deepsnap.hetero_gnn import forward_op, HeteroConv
 
 # Define the heterogeneous GNN for the link prediction task
-class HeteroGNN(torch.nn.Module):
+class softmax_HeteroGNN(torch.nn.Module):
     def __init__(self, gnn_conv, hetero, hidden_size, num_layer_hop, encoder_layer_num):
-        super(HeteroGNN, self).__init__()
+        super(softmax_HeteroGNN, self).__init__()
         
         # Wrap the heterogeneous GNN layers with HeteroConv
         # The wrapper will (use adj matrix as indices): 
@@ -22,7 +22,7 @@ class HeteroGNN(torch.nn.Module):
         for convs in layer_convs:
             # transfer to modulelist in avoidance of device inconsistance
             self.layer_convs.append(HeteroConv(convs))
-        self.loss_fn = torch.nn.BCEWithLogitsLoss()
+        self.loss_fn = torch.nn.CrossEntropyLoss()
         self.bns = torch.nn.ModuleList()
         self.relus = torch.nn.ModuleList()
         for _ in range(num_layer_hop):
@@ -61,23 +61,26 @@ class HeteroGNN(torch.nn.Module):
 
         pred = {}
         pred_attribute_values = {}
+        true_attr_node_labels = {}
         # data with labels for prediction
         # only predict edges sourcing from 'name'
         for message_type in data.edge_label: # must use edge_label instead of edge_label_index here
-            nodes_first = torch.index_select(x[message_type[0]], 0, data.edge_label_index[message_type][0,:].long())
-            nodes_second = torch.index_select(x[message_type[2]], 0, data.edge_label_index[message_type][1,:].long())
-            
-            attribute_nodes_label = torch.index_select(data.node_label[message_type[2]], 0, data.edge_label_index[message_type][1,:].long())
-            pred[message_type] = torch.sum(nodes_first * nodes_second, dim=-1)
+            name_nodes = torch.index_select(x[message_type[0]], 0, data.edge_label_index[message_type][0,:].long())
+            attr_nodes = torch.transpose(x[message_type[2]], 0, 1)
+            node_distmult = torch.mm(name_nodes, attr_nodes)
+            attribute_nodes_label = torch.tile(data.node_label[message_type[2]], (len(name_nodes),))
+
+            pred[message_type] = node_distmult
+            true_attr_node_labels[message_type] = data.edge_label_index[message_type][1,:].long()
             pred_attribute_values[message_type] = attribute_nodes_label
-        return pred, pred_attribute_values
+
+        return pred, true_attr_node_labels, pred_attribute_values
 
     def loss(self, pred, y):
         loss = 0
         for key in pred:
-            p = torch.sigmoid(pred[key])
-            # loss += self.loss_fn(pred[key], y[key].type(pred[key].dtype))
-            loss += self.loss_fn(p, y[key].type(pred[key].dtype))
+            p = F.softmax(pred[key])
+            loss += self.loss_fn(p, y[key].long())
         return loss
 
     # initialize k-hop conv layers for different message/edge types

@@ -1,4 +1,3 @@
-from cv2 import threshold
 import pandas as pd
 from pathlib import Path
 import sys
@@ -26,11 +25,12 @@ def cal_hit_n(n, pred, true_false_list):
 
 
 # args
-test_attr = ['Weight']
+test_attr = ['Volume']
 threshold = 0.5
 correct_pred = 0
 acc = 0
 highest_among_others = True
+softmax_model = True
 
 # load data
 labels = {}
@@ -43,7 +43,7 @@ test_data = test_data.drop(test_attr, axis=1)
 test_data = test_data.drop(test_data.columns[0], axis=1).to_dict(orient='records')
 
 # start experiment
-results, real_bins, attr_names, quantization_num = test_samples(test_data, dataset_name='amazon', folder_path=FATHER)
+results, real_bins, attr_names, quantization_num = test_samples(test_data, dataset_name='amazon', folder_path=FATHER, softmax_model=softmax_model)
 for key in labels:
     labels[key] = np.repeat(labels[key], quantization_num)
 
@@ -58,8 +58,8 @@ for i, attr_name in enumerate(attr_names):
     else:
         temp_acc = (np.sum(temp_pred > threshold))/len(test_data)
 
-    temp_hit_10 = cal_hit_n(10, temp_pred, true_false_list)
-    hit_10 += temp_hit_10
+    # temp_hit_10 = cal_hit_n(10, temp_pred, true_false_list)
+    # hit_10 += temp_hit_10
     print('Accuracy on attribute {} is {}:'.format(attr_name, temp_acc))
     acc += temp_acc
 
