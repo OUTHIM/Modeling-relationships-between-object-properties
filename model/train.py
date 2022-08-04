@@ -22,6 +22,7 @@ if str(ROOT) not in sys.path:
 from model.heteGraphSAGE import HeteroGNN
 from utils.data_preprocessing import CustomDataset, process_dataset
 from model.softmax_heteGraphSAGE import softmax_HeteroGNN
+from experiment.evaluation_experiment import evaluation
 
 # Train function
 def train(model, dataloaders, optimizer, args, save_hard_samples, retrain_hard_samples, save_path):
@@ -143,10 +144,11 @@ def train_custom(model, dataloader, optimizer, args):
     return model
 
 # For training with softmax heteGraphSAGE
-def train_softmax(model, dataloader, optimizer, args):
+def train_softmax(model, dataloader, optimizer, args, evaluation_epoch, wandb):
     print('Training with softmax model...')
     for epoch in range(1, args['epochs'] + 1):
         for train_batch in dataloader:
+            model.to(args['device'])
             train_batch.to(args["device"])
             model.train()
             optimizer.zero_grad()
@@ -172,6 +174,55 @@ def train_softmax(model, dataloader, optimizer, args):
             log = 'Current epoch: {:02d}/{} Train loss: {:.4f}, Train accuracy: {:.4f}'
             print(log.format(epoch, args['epochs'], loss.item(), acc))
 
+            train_metrics = {
+                'train/train_loss': loss,
+                'train/train_acc': acc
+            }
+            wandb.log(train_metrics)
+
+        # Evaluation and log to wandb
+        if evaluation_epoch != None:
+            if epoch % evaluation_epoch == 0 and epoch != 0:
+                FILE = Path(__file__).resolve()
+                ROOT = FILE.parents[1]
+                experiment_folder_path = os.path.join(ROOT, 'experiment')
+                attr_acc, avg_acc = evaluation(experiment_folder_path=experiment_folder_path, model = model)
+                material_acc = attr_acc['Material']
+                colour_acc = attr_acc['Colour']
+                weight_acc = attr_acc['Weight']
+                volume_acc = attr_acc['Volume']
+                length_acc = attr_acc['Length']
+                width_acc = attr_acc['Width']
+                height_acc = attr_acc['Height']
+                functionality_acc = attr_acc['Functionality']
+                button_acc = attr_acc['Button']
+                lip_acc = attr_acc['Lip']
+                fillability_acc = attr_acc['Fillability']
+                washability_acc = attr_acc['Washability']
+                dismountability_acc = attr_acc['Dismountability']
+                shape_acc = attr_acc['Shape']
+                handle_acc = attr_acc['Handle']
+
+                val_metrics = {
+                    'val/material_acc':material_acc,
+                    'val/colour_acc':colour_acc,
+                    'val/weight_acc':weight_acc,
+                    'val/volume_acc':volume_acc,
+                    'val/length_acc':length_acc,
+                    'val/width_acc':width_acc,
+                    'val/height_acc':height_acc,
+                    'val/unctionality_acc':functionality_acc,
+                    'val/button_acc':button_acc,
+                    'val/lip_acc':lip_acc,
+                    'val/fillability_acc':fillability_acc,
+                    'val/washability_acc':washability_acc,
+                    'val/dismountability_acc':dismountability_acc,
+                    'val/shape_acc':shape_acc,
+                    'val/handle_acc':handle_acc,
+                    'val/avg_acc': avg_acc
+                }
+
+                wandb.log(val_metrics)
     return model
 
 def test(model, dataloaders, args, epoch):
@@ -211,7 +262,8 @@ def test(model, dataloaders, args, epoch):
 
 ## arguments to tune the model
 def start_training(hetero, args, save_path, save_file = True, file_name = 'best_model',save_hard_samples = False, retrain_hard_samples = False, 
-                    custom_train = False, negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = False):
+                    custom_train = False, negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = False,
+                    evaluation_epoch = 5, wandb = None):
 
     shop_vrb_split_types = [('name', 'name-color', 'color'), ('name', 'name-weight', 'weight'), ('name', 'name-movability', 'movability'), 
                             ('name', 'name-material', 'material'), ('name', 'name-shape', 'shape'), 
@@ -251,7 +303,7 @@ def start_training(hetero, args, save_path, save_file = True, file_name = 'best_
     elif train_with_softmax:
         custom_dataset = CustomDataset([hetero], split_types, negative_sampling = False)
         dataloader = DataLoader(custom_dataset, batch_size=1, collate_fn=Batch.collate())
-        best_model = train_softmax(model, dataloader, optimizer, args)
+        best_model = train_softmax(model, dataloader, optimizer, args, evaluation_epoch=evaluation_epoch, wandb = wandb)
     else:
         dataloaders = process_dataset(hetero, directed = args['directed'], split_types=split_types)
         if retrain_hard_samples:
@@ -265,10 +317,6 @@ def start_training(hetero, args, save_path, save_file = True, file_name = 'best_
         if retrain_hard_samples:
             path3 = os.path.join(save_path, 'before_hard_training.pth')
             torch.save(before_hard_training_model.state_dict(), path3)
-        # save the hyper_parameters of training
-        path2 = os.path.join(save_path, '{0}_args.json'.format(dataset_name))
-        with open(path2, 'w') as outfile:
-            json.dump(args, outfile)
 
 
 if __name__ == '__main__':

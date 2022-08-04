@@ -1,3 +1,8 @@
+'''
+This is a customized version for experiment.
+Arbitrary number of missing attributes can be tested here.
+'''
+
 import pandas as pd
 from pathlib import Path
 import sys
@@ -34,7 +39,7 @@ softmax_model = True
 
 # load data
 labels = {}
-test_data = pd.read_csv(os.path.join(FATHER, 'test_data.csv'))
+test_data = pd.read_csv(os.path.join(FATHER, 'training_data.csv'))
 for attr_name in test_attr:
     temp = test_data[attr_name].to_numpy()
     labels[attr_name] = temp

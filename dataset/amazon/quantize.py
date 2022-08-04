@@ -128,8 +128,9 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
         with open(path3, 'w') as outfile:
             json.dump(quantization_levels, outfile)
 
-    plt.hist(X_binned)
-    plt.show()
+    print('Quantization finished!')
+    # plt.hist(X_binned)
+    # plt.show()
 
 # print(data)
 # print(np.concatenate([enc.inverse_transform(X_binned), data], axis=-1))

@@ -30,7 +30,7 @@ def get_attribute_to_predict(attributes, attribute_values):
             attribute_to_predict.append(head)
     return attribute_to_predict
 
-def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=False):
+def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=False, model = None):
     # known attributes for the object
     shop_vrb_attribute_values = {
         'name': 18,
@@ -124,6 +124,7 @@ def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=Fa
     ################################################# Create the test node on 'shape' and 'size' ######################################################
     # ----------- variable setting part ---------------------
     # generate center nodes with object 'name' index
+    
     for attribute_values in samples:
         name_index = attribute_values['name']
         node_idx = len(G.nodes)
@@ -139,12 +140,7 @@ def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=Fa
                     (node_idx, attr_to_node[node_type][str(attribute_values[node_type])],{'edge_type':'name-'+ node_type}),
                     (attr_to_node[node_type][str(attribute_values[node_type])], node_idx, {'edge_type': node_type + '-name'})
                     ])
-
-    # print('neighbour of the node to predict', list(G.neighbors(node_idx)))            
-    # print('total num of nodes', len(G.nodes))
-    # load the full knowledge graph
-    # print(test_graph.get_num_labels('name'))
-
+    
     test_graph = HeteroGraph(G) # the heterogeneous graph with all test nodes inserted and linked
 
     # It is assumed that each sample requires same types of attributes to predict 
@@ -197,18 +193,42 @@ def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=Fa
     hidden_size = args['hidden_size']
     num_layer_hop = args['layer_num']
     encoder_layer_num = args['encoder_layer_num']
-    if softmax_model:
-        model = softmax_HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
-    else:
-        model = HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
-    PATH = os.path.join(folder_path, '{0}_best.pth'.format(dataset_name))
-    model.load_state_dict(torch.load(PATH))
+
+    '''
+    # Test on training graphs where all the links are preserved.
+    test_graph = hetero_training
+    for attribute_name in attribute_to_predict:
+        temp = []
+        tup = ('name', 'name-{0}'.format(attribute_name), attribute_name)
+        edge_label_index[tup] = test_graph.edge_label_index[tup]
+        name_node_idx = start_node_idx
+    test_graph.edge_label_index = edge_label_index
+    edge_label = {}
+    for edge_type in test_graph.edge_label_index:
+        edge_label[edge_type] = torch.Tensor([1])
+
+    test_graph.edge_label = edge_label
+    '''
+
+
+    # if the model is not given, then load from directory
+    if model == None:
+        if softmax_model:
+            model = softmax_HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
+        else:
+            model = HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
+        PATH = os.path.join(folder_path, '{0}_best.pth'.format(dataset_name))
+        model.load_state_dict(torch.load(PATH))
+
+    model.to('cpu')
     model.eval()
+
     if softmax_model:
         # The ground-truth edge label is useless in test mode
         pred, _, corresponding_attr_values = model(test_graph.to('cpu'))
     else:
         pred , corresponding_attr_values = model(test_graph.to('cpu'))
+
     torch.set_printoptions(precision=2)
 
     results = []

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 57, in <module>
+    json.dump(args, outfile)
+  File "C:\Apps\Anaconda\envs\fyp\lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "C:\Apps\Anaconda\envs\fyp\lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "C:\Apps\Anaconda\envs\fyp\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Config is not JSON serializable

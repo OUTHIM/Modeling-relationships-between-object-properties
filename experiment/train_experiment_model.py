@@ -4,6 +4,8 @@ import os
 import pandas as pd
 import networkx as nx
 from deepsnap.hetero_graph import HeteroGraph
+import wandb
+import json
 
 FILE = Path(__file__).resolve()
 FATHER = FILE.parents[0]  # root directory
@@ -20,26 +22,41 @@ from model.heteGraphSAGE import HeteroGNN
 from model.train import start_training
 from sklearn.utils import shuffle
 
-# node_num = 124
-node_num = 1431
-num_levels = 10
 args = {
-    'custom_train': False,
-    'train_with_softmax': True,
+        'custom_train': False,
+        'train_with_softmax': True,
 
-    'dataset_name': 'amazon',
-    "device": "cuda",
-    "epochs": 50,
-    "lr": 0.01,
-    "weight_decay": 1e-4,
-    'encoder_layer_num': 3,
-    "hidden_size": 32,
-    'layer_num': 1,
-    'directed' : True,
-    'retrain_hard_samples': False,
-    'save_hard_samples': False,
-    'negative_sampling_ratio':1
+        'dataset_name': 'amazon',
+        'evaluation_epoch':5,
+        'num_quantization_level': 10,
+        'node_num': 1431,
+        "device": "cuda",
+        "epochs": 500,
+        "lr": 0.01,
+        "weight_decay": 1e-4,
+        'encoder_layer_num': 3,
+        "hidden_size": 32,
+        'layer_num': 1,
+        'directed' : True,
+        'retrain_hard_samples': False,
+        'save_hard_samples': False,
+        'negative_sampling_ratio':1
     }
+
+wandb.init(
+    project = 'fyp',
+    name = 'softmax without dropout',
+
+    config = args
+    )
+
+# save the hyper_parameters of training
+path2 = os.path.join(FATHER, '{0}_args.json'.format(args['dataset_name']))
+with open(path2, 'w') as outfile:
+    json.dump(args, outfile)
+
+num_levels = args['num_quantization_level']
+node_num = args['node_num']
 
 # Load training data
 path = os.path.join(ROOT, 'dataset/amazon\clean_data.csv')
@@ -93,4 +110,7 @@ hetero = HeteroGraph(G)
 start_training(
     hetero, args, save_path = FATHER, save_file=True, save_hard_samples=args['save_hard_samples'],
     retrain_hard_samples = args['retrain_hard_samples'], custom_train=args['custom_train'],
-    negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = args['train_with_softmax'])
+    negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = args['train_with_softmax'],
+    evaluation_epoch = args['evaluation_epoch'], wandb = wandb)
+
+wandb.finish()
