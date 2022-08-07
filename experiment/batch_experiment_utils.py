@@ -236,21 +236,21 @@ def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=Fa
     attr_names = []
     if softmax_model:
         for i in range(len(pred)):
-            result = F.softmax(list(pred.items())[i][1]).detach().numpy()
+            result = F.softmax(list(pred.items())[i][1]).detach().cpu().numpy()
             # print for test
             print(result.shape)
 
             result = result.reshape([1,-1]).squeeze()
             results.append(result)
             attr_names.append(list(corresponding_attr_values.items())[i][0][2])
-            real_bin_piece = list(corresponding_attr_values.items())[i][1].detach().numpy()
+            real_bin_piece = list(corresponding_attr_values.items())[i][1].detach().cpu().numpy()
             real_bins.append(real_bin_piece)
     else:
         for i in range(len(pred)):
-            result = torch.sigmoid(list(pred.items())[i][1]).detach().numpy()
+            result = torch.sigmoid(list(pred.items())[i][1]).detach().cpu().numpy()
             results.append(result)
             attr_names.append(list(corresponding_attr_values.items())[i][0][2])
-            real_bin_piece = list(corresponding_attr_values.items())[i][1].detach().numpy()
+            real_bin_piece = list(corresponding_attr_values.items())[i][1].detach().cpu().numpy()
             real_bins.append(real_bin_piece)
 
     quantization_num = len(test_graph.node_feature[attribute_name])

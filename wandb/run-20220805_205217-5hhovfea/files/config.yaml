@@ -1,0 +1,88 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.4
+    start_time: 1659729137.363133
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      - 77
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      - 77
+      3:
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.10.4
+      5: 0.13.0
+      8:
+      - 3
+      - 5
+custom_train:
+  desc: null
+  value: false
+dataset_name:
+  desc: null
+  value: amazon
+device:
+  desc: null
+  value: cuda
+directed:
+  desc: null
+  value: true
+encoder_layer_num:
+  desc: null
+  value: 1
+epochs:
+  desc: null
+  value: 30
+evaluation_epoch:
+  desc: null
+  value: 1
+hidden_size:
+  desc: null
+  value: 32
+layer_num:
+  desc: null
+  value: 1
+lr:
+  desc: null
+  value: 0.01
+message_passing_edge_ratio:
+  desc: null
+  value: 0.5
+negative_sampling_ratio:
+  desc: null
+  value: 1
+node_num:
+  desc: null
+  value: 1431
+num_quantization_level:
+  desc: null
+  value: 10
+retrain_hard_samples:
+  desc: null
+  value: false
+save_hard_samples:
+  desc: null
+  value: false
+train_with_softmax:
+  desc: null
+  value: true
+weight_decay:
+  desc: null
+  value: 0.0001

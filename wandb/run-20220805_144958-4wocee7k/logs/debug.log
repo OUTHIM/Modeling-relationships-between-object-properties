@@ -1,0 +1,25 @@
+2022-08-05 14:49:58,141 INFO    MainThread:17832 [wandb_setup.py:_flush():76] Configure stats pid to 17832
+2022-08-05 14:49:58,141 INFO    MainThread:17832 [wandb_setup.py:_flush():76] Loading settings from C:\Users\yjn_1\.config\wandb\settings
+2022-08-05 14:49:58,141 INFO    MainThread:17832 [wandb_setup.py:_flush():76] Loading settings from C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\settings
+2022-08-05 14:49:58,141 INFO    MainThread:17832 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2022-08-05 14:49:58,141 INFO    MainThread:17832 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'experiment\\train_experiment_model.py', 'program': 'c:\\Users\\yjn_1\\Documents\\GitHub\\Modeling-relationships-between-object-properties\\experiment\\train_experiment_model.py'}
+2022-08-05 14:49:58,142 INFO    MainThread:17832 [wandb_init.py:_log_setup():461] Logging user logs to C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_144958-4wocee7k\logs\debug.log
+2022-08-05 14:49:58,142 INFO    MainThread:17832 [wandb_init.py:_log_setup():462] Logging internal logs to C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_144958-4wocee7k\logs\debug-internal.log
+2022-08-05 14:49:58,142 INFO    MainThread:17832 [wandb_init.py:init():495] calling init triggers
+2022-08-05 14:49:58,142 INFO    MainThread:17832 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {'custom_train': False, 'train_with_softmax': True, 'dataset_name': 'amazon', 'evaluation_epoch': 20, 'num_quantization_level': 10, 'message_passing_edge_ratio': 0.1, 'node_num': 1431, 'device': 'cuda', 'epochs': 200, 'lr': 0.01, 'weight_decay': 0.0001, 'encoder_layer_num': 3, 'hidden_size': 32, 'layer_num': 1, 'directed': True, 'retrain_hard_samples': False, 'save_hard_samples': False, 'negative_sampling_ratio': 1}
+2022-08-05 14:49:58,142 INFO    MainThread:17832 [wandb_init.py:init():548] starting backend
+2022-08-05 14:49:58,142 INFO    MainThread:17832 [wandb_init.py:init():552] setting up manager
+2022-08-05 14:49:58,144 INFO    MainThread:17832 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2022-08-05 14:49:58,147 INFO    MainThread:17832 [wandb_init.py:init():558] backend started and connected
+2022-08-05 14:49:58,149 INFO    MainThread:17832 [wandb_init.py:init():636] updated telemetry
+2022-08-05 14:49:58,191 INFO    MainThread:17832 [wandb_init.py:init():667] communicating run to backend with 30 second timeout
+2022-08-05 14:49:58,543 INFO    MainThread:17832 [wandb_run.py:_on_init():1981] communicating current version
+2022-08-05 14:49:58,598 INFO    MainThread:17832 [wandb_run.py:_on_init():1985] got version response 
+2022-08-05 14:49:58,599 INFO    MainThread:17832 [wandb_init.py:init():700] starting run threads in backend
+2022-08-05 14:49:59,865 INFO    MainThread:17832 [wandb_run.py:_console_start():1961] atexit reg
+2022-08-05 14:49:59,871 INFO    MainThread:17832 [wandb_run.py:_redirect():1819] redirect: SettingsConsole.WRAP_RAW
+2022-08-05 14:49:59,872 INFO    MainThread:17832 [wandb_run.py:_redirect():1884] Wrapping output streams.
+2022-08-05 14:49:59,872 INFO    MainThread:17832 [wandb_run.py:_redirect():1906] Redirects installed.
+2022-08-05 14:49:59,872 INFO    MainThread:17832 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-05 14:53:18,260 WARNING MsgRouterThr:17832 [router.py:message_loop():76] message_loop has been closed

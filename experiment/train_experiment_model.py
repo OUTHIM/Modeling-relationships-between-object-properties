@@ -6,6 +6,9 @@ import networkx as nx
 from deepsnap.hetero_graph import HeteroGraph
 import wandb
 import json
+import warnings
+
+warnings.filterwarnings('ignore')
 
 FILE = Path(__file__).resolve()
 FATHER = FILE.parents[0]  # root directory
@@ -22,19 +25,23 @@ from model.heteGraphSAGE import HeteroGNN
 from model.train import start_training
 from sklearn.utils import shuffle
 
+wandb_mode = 'disabled'
+# wandb_mode = None
+wandb_name = 'softmax eval per 5 epoch(mp edge 0.5)'
 args = {
         'custom_train': False,
         'train_with_softmax': True,
 
         'dataset_name': 'amazon',
-        'evaluation_epoch':5,
-        'num_quantization_level': 10,
+        'evaluation_epoch':None,
+        'num_quantization_level': 20,
+        'message_passing_edge_ratio': 0.6,
         'node_num': 1431,
         "device": "cuda",
-        "epochs": 500,
+        "epochs": 150,
         "lr": 0.01,
         "weight_decay": 1e-4,
-        'encoder_layer_num': 3,
+        'encoder_layer_num': 1,
         "hidden_size": 32,
         'layer_num': 1,
         'directed' : True,
@@ -44,9 +51,9 @@ args = {
     }
 
 wandb.init(
+    mode = wandb_mode,
     project = 'fyp',
-    name = 'softmax without dropout',
-
+    name = wandb_name,
     config = args
     )
 
@@ -111,6 +118,6 @@ start_training(
     hetero, args, save_path = FATHER, save_file=True, save_hard_samples=args['save_hard_samples'],
     retrain_hard_samples = args['retrain_hard_samples'], custom_train=args['custom_train'],
     negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = args['train_with_softmax'],
-    evaluation_epoch = args['evaluation_epoch'], wandb = wandb)
+    evaluation_epoch = args['evaluation_epoch'], mp_edge_ratio = args['message_passing_edge_ratio'], wandb = wandb)
 
 wandb.finish()

@@ -1,0 +1,56 @@
+2022-08-05 16:32:24,583 INFO    StreamThr :15476 [internal.py:wandb_internal():90] W&B internal server running at pid: 15476, started at: 2022-08-05 16:32:24.583258
+2022-08-05 16:32:24,585 DEBUG   HandlerThread:15476 [handler.py:handle_request():141] handle_request: status
+2022-08-05 16:32:24,588 DEBUG   SenderThread:15476 [sender.py:send_request():316] send_request: status
+2022-08-05 16:32:24,589 INFO    WriterThread:15476 [datastore.py:open_for_write():75] open: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\run-pg8ifrn1.wandb
+2022-08-05 16:32:24,589 DEBUG   SenderThread:15476 [sender.py:send():302] send: header
+2022-08-05 16:32:24,617 DEBUG   SenderThread:15476 [sender.py:send():302] send: run
+2022-08-05 16:32:24,992 DEBUG   HandlerThread:15476 [handler.py:handle_request():141] handle_request: check_version
+2022-08-05 16:32:24,998 INFO    SenderThread:15476 [dir_watcher.py:__init__():216] watching files in: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files
+2022-08-05 16:32:24,998 INFO    SenderThread:15476 [sender.py:_start_run_threads():913] run started: pg8ifrn1 with start time 1659713544.578275
+2022-08-05 16:32:24,998 DEBUG   SenderThread:15476 [sender.py:send():302] send: summary
+2022-08-05 16:32:24,999 INFO    SenderThread:15476 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-05 16:32:25,000 DEBUG   SenderThread:15476 [sender.py:send_request():316] send_request: check_version
+2022-08-05 16:32:25,069 DEBUG   HandlerThread:15476 [handler.py:handle_request():141] handle_request: run_start
+2022-08-05 16:32:25,087 DEBUG   HandlerThread:15476 [meta.py:__init__():35] meta init
+2022-08-05 16:32:25,088 DEBUG   HandlerThread:15476 [meta.py:__init__():50] meta init done
+2022-08-05 16:32:25,088 DEBUG   HandlerThread:15476 [meta.py:probe():216] probe
+2022-08-05 16:32:25,120 DEBUG   HandlerThread:15476 [meta.py:_setup_git():206] setup git
+2022-08-05 16:32:25,193 DEBUG   HandlerThread:15476 [meta.py:_setup_git():213] setup git done
+2022-08-05 16:32:25,193 DEBUG   HandlerThread:15476 [meta.py:_save_pip():54] save pip
+2022-08-05 16:32:25,194 DEBUG   HandlerThread:15476 [meta.py:_save_pip():68] save pip done
+2022-08-05 16:32:25,194 DEBUG   HandlerThread:15476 [meta.py:_save_conda():75] save conda
+2022-08-05 16:32:25,999 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\wandb-summary.json
+2022-08-05 16:32:26,000 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\conda-environment.yaml
+2022-08-05 16:32:26,000 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\requirements.txt
+2022-08-05 16:32:26,056 DEBUG   HandlerThread:15476 [meta.py:_save_conda():85] save conda done
+2022-08-05 16:32:26,056 DEBUG   HandlerThread:15476 [meta.py:probe():254] probe done
+2022-08-05 16:32:26,136 DEBUG   SenderThread:15476 [sender.py:send():302] send: files
+2022-08-05 16:32:26,136 INFO    SenderThread:15476 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-05 16:32:26,137 DEBUG   HandlerThread:15476 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-05 16:32:26,137 DEBUG   SenderThread:15476 [sender.py:send_request():316] send_request: stop_status
+2022-08-05 16:32:26,358 DEBUG   SenderThread:15476 [sender.py:send():302] send: telemetry
+2022-08-05 16:32:26,980 INFO    Thread-22 :15476 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\AppData\Local\Temp\tmpr_k82p3nwandb\zo9i43j3-wandb-metadata.json
+2022-08-05 16:32:26,999 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\wandb-metadata.json
+2022-08-05 16:32:27,000 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:29,021 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:41,199 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:43,310 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:44,557 DEBUG   HandlerThread:15476 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-05 16:32:44,557 DEBUG   SenderThread:15476 [sender.py:send_request():316] send_request: stop_status
+2022-08-05 16:32:45,323 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:47,754 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:50,023 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:51,026 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:52,177 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:54,224 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:55,237 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\output.log
+2022-08-05 16:32:56,243 INFO    Thread-16 :15476 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220805_163224-pg8ifrn1\files\config.yaml
+2022-08-05 16:32:57,073 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats
+2022-08-05 16:33:30,075 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats
+2022-08-05 16:34:03,118 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats
+2022-08-05 16:34:36,167 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats
+2022-08-05 16:35:09,232 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats
+2022-08-05 16:35:42,286 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats
+2022-08-05 16:36:15,362 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats
+2022-08-05 16:36:48,454 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats
+2022-08-05 16:37:21,495 DEBUG   SenderThread:15476 [sender.py:send():302] send: stats

@@ -211,7 +211,7 @@ def train_softmax(model, dataloader, optimizer, args, evaluation_epoch, wandb):
                     'val/length_acc':length_acc,
                     'val/width_acc':width_acc,
                     'val/height_acc':height_acc,
-                    'val/unctionality_acc':functionality_acc,
+                    'val/functionality_acc':functionality_acc,
                     'val/button_acc':button_acc,
                     'val/lip_acc':lip_acc,
                     'val/fillability_acc':fillability_acc,
@@ -263,7 +263,7 @@ def test(model, dataloaders, args, epoch):
 ## arguments to tune the model
 def start_training(hetero, args, save_path, save_file = True, file_name = 'best_model',save_hard_samples = False, retrain_hard_samples = False, 
                     custom_train = False, negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = False,
-                    evaluation_epoch = 5, wandb = None):
+                    evaluation_epoch = 5, mp_edge_ratio = 0.8, wandb = None):
 
     shop_vrb_split_types = [('name', 'name-color', 'color'), ('name', 'name-weight', 'weight'), ('name', 'name-movability', 'movability'), 
                             ('name', 'name-material', 'material'), ('name', 'name-shape', 'shape'), 
@@ -297,11 +297,11 @@ def start_training(hetero, args, save_path, save_file = True, file_name = 'best_
     
     # train
     if custom_train:
-        custom_dataset = CustomDataset([hetero], split_types, negative_sampling = negative_sampling, negative_sampling_ratio = negative_sampling_ratio, sampling_epoch = sampling_epoch)
+        custom_dataset = CustomDataset([hetero], split_types, negative_sampling = negative_sampling, negative_sampling_ratio = negative_sampling_ratio, sampling_epoch = sampling_epoch, mp_edge_ratio = mp_edge_ratio)
         dataloader = DataLoader(custom_dataset, batch_size=1, collate_fn=Batch.collate())
         best_model = train_custom(model, dataloader, optimizer, args)
     elif train_with_softmax:
-        custom_dataset = CustomDataset([hetero], split_types, negative_sampling = False)
+        custom_dataset = CustomDataset([hetero], split_types, negative_sampling = False, mp_edge_ratio = mp_edge_ratio)
         dataloader = DataLoader(custom_dataset, batch_size=1, collate_fn=Batch.collate())
         best_model = train_softmax(model, dataloader, optimizer, args, evaluation_epoch=evaluation_epoch, wandb = wandb)
     else:

@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from deepsnap.hetero_gnn import forward_op, HeteroConv
+import math
+import random
+import copy
 
 # Define the heterogeneous GNN for the link prediction task
 class softmax_HeteroGNN(torch.nn.Module):
@@ -62,12 +65,31 @@ class softmax_HeteroGNN(torch.nn.Module):
         pred = {}
         pred_attribute_values = {}
         true_attr_node_labels = {}
+        drop_softmax_ratio = 0.5
+
         # data with labels for prediction
         # only predict edges sourcing from 'name'
         for message_type in data.edge_label: # must use edge_label instead of edge_label_index here
             name_nodes = torch.index_select(x[message_type[0]], 0, data.edge_label_index[message_type][0,:].long())
             attr_nodes = torch.transpose(x[message_type[2]], 0, 1)
-            node_distmult = torch.mm(name_nodes, attr_nodes)
+            node_distmult = torch.mm(name_nodes, attr_nodes).to('cuda')
+
+            # Drop attribute nodes before softmax to reduce overfitting
+            # Only in training mode
+            if self.training:
+                drop_dismult_num = math.floor(node_distmult.size()[1] * drop_softmax_ratio)
+                mask_drop = torch.zeros_like(node_distmult).to('cuda')
+                for _ in range(drop_dismult_num):
+                    indices_to_drop = torch.randint(0, node_distmult.size()[1], (node_distmult.size()[0],)).to('cuda')
+                    temp = F.one_hot(indices_to_drop, num_classes = node_distmult.size()[1]).to('cuda')
+                    mask_drop = torch.logical_or(temp, mask_drop).to('cuda')
+
+                mask_drop = torch.logical_not(mask_drop)
+                indices_to_preserve = data.edge_label_index[message_type][1,:].to('cuda')
+                mask_preserve = F.one_hot(indices_to_preserve.long(), num_classes = node_distmult.size()[1]).to('cuda')
+                mask_final = torch.logical_or(mask_drop, mask_preserve).to('cuda')
+                node_distmult = node_distmult * mask_final
+
             attribute_nodes_label = torch.tile(data.node_label[message_type[2]], (len(name_nodes),))
 
             pred[message_type] = node_distmult

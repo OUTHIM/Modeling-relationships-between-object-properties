@@ -1,0 +1,29 @@
+C:\Apps\Anaconda\envs\fyp\lib\site-packages\sklearn\cluster\_kmeans.py:1332: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+C:\Apps\Anaconda\envs\fyp\lib\site-packages\sklearn\cluster\_kmeans.py:1332: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+C:\Apps\Anaconda\envs\fyp\lib\site-packages\sklearn\cluster\_kmeans.py:1332: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+C:\Apps\Anaconda\envs\fyp\lib\site-packages\sklearn\cluster\_kmeans.py:1332: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+C:\Apps\Anaconda\envs\fyp\lib\site-packages\sklearn\cluster\_kmeans.py:1332: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
+  warnings.warn(
+C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\dataset\amazon\quantize.py:117: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[head][i] = temp[value]
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 73, in <module>
+    quantize.quantization(df, num_levels, save_path = FATHER, save_file = True, strategy='kmeans', figure_on = False)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\dataset\amazon\quantize.py", line 117, in quantization
+    df[head][i] = temp[value]
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 1075, in __setitem__
+    cacher_needs_updating = self._check_is_chained_assignment_possible()
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 1255, in _check_is_chained_assignment_possible
+    if ref is not None and ref._is_mixed_type:
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\generic.py", line 5680, in _is_mixed_type
+    return self.dtypes.nunique() > 1
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\base.py", line 1029, in nunique
+    uniqs = remove_na_arraylike(uniqs)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\dtypes\missing.py", line 622, in remove_na_arraylike
+    return arr[notna(np.asarray(arr))]

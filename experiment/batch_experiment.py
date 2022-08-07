@@ -30,7 +30,7 @@ def cal_hit_n(n, pred, true_false_list):
 
 
 # args
-test_attr = ['Volume']
+test_attr = ['Weight']
 threshold = 0.5
 correct_pred = 0
 acc = 0
@@ -39,7 +39,7 @@ softmax_model = True
 
 # load data
 labels = {}
-test_data = pd.read_csv(os.path.join(FATHER, 'training_data.csv'))
+test_data = pd.read_csv(os.path.join(FATHER, 'test_data.csv'))
 for attr_name in test_attr:
     temp = test_data[attr_name].to_numpy()
     labels[attr_name] = temp
