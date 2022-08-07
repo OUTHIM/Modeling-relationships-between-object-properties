@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 import numpy as np
 import torch
+from tqdm import tqdm
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[2]  # root directory
@@ -54,8 +55,9 @@ def generate_graphs(quantized_data_filepath, quantization_levels_filepath, save_
         node_idx += 1
 
         # then, create other nodes
+        
         for (node_type, value) in row.items():
-            print('generating node {0}/{1}'.format(node_idx, node_num))
+            # print('generating node {0}/{1}'.format(node_idx, node_num))
             value = float(value)
             if node_type != 'name':
                 # if the attribute value node already exists, point current attribute node to the exsiting one

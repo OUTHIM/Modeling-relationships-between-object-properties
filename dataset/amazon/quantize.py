@@ -5,6 +5,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import json
 from pathlib import Path
+import copy
 
 def array_to_list(x):
     return x.reshape([1,-1]).squeeze().tolist()
@@ -60,9 +61,13 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
         avg_quantization_loss = []
         temp = {}
         data = df[head].to_numpy()
-        data_copy = data[:]
+        data_copy = copy.deepcopy(data)
         data = data.reshape([-1,1])
-        enc = KBinsDiscretizer(n_bins = num_levels, encode="ordinal", strategy= strategy)
+        # The range of value for Volume is quite large, so we choose 300 levels during quantization
+        if head == 'Volume':
+            enc = KBinsDiscretizer(n_bins = 300, encode="ordinal", strategy= 'uniform')
+        else:
+            enc = KBinsDiscretizer(n_bins = num_levels, encode="ordinal", strategy= strategy)
         X_binned = enc.fit_transform(data)
         X_quantized = enc.inverse_transform(X_binned)
         # plt.scatter(X_binned.reshape([1,-1]).squeeze(),data.reshape([1,-1]).squeeze())

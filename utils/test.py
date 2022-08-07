@@ -22,10 +22,9 @@ import torch.nn as nn
 import random
 
 
-a = torch.tensor([[1,2,3]])
-b = torch.tensor([[1,2,3]])
-c = torch.cat((a,b),dim=0)
-print(c)
+a = torch.tensor([1,2])
+b = torch.ones((5,))
+b[a] = 0
 # a = np.arange(12)
 # a = a.reshape([3,4])
 # b = [1,2,3]

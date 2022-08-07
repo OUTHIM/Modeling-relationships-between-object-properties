@@ -214,7 +214,7 @@ def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=Fa
     # if the model is not given, then load from directory
     if model == None:
         if softmax_model:
-            model = softmax_HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
+            model = softmax_HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num, drop_softmax_ratio=None).to('cpu')
         else:
             model = HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
         PATH = os.path.join(folder_path, '{0}_best.pth'.format(dataset_name))

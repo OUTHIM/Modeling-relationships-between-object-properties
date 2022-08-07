@@ -8,7 +8,7 @@ import wandb
 import json
 import warnings
 
-warnings.filterwarnings('ignore')
+# warnings.filterwarnings('ignore')
 
 FILE = Path(__file__).resolve()
 FATHER = FILE.parents[0]  # root directory
@@ -31,14 +31,19 @@ wandb_name = 'softmax eval per 5 epoch(mp edge 0.5)'
 args = {
         'custom_train': False,
         'train_with_softmax': True,
+        'disjoint': False,
 
         'dataset_name': 'amazon',
-        'evaluation_epoch':None,
-        'num_quantization_level': 20,
-        'message_passing_edge_ratio': 0.6,
+
+        'sampling_epoch': 5,
+        'evaluation_epoch': None,
+        'drop_softmax_ratio': None,
+        'quantization_strategy': 'uniform',
+        'num_quantization_level': 10,
+        'message_passing_edge_ratio': 0.7,
         'node_num': 1431,
         "device": "cuda",
-        "epochs": 150,
+        "epochs": 500,
         "lr": 0.01,
         "weight_decay": 1e-4,
         'encoder_layer_num': 1,
@@ -75,8 +80,8 @@ df = df.drop(df.columns[0:3], axis=1)
 # df = df.drop(['Functionality','Button','Lip','Fillability','Washability','Dismountability'], axis = 1)
 # # ------------------------------
 
-strategy = 'kmeans'
-quantize.quantization(df, num_levels, save_path = FATHER, save_file = True, strategy='kmeans', figure_on = False)
+strategy = args['quantization_strategy']
+quantize.quantization(df, num_levels, save_path = FATHER, save_file = True, strategy=strategy, figure_on = False)
 
 # Split training and test data: for test data, we choose 15 samples from each type of object
 quantized_data = pd.read_csv(os.path.join(FATHER, 'quantized_clean_data.csv'))
@@ -117,7 +122,8 @@ hetero = HeteroGraph(G)
 start_training(
     hetero, args, save_path = FATHER, save_file=True, save_hard_samples=args['save_hard_samples'],
     retrain_hard_samples = args['retrain_hard_samples'], custom_train=args['custom_train'],
-    negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = args['train_with_softmax'],
-    evaluation_epoch = args['evaluation_epoch'], mp_edge_ratio = args['message_passing_edge_ratio'], wandb = wandb)
+    negative_sampling = True, negative_sampling_ratio = args['negative_sampling_ratio'], sampling_epoch = args['sampling_epoch'], train_with_softmax = args['train_with_softmax'],
+    evaluation_epoch = args['evaluation_epoch'], mp_edge_ratio = args['message_passing_edge_ratio'], wandb = wandb, drop_softmax_ratio=args['drop_softmax_ratio'],
+    disjoint = args['disjoint'])
 
 wandb.finish()

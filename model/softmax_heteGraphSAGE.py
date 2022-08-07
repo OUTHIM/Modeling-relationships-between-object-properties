@@ -8,14 +8,14 @@ import copy
 
 # Define the heterogeneous GNN for the link prediction task
 class softmax_HeteroGNN(torch.nn.Module):
-    def __init__(self, gnn_conv, hetero, hidden_size, num_layer_hop, encoder_layer_num):
+    def __init__(self, gnn_conv, hetero, hidden_size, num_layer_hop, encoder_layer_num, drop_softmax_ratio):
         super(softmax_HeteroGNN, self).__init__()
         
         # Wrap the heterogeneous GNN layers with HeteroConv
         # The wrapper will (use adj matrix as indices): 
         #       1. propagate source node messages with different GraphSAGE layers according to message types
         #       2. for each destination node, aggregate propagation embeddings of different message types
-
+        self.drop_softmax_ratio = drop_softmax_ratio
         self.embedding_layer = nn.ModuleDict()
         self.encoder_mlp = nn.ModuleDict()
         self.layer_convs = torch.nn.ModuleList()
@@ -65,7 +65,6 @@ class softmax_HeteroGNN(torch.nn.Module):
         pred = {}
         pred_attribute_values = {}
         true_attr_node_labels = {}
-        drop_softmax_ratio = 0.5
 
         # data with labels for prediction
         # only predict edges sourcing from 'name'
@@ -76,8 +75,8 @@ class softmax_HeteroGNN(torch.nn.Module):
 
             # Drop attribute nodes before softmax to reduce overfitting
             # Only in training mode
-            if self.training:
-                drop_dismult_num = math.floor(node_distmult.size()[1] * drop_softmax_ratio)
+            if self.training and self.drop_softmax_ratio != None:
+                drop_dismult_num = math.floor(node_distmult.size()[1] * self.drop_softmax_ratio)
                 mask_drop = torch.zeros_like(node_distmult).to('cuda')
                 for _ in range(drop_dismult_num):
                     indices_to_drop = torch.randint(0, node_distmult.size()[1], (node_distmult.size()[0],)).to('cuda')

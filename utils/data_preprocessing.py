@@ -12,13 +12,13 @@ class CustomDataset(Dataset):
     def __init__(self, hetero, split_types, disjoint = True, mp_edge_ratio = 0.8, negative_sampling = False, negative_sampling_ratio = 1, sampling_epoch = 50):
         self.hetero = hetero
         self.split_types = split_types
+        self.disjoint = disjoint
         self.mp_edge_ratio = mp_edge_ratio
         self.negative_sampling = negative_sampling
         self.negative_sampling_ratio = negative_sampling_ratio
         self.sampling_epoch = sampling_epoch
         self.epoch_counter = 0
-        self.disjoint_hetero = self.create_partly_disjoint_dataset(copy.deepcopy(self.hetero[0]), self.split_types, self.mp_edge_ratio)
-        self.sampled_hetero = copy.deepcopy(self.disjoint_hetero)
+        self.sampled_hetero = None
 
     def __len__(self):
         return len(self.hetero)
@@ -26,13 +26,24 @@ class CustomDataset(Dataset):
     def __getitem__(self, index):
         if self.negative_sampling:
             if self.epoch_counter % self.sampling_epoch == 0:
-                self.sampled_hetero = self.create_negative_sampling_dataset(hetero = copy.deepcopy(self.disjoint_hetero), split_types=self.split_types, negative_sampling_ratio=self.negative_sampling_ratio)
+                self.sampled_hetero = self.create_negative_sampling_dataset(hetero = copy.deepcopy(self.hetero[0]), split_types=self.split_types, negative_sampling_ratio=self.negative_sampling_ratio)
             self.epoch_counter += 1
+
+        elif self.disjoint:
+            if self.epoch_counter % self.sampling_epoch == 0:
+                self.sampled_hetero = self.create_disjoint_dataset(hetero = copy.deepcopy(self.hetero[0]), split_types=self.split_types, mp_edge_ratio = self.mp_edge_ratio)
+            self.epoch_counter += 1
+
+        else:
+            if self.sampled_hetero == None:
+                self.sampled_hetero = self.create_partly_disjoint_dataset(copy.deepcopy(self.hetero[0]), self.split_types, self.mp_edge_ratio)
+
 
         return self.sampled_hetero
 
     def create_partly_disjoint_dataset(self, hetero, split_types, mp_edge_ratio):
-        # This is not completely disjoint. Some of the message-passing links will still be used in training.
+        # The supervision links are all the original links in the graph. This function only removes some message-passing links.
+        # This is not completely disjoint. Some of the message-passing links are still functioning as supervision links.
         # Link from both directions are removed for disjoint samples
         edge_label = {}
         for message_type in split_types:
@@ -53,11 +64,9 @@ class CustomDataset(Dataset):
         hetero.edge_label = edge_label
         return hetero
 
-    # def create_disjoint_dataset(self, hetero, split_types, mp_edge_ratio):
-    #     for message_type in split_types:
-    #         pass
+    def create_disjoint_dataset(self, hetero, split_types, mp_edge_ratio):
         '''If you need to test the effect on single attribute e.g. Weight, uncomment the following code'''
-        # message_type = ('name','name-Weight','Weight')
+        # message_type = ('name', 'name-Weight', 'Weight')
         # edge_label = {}
         # edge_label_index = {}
         # edge_label_index[message_type] = copy.deepcopy(hetero.edge_index[message_type])
@@ -71,7 +80,35 @@ class CustomDataset(Dataset):
         # edge_label[message_type] = torch.ones(size = sources.shape) # positive labels
         # hetero.edge_label = edge_label
         
-        # return hetero
+        edge_label = {}
+        edge_label_index = {}
+        edge_index = {}
+        for message_type in split_types:
+            # create message-passing edges mask for sampling
+            opposite_message_type = (message_type[2], message_type[2] + '-' + message_type[0], message_type[0])
+
+            total_mp_edges = hetero.edge_index[message_type].size()[1]
+            disjoint_mp_edge_num = math.ceil(total_mp_edges * mp_edge_ratio)
+            mp_mask = torch.zeros((total_mp_edges,)).bool()
+            mp_edge_indices = list(range(total_mp_edges))
+            disjoint_mp_edge_indices = random.sample(mp_edge_indices, disjoint_mp_edge_num)
+            mp_mask[disjoint_mp_edge_indices] = True
+
+            # Generate message-passing edges and supervision edges
+            mp_edges = copy.deepcopy(hetero.edge_index[message_type][:, mp_mask])
+            sp_edges = copy.deepcopy(hetero.edge_index[message_type][:, torch.logical_not(mp_mask)])
+            edge_index[message_type] = mp_edges
+            edge_label_index[message_type] = sp_edges
+            edge_label[message_type] = torch.ones(size = edge_label_index[message_type][0].shape) # positive labels
+
+            opposite_edge_index = torch.stack((copy.deepcopy(edge_index[message_type][1]), copy.deepcopy(edge_index[message_type][0])), dim = 0)
+            edge_index[opposite_message_type] = opposite_edge_index
+
+        hetero.edge_label = edge_label
+        hetero.edge_index = edge_index
+        hetero.edge_label_index = edge_label_index
+
+        return hetero
 
 
     def create_negative_sampling_dataset(self, hetero, split_types, negative_sampling_ratio):

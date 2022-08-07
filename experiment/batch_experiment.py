@@ -30,7 +30,7 @@ def cal_hit_n(n, pred, true_false_list):
 
 
 # args
-test_attr = ['Weight']
+test_attr = ['Volume']
 threshold = 0.5
 correct_pred = 0
 acc = 0
@@ -47,6 +47,7 @@ for attr_name in test_attr:
 test_data = test_data.drop(test_attr, axis=1)
 test_data = test_data.drop(test_data.columns[0], axis=1).to_dict(orient='records')
 
+print(np.unique(labels[test_attr[0]]))
 # start experiment
 results, real_bins, attr_names, quantization_num = test_samples(test_data, dataset_name='amazon', folder_path=FATHER, softmax_model=softmax_model)
 for key in labels:

@@ -263,7 +263,7 @@ def test(model, dataloaders, args, epoch):
 ## arguments to tune the model
 def start_training(hetero, args, save_path, save_file = True, file_name = 'best_model',save_hard_samples = False, retrain_hard_samples = False, 
                     custom_train = False, negative_sampling = True, negative_sampling_ratio = 1, sampling_epoch = 50, train_with_softmax = False,
-                    evaluation_epoch = 5, mp_edge_ratio = 0.8, wandb = None):
+                    evaluation_epoch = 5, mp_edge_ratio = 0.8, wandb = None, drop_softmax_ratio = None, disjoint = True):
 
     shop_vrb_split_types = [('name', 'name-color', 'color'), ('name', 'name-weight', 'weight'), ('name', 'name-movability', 'movability'), 
                             ('name', 'name-material', 'material'), ('name', 'name-shape', 'shape'), 
@@ -290,7 +290,7 @@ def start_training(hetero, args, save_path, save_file = True, file_name = 'best_
     split_types = amazon_split_types if args['dataset_name'] == 'amazon' else shop_vrb_split_types
 
     if train_with_softmax:
-        model = softmax_HeteroGNN(HeteroSAGEConv, hetero, hidden_size, num_layer_hop, encoder_layer_num).to(args["device"])
+        model = softmax_HeteroGNN(HeteroSAGEConv, hetero, hidden_size, num_layer_hop, encoder_layer_num, drop_softmax_ratio).to(args["device"])
     else:
         model = HeteroGNN(HeteroSAGEConv, hetero, hidden_size, num_layer_hop, encoder_layer_num).to(args["device"])
     optimizer = torch.optim.Adam(model.parameters(), lr=args['lr'], weight_decay=args['weight_decay'])
@@ -301,7 +301,7 @@ def start_training(hetero, args, save_path, save_file = True, file_name = 'best_
         dataloader = DataLoader(custom_dataset, batch_size=1, collate_fn=Batch.collate())
         best_model = train_custom(model, dataloader, optimizer, args)
     elif train_with_softmax:
-        custom_dataset = CustomDataset([hetero], split_types, negative_sampling = False, mp_edge_ratio = mp_edge_ratio)
+        custom_dataset = CustomDataset([hetero], split_types, disjoint = disjoint, negative_sampling = False, sampling_epoch=sampling_epoch, mp_edge_ratio = mp_edge_ratio)
         dataloader = DataLoader(custom_dataset, batch_size=1, collate_fn=Batch.collate())
         best_model = train_softmax(model, dataloader, optimizer, args, evaluation_epoch=evaluation_epoch, wandb = wandb)
     else:
