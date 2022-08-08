@@ -1,1 +1,1 @@
-# Modeling-relationships-between-object-properties
+# modeling-relationships-between-object-properties
