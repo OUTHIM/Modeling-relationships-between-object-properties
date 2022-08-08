@@ -6,6 +6,7 @@ from matplotlib import pyplot as plt
 import json
 from pathlib import Path
 import copy
+import time
 
 def array_to_list(x):
     return x.reshape([1,-1]).squeeze().tolist()
@@ -97,8 +98,8 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
                 cluster = data_copy[labels==j]
                 plt.scatter(np.ones(len(cluster)), cluster)
         
-            plt.title(head)
-            plt.show()
+            # plt.title(head)
+            # plt.show()
 
 
     # quantize the discrete labels
@@ -134,8 +135,11 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
             json.dump(quantization_levels, outfile)
 
     print('Quantization finished!')
-    # plt.hist(X_binned)
-    # plt.show()
+    plt.figure()
+    plt.hist(X_binned)
+    plt.show()
+    time.sleep(5)
+    plt.figure().close()
 
 # print(data)
 # print(np.concatenate([enc.inverse_transform(X_binned), data], axis=-1))

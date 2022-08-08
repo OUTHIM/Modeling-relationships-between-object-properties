@@ -1,0 +1,25 @@
+C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\dataset\amazon\quantize.py:125: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[head][i] = temp[value]
+Quantization finished!
+Training with softmax model...
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 124, in <module>
+    start_training(
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\train.py", line 306, in start_training
+    best_model = train_softmax(model, dataloader, optimizer, args, evaluation_epoch=evaluation_epoch, wandb = wandb)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\train.py", line 155, in train_softmax
+    pred, y, _ = model(train_batch)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\softmax_heteGraphSAGE.py", line 51, in forward
+    x = forward_op(x, self.embedding_layer)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\hetero_gnn.py", line 248, in forward_op
+    res[key] = module_dict[key](x[key], **kwargs)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\torch\nn\modules\sparse.py", line 158, in forward
+    return F.embedding(
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\torch\nn\functional.py", line 2183, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)

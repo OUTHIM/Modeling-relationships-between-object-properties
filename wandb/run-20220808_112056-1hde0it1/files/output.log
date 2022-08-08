@@ -1,0 +1,194 @@
+C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\dataset\amazon\quantize.py:122: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[head][i] = temp[value]
+Quantization finished!
+Training with softmax model...
+Current epoch: 01/300 Train loss: 22.5410, Train accuracy: 0.5473
+Current epoch: 02/300 Train loss: 19.0103, Train accuracy: 0.6365
+Current epoch: 03/300 Train loss: 17.8982, Train accuracy: 0.6995
+Current epoch: 04/300 Train loss: 17.3568, Train accuracy: 0.7329
+Current epoch: 05/300 Train loss: 16.9449, Train accuracy: 0.7248
+Current epoch: 06/300 Train loss: 16.7230, Train accuracy: 0.7401
+Current epoch: 07/300 Train loss: 16.6126, Train accuracy: 0.7556
+Current epoch: 08/300 Train loss: 16.5403, Train accuracy: 0.7421
+C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\softmax_heteGraphSAGE.py:103: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  p = F.softmax(pred[key])
+C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\train.py:167: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  p = F.softmax(pred[key])
+Current epoch: 09/300 Train loss: 16.6959, Train accuracy: 0.7331
+Current epoch: 10/300 Train loss: 16.4577, Train accuracy: 0.7444
+Current epoch: 11/300 Train loss: 16.2899, Train accuracy: 0.7626
+Current epoch: 12/300 Train loss: 16.3034, Train accuracy: 0.7816
+Current epoch: 13/300 Train loss: 16.3086, Train accuracy: 0.7916
+Current epoch: 14/300 Train loss: 16.2019, Train accuracy: 0.7734
+Current epoch: 15/300 Train loss: 16.4838, Train accuracy: 0.7889
+Current epoch: 16/300 Train loss: 16.1531, Train accuracy: 0.7973
+Current epoch: 17/300 Train loss: 16.0595, Train accuracy: 0.8009
+Current epoch: 18/300 Train loss: 16.0166, Train accuracy: 0.8024
+Current epoch: 19/300 Train loss: 15.9432, Train accuracy: 0.7978
+Current epoch: 20/300 Train loss: 16.0011, Train accuracy: 0.7969
+Current epoch: 21/300 Train loss: 15.8850, Train accuracy: 0.8020
+Current epoch: 22/300 Train loss: 15.7754, Train accuracy: 0.8096
+Current epoch: 23/300 Train loss: 15.7642, Train accuracy: 0.8144
+Current epoch: 24/300 Train loss: 15.6381, Train accuracy: 0.8058
+Current epoch: 25/300 Train loss: 15.6122, Train accuracy: 0.8042
+Current epoch: 26/300 Train loss: 15.5178, Train accuracy: 0.8048
+Current epoch: 27/300 Train loss: 15.4810, Train accuracy: 0.8169
+Current epoch: 28/300 Train loss: 15.4382, Train accuracy: 0.8098
+Current epoch: 29/300 Train loss: 15.4582, Train accuracy: 0.8016
+Current epoch: 30/300 Train loss: 15.4107, Train accuracy: 0.8057
+Current epoch: 31/300 Train loss: 15.4499, Train accuracy: 0.8177
+Current epoch: 32/300 Train loss: 15.4525, Train accuracy: 0.8219
+Current epoch: 33/300 Train loss: 15.3335, Train accuracy: 0.8081
+Current epoch: 34/300 Train loss: 15.4227, Train accuracy: 0.8109
+Current epoch: 35/300 Train loss: 15.3080, Train accuracy: 0.8246
+Current epoch: 36/300 Train loss: 15.2691, Train accuracy: 0.8477
+Current epoch: 37/300 Train loss: 15.3392, Train accuracy: 0.8548
+Current epoch: 38/300 Train loss: 15.2202, Train accuracy: 0.8477
+Current epoch: 39/300 Train loss: 15.2655, Train accuracy: 0.8345
+Current epoch: 40/300 Train loss: 15.3784, Train accuracy: 0.8266
+Current epoch: 41/300 Train loss: 15.3689, Train accuracy: 0.8127
+Current epoch: 42/300 Train loss: 15.2470, Train accuracy: 0.8192
+Current epoch: 43/300 Train loss: 15.0942, Train accuracy: 0.8248
+Current epoch: 44/300 Train loss: 15.0307, Train accuracy: 0.8247
+Current epoch: 45/300 Train loss: 15.1785, Train accuracy: 0.8463
+Current epoch: 46/300 Train loss: 15.0971, Train accuracy: 0.8514
+Current epoch: 47/300 Train loss: 15.0570, Train accuracy: 0.8505
+Current epoch: 48/300 Train loss: 15.0268, Train accuracy: 0.8493
+Current epoch: 49/300 Train loss: 14.9829, Train accuracy: 0.8486
+Current epoch: 50/300 Train loss: 14.9627, Train accuracy: 0.8432
+Current epoch: 51/300 Train loss: 15.0409, Train accuracy: 0.8564
+Current epoch: 52/300 Train loss: 14.9812, Train accuracy: 0.8553
+Current epoch: 53/300 Train loss: 14.9482, Train accuracy: 0.8564
+Current epoch: 54/300 Train loss: 14.9004, Train accuracy: 0.8540
+Current epoch: 55/300 Train loss: 14.9089, Train accuracy: 0.8553
+Current epoch: 56/300 Train loss: 14.8900, Train accuracy: 0.8526
+Current epoch: 57/300 Train loss: 14.8952, Train accuracy: 0.8543
+Current epoch: 58/300 Train loss: 14.8900, Train accuracy: 0.8574
+Current epoch: 59/300 Train loss: 14.8940, Train accuracy: 0.8689
+Current epoch: 60/300 Train loss: 14.9366, Train accuracy: 0.8616
+Current epoch: 61/300 Train loss: 14.9144, Train accuracy: 0.8672
+Current epoch: 62/300 Train loss: 14.8841, Train accuracy: 0.8709
+Current epoch: 63/300 Train loss: 14.9335, Train accuracy: 0.8744
+Current epoch: 64/300 Train loss: 14.8311, Train accuracy: 0.8845
+Current epoch: 65/300 Train loss: 14.8245, Train accuracy: 0.8765
+Current epoch: 66/300 Train loss: 14.7915, Train accuracy: 0.8637
+Current epoch: 67/300 Train loss: 14.8240, Train accuracy: 0.8627
+Current epoch: 68/300 Train loss: 14.8706, Train accuracy: 0.8586
+Current epoch: 69/300 Train loss: 14.8178, Train accuracy: 0.8581
+Current epoch: 70/300 Train loss: 14.7984, Train accuracy: 0.8602
+Current epoch: 71/300 Train loss: 14.7848, Train accuracy: 0.8637
+Current epoch: 72/300 Train loss: 14.8378, Train accuracy: 0.8669
+Current epoch: 73/300 Train loss: 14.7386, Train accuracy: 0.8691
+Current epoch: 74/300 Train loss: 14.7333, Train accuracy: 0.8703
+Current epoch: 75/300 Train loss: 14.7656, Train accuracy: 0.8877
+Current epoch: 76/300 Train loss: 14.7215, Train accuracy: 0.8909
+Current epoch: 77/300 Train loss: 14.7156, Train accuracy: 0.8944
+Current epoch: 78/300 Train loss: 14.7103, Train accuracy: 0.8911
+Current epoch: 79/300 Train loss: 14.7011, Train accuracy: 0.8908
+Current epoch: 80/300 Train loss: 14.6910, Train accuracy: 0.8911
+Current epoch: 81/300 Train loss: 14.6894, Train accuracy: 0.8665
+Current epoch: 82/300 Train loss: 14.7603, Train accuracy: 0.8617
+Current epoch: 83/300 Train loss: 14.7517, Train accuracy: 0.8665
+Current epoch: 84/300 Train loss: 14.7166, Train accuracy: 0.8738
+Current epoch: 85/300 Train loss: 14.6985, Train accuracy: 0.8797
+Current epoch: 86/300 Train loss: 14.6951, Train accuracy: 0.8783
+Current epoch: 87/300 Train loss: 14.6869, Train accuracy: 0.8823
+Current epoch: 88/300 Train loss: 14.6959, Train accuracy: 0.8876
+Current epoch: 89/300 Train loss: 14.6741, Train accuracy: 0.8914
+Current epoch: 90/300 Train loss: 14.6751, Train accuracy: 0.8954
+Current epoch: 91/300 Train loss: 14.6384, Train accuracy: 0.8990
+Current epoch: 92/300 Train loss: 14.6168, Train accuracy: 0.8988
+Current epoch: 93/300 Train loss: 14.5872, Train accuracy: 0.8952
+Current epoch: 94/300 Train loss: 14.5840, Train accuracy: 0.8947
+Current epoch: 95/300 Train loss: 14.5741, Train accuracy: 0.8970
+Current epoch: 96/300 Train loss: 14.5401, Train accuracy: 0.8912
+Current epoch: 97/300 Train loss: 14.5059, Train accuracy: 0.9033
+Current epoch: 98/300 Train loss: 14.6168, Train accuracy: 0.9071
+Current epoch: 99/300 Train loss: 14.5147, Train accuracy: 0.9113
+Current epoch: 100/300 Train loss: 14.4653, Train accuracy: 0.9139
+Current epoch: 101/300 Train loss: 14.4884, Train accuracy: 0.9077
+Current epoch: 102/300 Train loss: 14.4640, Train accuracy: 0.9046
+Current epoch: 103/300 Train loss: 14.4590, Train accuracy: 0.9115
+Current epoch: 104/300 Train loss: 14.4581, Train accuracy: 0.8997
+Current epoch: 105/300 Train loss: 14.4574, Train accuracy: 0.9032
+Current epoch: 106/300 Train loss: 14.4485, Train accuracy: 0.9072
+Current epoch: 107/300 Train loss: 14.4620, Train accuracy: 0.9024
+Current epoch: 108/300 Train loss: 14.4407, Train accuracy: 0.8890
+Current epoch: 109/300 Train loss: 14.4708, Train accuracy: 0.9017
+Current epoch: 110/300 Train loss: 14.4313, Train accuracy: 0.9098
+Current epoch: 111/300 Train loss: 14.3714, Train accuracy: 0.9089
+Current epoch: 112/300 Train loss: 14.3402, Train accuracy: 0.9024
+Current epoch: 113/300 Train loss: 14.3116, Train accuracy: 0.8971
+Current epoch: 114/300 Train loss: 14.3467, Train accuracy: 0.8884
+Current epoch: 115/300 Train loss: 14.2732, Train accuracy: 0.8832
+Current epoch: 116/300 Train loss: 14.2700, Train accuracy: 0.8824
+Current epoch: 117/300 Train loss: 14.2567, Train accuracy: 0.8871
+Current epoch: 118/300 Train loss: 14.2784, Train accuracy: 0.8977
+Current epoch: 119/300 Train loss: 14.3329, Train accuracy: 0.8944
+Current epoch: 120/300 Train loss: 14.3701, Train accuracy: 0.8941
+Current epoch: 121/300 Train loss: 14.2983, Train accuracy: 0.8877
+Current epoch: 122/300 Train loss: 14.3057, Train accuracy: 0.8819
+Current epoch: 123/300 Train loss: 14.3565, Train accuracy: 0.8903
+Current epoch: 124/300 Train loss: 14.2458, Train accuracy: 0.8952
+Current epoch: 125/300 Train loss: 14.2293, Train accuracy: 0.8985
+Current epoch: 126/300 Train loss: 14.2285, Train accuracy: 0.8991
+Current epoch: 127/300 Train loss: 14.3862, Train accuracy: 0.9003
+Current epoch: 128/300 Train loss: 14.4272, Train accuracy: 0.8856
+Current epoch: 129/300 Train loss: 14.3914, Train accuracy: 0.8912
+Current epoch: 130/300 Train loss: 14.3925, Train accuracy: 0.8994
+Current epoch: 131/300 Train loss: 14.3230, Train accuracy: 0.8929
+Current epoch: 132/300 Train loss: 14.4105, Train accuracy: 0.8874
+Current epoch: 133/300 Train loss: 14.3168, Train accuracy: 0.8939
+Current epoch: 134/300 Train loss: 14.3265, Train accuracy: 0.8986
+Current epoch: 135/300 Train loss: 14.3192, Train accuracy: 0.9021
+Current epoch: 136/300 Train loss: 14.2842, Train accuracy: 0.8979
+Current epoch: 137/300 Train loss: 14.2637, Train accuracy: 0.8945
+Current epoch: 138/300 Train loss: 14.2621, Train accuracy: 0.9091
+Current epoch: 139/300 Train loss: 14.2803, Train accuracy: 0.8883
+Current epoch: 140/300 Train loss: 14.2642, Train accuracy: 0.8939
+Current epoch: 141/300 Train loss: 14.2452, Train accuracy: 0.8987
+Current epoch: 142/300 Train loss: 14.2305, Train accuracy: 0.8954
+Current epoch: 143/300 Train loss: 14.2331, Train accuracy: 0.9020
+Current epoch: 144/300 Train loss: 14.2371, Train accuracy: 0.9062
+Current epoch: 145/300 Train loss: 14.2084, Train accuracy: 0.9110
+Current epoch: 146/300 Train loss: 14.2011, Train accuracy: 0.9128
+Current epoch: 147/300 Train loss: 14.2124, Train accuracy: 0.9188
+Current epoch: 148/300 Train loss: 14.1997, Train accuracy: 0.9235
+Current epoch: 149/300 Train loss: 14.1934, Train accuracy: 0.9243
+Current epoch: 150/300 Train loss: 14.1918, Train accuracy: 0.9242
+Current epoch: 151/300 Train loss: 14.1922, Train accuracy: 0.9265
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 122, in <module>
+    start_training(
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\train.py", line 306, in start_training
+    best_model = train_softmax(model, dataloader, optimizer, args, evaluation_epoch=evaluation_epoch, wandb = wandb)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\train.py", line 150, in train_softmax
+    for train_batch in dataloader:
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\batch.py", line 35, in <lambda>
+    return lambda batch: Batch.from_data_list(
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\batch.py", line 102, in from_data_list
+    Batch._dict_list_to_tensor(batch, data_list[0])
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\batch.py", line 195, in _dict_list_to_tensor
+    Batch._dict_list_to_tensor(dict_of_list[key], graph)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\batch.py", line 217, in _dict_list_to_tensor
+    dim=graph.__cat_dim__(key, item)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\hetero_graph.py", line 3199, in __cat_dim__
+    and value.shape[1] >= self.num_edges(key)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\hetero_graph.py", line 278, in num_edges
+    if "edge_index" not in self:
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\graph.py", line 168, in __contains__
+    return key in self.keys
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\graph.py", line 147, in keys
+    keys = [
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\graph.py", line 150, in <listcomp>
+    if self[key] is not None and key[0] != "_"
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\graph.py", line 131, in __getitem__
+    return getattr(self, key, None)

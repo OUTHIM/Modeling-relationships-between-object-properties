@@ -7,6 +7,7 @@ from deepsnap.hetero_graph import HeteroGraph
 import wandb
 import json
 import warnings
+import time
 
 # warnings.filterwarnings('ignore')
 
@@ -27,7 +28,7 @@ from sklearn.utils import shuffle
 
 wandb_mode = 'disabled'
 # wandb_mode = None
-wandb_name = 'softmax eval per 5 epoch(mp edge 0.5)'
+wandb_name = 'test'
 args = {
         'custom_train': False,
         'train_with_softmax': True,
@@ -35,15 +36,15 @@ args = {
 
         'dataset_name': 'amazon',
 
-        'sampling_epoch': 5,
-        'evaluation_epoch': None,
+        'sampling_epoch': 50,
+        'evaluation_epoch': 5,
         'drop_softmax_ratio': None,
         'quantization_strategy': 'uniform',
-        'num_quantization_level': 10,
+        'num_quantization_level': 30,
         'message_passing_edge_ratio': 0.7,
         'node_num': 1431,
         "device": "cuda",
-        "epochs": 500,
+        "epochs": 200,
         "lr": 0.01,
         "weight_decay": 1e-4,
         'encoder_layer_num': 1,
@@ -57,7 +58,7 @@ args = {
 
 wandb.init(
     mode = wandb_mode,
-    project = 'fyp',
+    project = 'modelling relationship between object properties',
     name = wandb_name,
     config = args
     )
@@ -71,7 +72,7 @@ num_levels = args['num_quantization_level']
 node_num = args['node_num']
 
 # Load training data
-path = os.path.join(ROOT, 'dataset/amazon\clean_data.csv')
+path = os.path.join(ROOT, 'dataset/amazon/clean_data.csv')
 df = pd.read_csv(path)
 df = df.drop(df.columns[0:3], axis=1)
 
@@ -119,11 +120,13 @@ G = nx.read_gpickle(path)
 # visualize_graph(G, folder_path = FATHER)
 hetero = HeteroGraph(G)
 
+start_time = time.time()
 start_training(
     hetero, args, save_path = FATHER, save_file=True, save_hard_samples=args['save_hard_samples'],
     retrain_hard_samples = args['retrain_hard_samples'], custom_train=args['custom_train'],
     negative_sampling = True, negative_sampling_ratio = args['negative_sampling_ratio'], sampling_epoch = args['sampling_epoch'], train_with_softmax = args['train_with_softmax'],
     evaluation_epoch = args['evaluation_epoch'], mp_edge_ratio = args['message_passing_edge_ratio'], wandb = wandb, drop_softmax_ratio=args['drop_softmax_ratio'],
     disjoint = args['disjoint'])
-
+end_time = time.time()
 wandb.finish()
+print('Total time cost is:', end_time - start_time)
