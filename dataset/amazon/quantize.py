@@ -65,10 +65,12 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
         data_copy = copy.deepcopy(data)
         data = data.reshape([-1,1])
         # The range of value for Volume is quite large, so we choose 300 levels during quantization
-        if head == 'Volume':
-            enc = KBinsDiscretizer(n_bins = 300, encode="ordinal", strategy= 'uniform')
-        else:
-            enc = KBinsDiscretizer(n_bins = num_levels, encode="ordinal", strategy= strategy)
+        # if head == 'Volume':
+        #     enc = KBinsDiscretizer(n_bins = 35, encode="ordinal", strategy= 'uniform')
+        # if head == 'Length' or head == 'Width' or head == 'Height':
+        #     enc = KBinsDiscretizer(n_bins = 10, encode="ordinal", strategy= 'uniform')
+        # else:
+        enc = KBinsDiscretizer(n_bins = num_levels, encode="ordinal", strategy= strategy)
         X_binned = enc.fit_transform(data)
         X_quantized = enc.inverse_transform(X_binned)
         # plt.scatter(X_binned.reshape([1,-1]).squeeze(),data.reshape([1,-1]).squeeze())
@@ -100,6 +102,10 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
         
             # plt.title(head)
             # plt.show()
+        if head == 'Weight':
+            plt.hist(X_binned)
+            plt.title('Weight')
+            plt.show()
 
 
     # quantize the discrete labels
@@ -135,11 +141,8 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
             json.dump(quantization_levels, outfile)
 
     print('Quantization finished!')
-    plt.figure()
-    plt.hist(X_binned)
-    plt.show()
-    time.sleep(5)
-    plt.figure().close()
+    # time.sleep(5)
+    # plt.close()
 
 # print(data)
 # print(np.concatenate([enc.inverse_transform(X_binned), data], axis=-1))

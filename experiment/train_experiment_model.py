@@ -9,7 +9,7 @@ import json
 import warnings
 import time
 
-# warnings.filterwarnings('ignore')
+warnings.filterwarnings('ignore')
 
 FILE = Path(__file__).resolve()
 FATHER = FILE.parents[0]  # root directory
@@ -26,9 +26,9 @@ from model.heteGraphSAGE import HeteroGNN
 from model.train import start_training
 from sklearn.utils import shuffle
 
-wandb_mode = 'disabled'
-# wandb_mode = None
-wandb_name = 'test'
+# wandb_mode = 'disabled'
+wandb_mode = None
+wandb_name = 'quantization-same-5'
 args = {
         'custom_train': False,
         'train_with_softmax': True,
@@ -36,11 +36,11 @@ args = {
 
         'dataset_name': 'amazon',
 
-        'sampling_epoch': 50,
+        'sampling_epoch': 5,
         'evaluation_epoch': 5,
         'drop_softmax_ratio': None,
-        'quantization_strategy': 'uniform',
-        'num_quantization_level': 30,
+        'quantization_strategy': 'kmeans',
+        'num_quantization_level': 5,
         'message_passing_edge_ratio': 0.7,
         'node_num': 1431,
         "device": "cuda",
