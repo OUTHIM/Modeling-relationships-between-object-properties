@@ -26,21 +26,21 @@ from model.heteGraphSAGE import HeteroGNN
 from model.train import start_training
 from sklearn.utils import shuffle
 
-# wandb_mode = 'disabled'
-wandb_mode = None
-wandb_name = 'quantization-same-5'
+wandb_mode = 'disabled'
+# wandb_mode = None
+wandb_name = 'final exp'
 args = {
         'custom_train': False,
         'train_with_softmax': True,
-        'disjoint': False,
+        'disjoint': True,
 
         'dataset_name': 'amazon',
 
-        'sampling_epoch': 5,
-        'evaluation_epoch': 5,
+        'sampling_epoch': 1,
+        'evaluation_epoch': 200,
         'drop_softmax_ratio': None,
         'quantization_strategy': 'kmeans',
-        'num_quantization_level': 5,
+        'num_quantization_level': 10,
         'message_passing_edge_ratio': 0.7,
         'node_num': 1431,
         "device": "cuda",
@@ -71,7 +71,7 @@ with open(path2, 'w') as outfile:
 num_levels = args['num_quantization_level']
 node_num = args['node_num']
 
-# Load training data
+# Load total data
 path = os.path.join(ROOT, 'dataset/amazon/clean_data.csv')
 df = pd.read_csv(path)
 df = df.drop(df.columns[0:3], axis=1)

@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import copy
 import time
+import seaborn as sns
 
 def array_to_list(x):
     return x.reshape([1,-1]).squeeze().tolist()
@@ -57,6 +58,9 @@ def test_on_quantization_levels(df, max_levels, strategy = 'kmeans', figure_on =
 def quantization(df, num_levels, save_path, save_file = True, figure_on = True, strategy = 'kmeans'):
     quantization_levels = {}
     heads = ['Weight', 'Volume', 'Length', 'Width', 'Height']
+    hist_df = pd.DataFrame(columns=['Attributes', 'Values'])
+    attributes = []
+    values = []
     #%% Quantization
     for i, head in enumerate(heads):
         avg_quantization_loss = []
@@ -64,13 +68,13 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
         data = df[head].to_numpy()
         data_copy = copy.deepcopy(data)
         data = data.reshape([-1,1])
-        # The range of value for Volume is quite large, so we choose 300 levels during quantization
+
         # if head == 'Volume':
         #     enc = KBinsDiscretizer(n_bins = 35, encode="ordinal", strategy= 'uniform')
-        # if head == 'Length' or head == 'Width' or head == 'Height':
-        #     enc = KBinsDiscretizer(n_bins = 10, encode="ordinal", strategy= 'uniform')
-        # else:
-        enc = KBinsDiscretizer(n_bins = num_levels, encode="ordinal", strategy= strategy)
+        if head == 'Length' or head == 'Width' or head == 'Height':
+            enc = KBinsDiscretizer(n_bins = num_levels, encode="ordinal", strategy= 'uniform')
+        else:
+            enc = KBinsDiscretizer(n_bins = num_levels, encode="ordinal", strategy= strategy)
         X_binned = enc.fit_transform(data)
         X_quantized = enc.inverse_transform(X_binned)
         # plt.scatter(X_binned.reshape([1,-1]).squeeze(),data.reshape([1,-1]).squeeze())
@@ -94,18 +98,54 @@ def quantization(df, num_levels, save_path, save_file = True, figure_on = True, 
 
         # plot the clusters
         if figure_on:
-            plt.figure(i)
-            labels = np.array(X_binned)
-            for j in range(1, num_levels+1):
-                cluster = data_copy[labels==j]
-                plt.scatter(np.ones(len(cluster)), cluster)
+            if head == figure_on:
+                plt.figure()
+                labels = np.array(X_binned)
+                for j in range(1, num_levels+1):
+                    cluster = data_copy[labels==j]
+                    # plt.scatter(np.ones(len(cluster)), cluster)
+                    plt.scatter(cluster, [strategy for _ in range(len(cluster))], marker='s', label='Level ' + str(j),
+                    linewidths=4)
+                    # plt.title('Data samples of \'Volume\' and the quantisation levels they belong to for different strategies', fontweight='bold', fontsize=14)
+                    # plt.ylabel('Quantisation Strategies', fontsize=12)
+                    # plt.xlabel('Values before quantisation', fontsize=14)
+                    plt.legend(ncol=num_levels)
+                    plt.rcParams["font.family"] = "Times New Roman"
         
-            # plt.title(head)
-            # plt.show()
-        if head == 'Weight':
-            plt.hist(X_binned)
-            plt.title('Weight')
-            plt.show()
+
+        if head == 'Length' or head == 'Width':
+            temp = pd.Series([head])
+            temp = temp.repeat(len(X_binned))
+            attributes.append(temp)
+            values.append(pd.Series(X_binned))
+
+    plt.figure()
+    hist_df['Attributes'] = pd.concat(attributes, ignore_index=True)
+    hist_df['Values'] = pd.concat(values, ignore_index=True)
+    sns.histplot(data=hist_df, x ='Values', hue = 'Attributes', multiple='stack')
+    plt.title('Distribution of data for Length and Width' + '({} with {} levels)'.format(strategy, num_levels), fontname="Times New Roman", fontweight='bold', fontsize=14)
+    plt.ylabel('Number of Samples', fontname="Times New Roman", fontsize=12)
+    plt.xlabel('Values', fontname="Times New Roman", fontsize=12)
+    plt.rcParams["font.family"] = "Times New Roman"
+    plt.show()
+
+
+
+    #     if head == 'Weight' or head == 'Volume':
+    #         temp = pd.Series([head])
+    #         temp = temp.repeat(len(X_binned))
+    #         attributes.append(temp)
+    #         values.append(pd.Series(X_binned))
+
+    # plt.figure()
+    # hist_df['Attributes'] = pd.concat(attributes, ignore_index=True)
+    # hist_df['Values'] = pd.concat(values, ignore_index=True)
+    # sns.histplot(data=hist_df, x ='Values', hue = 'Attributes', multiple='stack')
+    # plt.title('Distribution of data for Weight and Volume' + '({} with {} levels)'.format(strategy, num_levels), fontname="Times New Roman", fontweight='bold', fontsize=16)
+    # plt.ylabel('Number of Samples', fontname="Times New Roman", fontsize=14)
+    # plt.xlabel('Values', fontname="Times New Roman", fontsize=14)
+    # plt.show()
+
 
 
     # quantize the discrete labels
@@ -154,7 +194,7 @@ if __name__ == '__main__':
     CURRENT_FILE = Path(__file__).resolve()
     FATHER = CURRENT_FILE.parents[0]  # root directory
     max_levels = 200
-    num_levels = 100
-    strategy = 'kmeans'
-    test_on_quantization_levels(df, max_levels, strategy = 'kmeans', figure_on = False)
-    quantization(df, num_levels, save_path = FATHER, save_file = True, strategy='kmeans')
+    num_levels = 10
+    strategy = 'quantile'
+    # test_on_quantization_levels(df, max_levels, strategy = 'kmeans', figure_on = False)
+    quantization(df, num_levels, save_path = FATHER, save_file = True, strategy=strategy, figure_on='Volume')

@@ -20,11 +20,26 @@ from deepsnap.hetero_gnn import HeteroSAGEConv
 from deepsnap.hetero_graph import HeteroGraph
 import torch.nn as nn
 import random
+import seaborn as sns
 
+a = np.array([1,2,3, 4, 5])
+b = np.array([1,3,4])
+print(a[b])
+# s = pd.DataFrame(columns=['a','b'])
+# a = pd.Series([1,2,3])
+# b = pd.Series([1,2])
+# c =  pd.Series([1,2,3,4,5])
+# s['a'] = a
+# s['b'] = b
 
-a = torch.tensor([1,2])
-b = torch.ones((5,))
-b[a] = 0
+# s ['b'] = c
+# print(s)
+# s['b'] = s['b'].append(a, ignore_index=True)
+# c = s['b'].append(a).reset_index(drop=True)
+# # print(s['b'].append(a).reset_index())
+# # s['b'] = s['b'].append(a)
+# # print(c)
+# print(s['b'])
 # a = np.arange(12)
 # a = a.reshape([3,4])
 # b = [1,2,3]

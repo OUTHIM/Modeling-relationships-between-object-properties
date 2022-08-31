@@ -32,7 +32,8 @@ def evaluation(
         threshold = 0.5,
         highest_among_others = True,
         softmax_model = True,
-        model = None
+        model = None,
+        dataset_name = 'amazon'
         ):
     '''
     experiment_folder_path: 
@@ -65,7 +66,7 @@ def evaluation(
         test_data = test_data.to_dict(orient='records')
 
         # start experiment
-        results, real_bins, ordered_attr_names, quantization_num = test_samples(test_data, dataset_name='amazon', folder_path=experiment_folder_path, softmax_model=softmax_model, model = model)
+        results, real_bins, ordered_attr_names, quantization_num = test_samples(test_data, dataset_name= dataset_name, folder_path=experiment_folder_path, softmax_model=softmax_model, model = model)
         for key in labels:
             labels[key] = np.repeat(labels[key], quantization_num)
 
@@ -90,4 +91,4 @@ if __name__ == '__main__':
     FILE = Path(__file__).resolve()
     FATHER = FILE.parents[0]  # root directory
     ROOT = FILE.parents[1]
-    evaluation(experiment_folder_path=FATHER)
+    evaluation(experiment_folder_path=FATHER, dataset_name='shop_vrb')

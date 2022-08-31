@@ -8,6 +8,8 @@ import os
 import networkx as nx
 import json
 import numpy as np
+import torch.nn.functional as F
+import time
 
 from torch.utils.data import DataLoader
 from deepsnap.dataset import GraphDataset
@@ -18,7 +20,7 @@ ROOT = FILE.parents[1]  # root directory
 if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))
     
-from model.heteGraphSAGE import HeteroGNN
+from model.softmax_heteGraphSAGE import softmax_HeteroGNN
 from utils import dataset_utils, data_preprocessing
 
 # %% some util functions
@@ -87,12 +89,12 @@ shop_vrb_attribute_values = {
     'disassembly': 3}
 
 amazon_attribute_values = {
-    'name': adjective_to_bin(dataset_name, 'name','hammer'),
+    'name': adjective_to_bin(dataset_name, 'name','bakingtray'),
     'Material': adjective_to_bin(dataset_name, 'Material','metal'),
     'Colour': adjective_to_bin(dataset_name, 'Colour','silver'),
     # 'Weight': value_to_bin(dataset_name, 'Volume', 8000), 
-    'Volume': value_to_bin(dataset_name, 'Volume', 2000), 
-    'Length': value_to_bin(dataset_name, 'Length', 100), 
+    'Volume': value_to_bin(dataset_name, 'Volume', 1000), 
+    'Length': value_to_bin(dataset_name, 'Length', 20), 
     'Width': value_to_bin(dataset_name, 'Width', 50), 
     'Height': value_to_bin(dataset_name, 'Height', 12),
     'Functionality': adjective_to_bin(dataset_name, 'Functionality','tool'), 
@@ -138,7 +140,7 @@ dataset_name_to_split_types = {
 # ---------------- settings of variables for the experiment ----------------------
 attribute_values = dataset_name_to_known_attributes[dataset_name]
 
-path_args = os.path.join(os.getcwd(), 'model/{0}_args.json'.format(dataset_name))
+path_args = os.path.join(os.getcwd(), 'experiment/{0}_args.json'.format(dataset_name))
 with open(path_args) as f:
     args = json.load(f)
 
@@ -147,11 +149,15 @@ cwd = os.getcwd()
 # for shop-vrb
 # path = os.path.join(cwd, 'dataset\shop_vrb\graph_data.gpickle')
 # for Amazon
-path = os.path.join(cwd, 'dataset/{0}/{1}_graph_data.gpickle'.format(dataset_name, dataset_name))
+
+t_total_0 = time.time()
+t_load_graph_0 = time.time()
+path = os.path.join(cwd, 'experiment/{}_graph_data.gpickle'.format(dataset_name))
 G = nx.read_gpickle(path)
+t_load_graph_1 = time.time()
 
 # load attribute node indices
-path2 = os.path.join(cwd, 'dataset/{0}/node_idx_of_attributes.json'.format(dataset_name))
+path2 = os.path.join(cwd, 'experiment/node_idx_of_attributes.json')
 with open(path2) as f:
     attr_to_node = json.load(f)
 # print('attribute values and their corresponding node indices', attr_to_node)
@@ -159,6 +165,9 @@ with open(path2) as f:
 ################################################# Create the test node on 'shape' and 'size' ######################################################
 # ----------- variable setting part ---------------------
 # generate a center node with object 'name' index
+
+t_append_node_0 = time.time()
+
 name_index = attribute_values['name']
 node_idx = len(G.nodes)
 G.add_nodes_from([
@@ -207,6 +216,7 @@ for edge_type in test_graph.edge_label_index:
 
 test_graph.edge_label = edge_label
 print('\033[94m' + 'Edge labels are:' + '\033[0m', edge_label)
+t_append_node_1 = time.time()
 
 # %% Some print things to prove that the added node is exactly the last row vector in node_feature['name]
 # print(test_graph)
@@ -227,22 +237,37 @@ print('\033[94m' + 'Edge labels are:' + '\033[0m', edge_label)
 hidden_size = args['hidden_size']
 num_layer_hop = args['layer_num']
 encoder_layer_num = args['encoder_layer_num']
-model = HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num).to('cpu')
-PATH = 'model/{0}_best.pth'.format(dataset_name)
+drop_softmax_ratio = args['drop_softmax_ratio']
+model = softmax_HeteroGNN(HeteroSAGEConv, test_graph, hidden_size, num_layer_hop, encoder_layer_num, drop_softmax_ratio=None).to('cpu')
+PATH = 'experiment/{0}_best.pth'.format(dataset_name)
+
+t_load_model_0 = time.time()
 model.load_state_dict(torch.load(PATH))
+t_load_model_1 = time.time()
 
 model.eval()
-pred , corresponding_attr_values = model(test_graph.to('cpu'))
+test_graph.to('cpu')
+t_inference_0 = time.time()
+pred, _, corresponding_attr_values = model(test_graph)
+t_inference_1 = time.time()
 torch.set_printoptions(precision=2)
 
-
+t_post_processing_0 = time.time()
 for i in range(len(pred)):
     attr_name = list(corresponding_attr_values.items())[i][0][2]
-    real_bins = list(corresponding_attr_values.items())[i][1].detach().numpy()
-    result = torch.sigmoid(list(pred.items())[i][1]).detach().numpy()
-    most_likely_indices = np.argsort(result)[-5:]
+    real_bins = list(corresponding_attr_values.items())[i][1].cpu().detach().numpy()
+    result = F.softmax(list(pred.items())[i][1]).cpu().detach().numpy()
+    most_likely_indices = np.argsort(result[0])[-5:]
     print('\033[94m' + '-----------------------------------' + '\033[0m')
     print('\033[94m' + 'The most likely {0} are:'.format(attr_name) + '\033[0m')
     for index in np.flip(most_likely_indices):
         value = bin_to_value(dataset_name, attr_name, real_bins[index])
-        print('\033[94m' + 'Value: {0}, Confidence {1:.2f} %'.format(value, result[index]*100) + '\033[0m')
+        print('\033[94m' + 'Value: {0}, Confidence {1:.2f} %'.format(value, result[0,index]*100) + '\033[0m')
+
+t_post_processing_1 = time.time()
+t_total_1 = time.time()
+print('Total time: ', t_total_1 - t_total_0)
+print('Time of loading graph: ', t_load_graph_1 - t_load_graph_0)
+print('Time of appending test nodes: ', t_append_node_1 - t_append_node_0)
+print('Time of inference: ', t_inference_1 - t_inference_0)
+print('Time of post-processing: ', t_post_processing_1 - t_post_processing_0)

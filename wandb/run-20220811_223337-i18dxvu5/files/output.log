@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 85, in <module>
+    quantize.quantization(df, num_levels, save_path = FATHER, save_file = True, strategy=strategy, figure_on = False)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\dataset\amazon\quantize.py", line 144, in quantization
+    df[head][i] = temp[value]
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 1143, in __setitem__
+    self._maybe_update_cacher()
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 1279, in _maybe_update_cacher
+    ref._maybe_cache_changed(cacher[0], self, inplace=inplace)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\frame.py", line 3951, in _maybe_cache_changed
+    old = self._ixs(loc, axis=1)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\frame.py", line 3441, in _ixs
+    col_mgr = self._mgr.iget(i)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\internals\managers.py", line 1026, in iget
+    return SingleBlockManager(nb, self.axes[1])
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\internals\managers.py", line 1711, in __init__
+    if fastpath is not lib.no_default:

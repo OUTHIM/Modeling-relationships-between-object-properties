@@ -1,0 +1,1037 @@
+2022-08-29 21:16:33,293 INFO    StreamThr :36368 [internal.py:wandb_internal():90] W&B internal server running at pid: 36368, started at: 2022-08-29 21:16:33.293636
+2022-08-29 21:16:33,295 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: status
+2022-08-29 21:16:33,297 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: status
+2022-08-29 21:16:33,298 DEBUG   SenderThread:36368 [sender.py:send():302] send: header
+2022-08-29 21:16:33,298 INFO    WriterThread:36368 [datastore.py:open_for_write():75] open: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\run-3iemtl38.wandb
+2022-08-29 21:16:33,320 DEBUG   SenderThread:36368 [sender.py:send():302] send: run
+2022-08-29 21:16:34,046 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: check_version
+2022-08-29 21:16:34,052 INFO    SenderThread:36368 [dir_watcher.py:__init__():216] watching files in: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files
+2022-08-29 21:16:34,052 INFO    SenderThread:36368 [sender.py:_start_run_threads():913] run started: 3iemtl38 with start time 1661804193.288623
+2022-08-29 21:16:34,052 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:34,053 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:34,053 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: check_version
+2022-08-29 21:16:34,121 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: run_start
+2022-08-29 21:16:34,142 DEBUG   HandlerThread:36368 [meta.py:__init__():35] meta init
+2022-08-29 21:16:34,143 DEBUG   HandlerThread:36368 [meta.py:__init__():50] meta init done
+2022-08-29 21:16:34,143 DEBUG   HandlerThread:36368 [meta.py:probe():216] probe
+2022-08-29 21:16:34,181 DEBUG   HandlerThread:36368 [meta.py:_setup_git():206] setup git
+2022-08-29 21:16:34,246 DEBUG   HandlerThread:36368 [meta.py:_setup_git():213] setup git done
+2022-08-29 21:16:34,246 DEBUG   HandlerThread:36368 [meta.py:_save_pip():54] save pip
+2022-08-29 21:16:34,247 DEBUG   HandlerThread:36368 [meta.py:_save_pip():68] save pip done
+2022-08-29 21:16:34,247 DEBUG   HandlerThread:36368 [meta.py:_save_conda():75] save conda
+2022-08-29 21:16:35,069 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:16:35,069 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\requirements.txt
+2022-08-29 21:16:35,069 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\conda-environment.yaml
+2022-08-29 21:16:36,453 DEBUG   HandlerThread:36368 [meta.py:_save_conda():85] save conda done
+2022-08-29 21:16:36,454 DEBUG   HandlerThread:36368 [meta.py:probe():254] probe done
+2022-08-29 21:16:36,513 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-29 21:16:36,514 DEBUG   SenderThread:36368 [sender.py:send():302] send: files
+2022-08-29 21:16:36,514 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-29 21:16:36,514 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: stop_status
+2022-08-29 21:16:36,776 DEBUG   SenderThread:36368 [sender.py:send():302] send: telemetry
+2022-08-29 21:16:37,094 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\conda-environment.yaml
+2022-08-29 21:16:37,095 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-metadata.json
+2022-08-29 21:16:37,482 INFO    Thread-22 :36368 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\AppData\Local\Temp\tmpv2bnuer7wandb\1xjypi8b-wandb-metadata.json
+2022-08-29 21:16:51,782 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-29 21:16:51,782 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: stop_status
+2022-08-29 21:16:55,296 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:16:57,307 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:16:58,190 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:58,190 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:58,190 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:58,191 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:58,308 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:58,308 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:58,308 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:58,309 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:58,317 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:16:58,400 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:58,400 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:58,400 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:58,401 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:58,507 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:58,507 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:58,508 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:58,508 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:58,613 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:58,613 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:58,613 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:58,614 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:59,091 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:59,091 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:59,091 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:59,092 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:59,192 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:59,192 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:59,192 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:59,193 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:59,288 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:59,288 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:59,288 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:59,289 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:59,320 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:16:59,321 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:16:59,462 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:59,462 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:59,463 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:59,463 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:16:59,599 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:16:59,599 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:16:59,599 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:16:59,600 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:00,097 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:00,098 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:00,098 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:00,098 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:00,200 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:00,200 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:00,200 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:00,201 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:00,301 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:00,302 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:00,302 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:00,303 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:00,336 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:00,424 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:00,424 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:00,424 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:00,425 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:00,527 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:00,527 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:00,528 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:00,528 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:01,050 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:01,051 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:01,051 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:01,052 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:01,156 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:01,156 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:01,156 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:01,157 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:01,276 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:01,277 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:01,277 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:01,277 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:01,340 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:01,340 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:01,387 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:01,387 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:01,387 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:01,388 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:01,500 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:01,501 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:01,501 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:01,501 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:01,929 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:01,929 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:01,929 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:01,930 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:02,045 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:02,045 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:02,045 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:02,046 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:02,148 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:02,149 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:02,149 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:02,149 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:02,246 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:02,246 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:02,246 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:02,247 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:02,341 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:02,342 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:02,342 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:02,342 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:02,348 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:02,809 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:02,809 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:02,809 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:02,810 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:02,921 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:02,922 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:02,922 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:02,922 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:03,021 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:03,021 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:03,021 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:03,022 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:03,132 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:03,133 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:03,133 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:03,134 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:03,251 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:03,252 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:03,252 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:03,252 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:03,354 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:03,355 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:03,674 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:03,776 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:03,876 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:03,877 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:03,879 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:03,880 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:03,881 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:03,882 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:03,888 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:03,888 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:03,888 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:03,889 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:03,995 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:03,996 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:03,996 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:03,997 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:04,103 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:04,104 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:04,104 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:04,105 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:04,359 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\config.yaml
+2022-08-29 21:17:04,359 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:04,739 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:04,739 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:04,739 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:04,740 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:04,844 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:04,845 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:04,845 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:04,847 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:04,953 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:04,953 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:04,953 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:04,954 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:05,061 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:05,061 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:05,062 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:05,062 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:05,186 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:05,187 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:05,187 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:05,187 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:05,308 DEBUG   SenderThread:36368 [sender.py:send():302] send: stats
+2022-08-29 21:17:05,364 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:05,364 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:05,662 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:05,662 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:05,662 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:05,663 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:05,772 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:05,773 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:05,773 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:05,773 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:05,888 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:05,889 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:05,889 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:05,889 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:06,029 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:06,030 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:06,030 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:06,031 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:06,139 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:06,140 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:06,140 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:06,141 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:06,367 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:06,594 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:06,595 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:06,595 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:06,596 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:06,706 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:06,706 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:06,706 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:06,707 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:06,832 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:06,833 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:06,833 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:06,833 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:06,933 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-29 21:17:06,933 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: stop_status
+2022-08-29 21:17:06,954 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:07,063 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:07,065 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:07,065 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:07,066 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:07,066 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:07,066 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:07,067 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:07,373 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:07,374 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:07,520 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:07,521 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:07,521 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:07,522 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:07,635 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:07,636 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:07,636 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:07,636 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:07,749 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:07,749 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:07,749 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:07,750 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:07,863 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:07,863 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:07,864 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:07,864 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:07,976 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:07,977 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:07,977 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:07,977 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:08,377 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:08,453 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:08,454 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:08,454 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:08,455 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:08,570 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:08,570 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:08,570 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:08,571 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:08,683 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:08,683 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:08,684 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:08,684 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:08,794 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:08,794 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:08,794 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:08,795 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:08,900 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:08,901 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:08,901 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:08,901 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:09,375 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:09,375 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:09,375 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:09,376 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:09,380 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:09,380 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:09,480 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:09,481 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:09,481 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:09,482 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:09,589 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:09,589 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:09,589 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:09,590 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:09,695 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:09,696 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:09,696 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:09,697 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:09,801 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:09,801 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:09,802 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:09,802 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:10,271 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:10,272 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:10,272 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:10,272 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:10,382 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:10,382 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:10,382 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:10,383 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:10,389 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:10,492 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:10,493 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:10,493 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:10,493 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:10,603 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:10,603 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:10,603 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:10,604 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:10,703 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:10,704 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:10,704 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:10,704 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:11,152 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:11,153 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:11,153 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:11,153 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:11,259 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:11,259 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:11,259 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:11,260 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:11,365 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:11,365 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:11,366 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:11,366 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:11,396 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:11,396 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:11,475 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:11,475 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:11,475 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:11,476 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:11,584 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:11,584 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:11,584 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:11,585 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:12,238 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:12,238 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:12,239 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:12,239 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:12,341 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:12,341 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:12,341 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:12,341 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:12,402 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:12,448 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:12,448 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:12,449 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:12,449 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:12,565 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:12,565 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:12,565 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:12,566 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:12,678 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:12,678 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:12,678 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:12,679 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:13,154 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:13,154 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:13,154 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:13,155 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:13,262 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:13,262 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:13,262 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:13,263 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:13,385 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:13,386 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:13,386 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:13,387 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:13,418 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:13,418 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:13,499 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:13,500 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:13,500 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:13,501 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:13,612 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:13,612 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:13,612 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:13,613 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:14,093 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:14,093 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:14,094 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:14,094 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:14,212 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:14,213 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:14,213 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:14,214 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:14,321 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:14,321 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:14,321 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:14,322 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:14,419 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:14,431 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:14,432 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:14,432 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:14,432 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:14,542 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:14,542 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:14,542 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:14,543 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:14,982 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:14,983 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:14,983 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:14,984 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:15,091 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:15,091 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:15,091 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:15,092 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:15,232 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:15,232 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:15,232 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:15,233 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:15,363 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:15,364 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:15,364 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:15,365 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:15,433 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:15,434 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:15,471 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:15,472 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:15,472 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:15,473 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:15,933 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:15,934 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:15,934 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:15,934 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:16,038 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:16,039 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:16,039 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:16,040 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:16,145 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:16,145 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:16,146 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:16,146 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:16,260 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:16,261 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:16,261 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:16,262 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:16,370 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:16,371 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:16,371 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:16,372 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:16,438 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:16,835 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:16,835 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:16,836 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:16,836 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:16,942 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:16,943 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:16,943 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:16,944 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:17,046 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:17,046 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:17,046 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:17,047 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:17,153 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:17,153 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:17,153 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:17,154 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:17,265 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:17,265 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:17,265 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:17,266 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:17,439 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:17,440 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:17,706 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:17,707 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:17,707 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:17,708 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:17,826 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:17,826 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:17,826 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:17,827 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:17,932 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:17,933 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:17,933 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:17,933 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:18,036 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:18,036 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:18,036 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:18,037 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:18,149 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:18,149 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:18,149 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:18,150 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:18,442 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:18,600 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:18,601 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:18,601 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:18,610 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:18,701 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:18,701 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:18,701 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:18,702 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:18,808 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:18,808 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:18,808 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:18,810 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:18,930 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:18,930 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:18,931 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:18,932 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:19,037 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:19,038 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:19,038 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:19,039 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:19,446 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:19,447 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:19,640 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:19,641 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:19,641 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:19,641 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:19,761 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:19,762 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:19,762 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:19,764 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:19,887 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:19,888 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:19,888 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:19,888 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:19,991 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:19,991 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:19,991 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:19,992 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:20,099 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:20,099 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:20,100 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:20,100 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:20,450 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:20,573 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:20,573 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:20,574 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:20,574 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:20,677 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:20,677 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:20,677 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:20,678 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:20,782 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:20,782 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:20,782 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:20,783 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:20,905 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:20,905 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:20,905 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:20,906 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:21,013 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:21,013 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:21,014 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:21,014 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:21,457 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:21,458 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:21,462 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:21,463 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:21,463 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:21,463 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:21,567 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:21,567 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:21,568 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:21,568 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:21,678 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:21,679 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:21,679 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:21,679 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:21,787 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:21,788 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:21,788 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:21,789 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:21,893 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:21,893 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:21,893 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:21,894 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:22,113 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-29 21:17:22,114 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: stop_status
+2022-08-29 21:17:22,365 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:22,365 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:22,365 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:22,366 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:22,459 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:22,468 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:22,468 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:22,468 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:22,469 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:22,573 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:22,573 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:22,573 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:22,574 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:22,678 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:22,679 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:22,679 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:22,679 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:22,796 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:22,796 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:22,796 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:22,797 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:23,300 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:23,300 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:23,301 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:23,301 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:23,404 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:23,404 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:23,404 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:23,405 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:23,467 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:23,467 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:23,509 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:23,509 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:23,510 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:23,510 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:23,620 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:23,621 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:23,621 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:23,622 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:23,739 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:23,740 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:23,740 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:23,741 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:24,225 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:24,225 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:24,225 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:24,226 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:24,332 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:24,332 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:24,332 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:24,333 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:24,440 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:24,440 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:24,441 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:24,441 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:24,474 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:24,558 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:24,558 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:24,558 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:24,559 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:24,658 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:24,659 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:24,659 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:24,659 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:25,199 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:25,199 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:25,199 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:25,200 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:25,319 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:25,320 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:25,320 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:25,320 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:25,429 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:25,429 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:25,429 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:25,430 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:25,483 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:25,484 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:25,536 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:25,536 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:25,536 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:25,537 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:25,648 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:25,648 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:25,648 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:25,649 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:26,119 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:26,119 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:26,119 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:26,120 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:26,237 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:26,238 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:26,238 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:26,239 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:26,361 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:26,361 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:26,362 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:26,362 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:26,484 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:26,485 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:26,485 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:26,485 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:26,494 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:26,598 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:26,599 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:26,599 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:26,599 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:27,199 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:27,199 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:27,200 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:27,200 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:27,303 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:27,303 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:27,304 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:27,304 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:27,411 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:27,411 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:27,412 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:27,412 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:27,506 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:27,507 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:27,530 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:27,531 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:27,531 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:27,531 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:27,637 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:27,638 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:27,638 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:27,638 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:28,108 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:28,109 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:28,109 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:28,109 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:28,212 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:28,212 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:28,213 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:28,213 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:28,326 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:28,326 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:28,326 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:28,327 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:28,431 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:28,432 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:28,432 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:28,433 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:28,518 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:28,533 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:28,533 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:28,533 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:28,534 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:29,023 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:29,023 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:29,023 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:29,024 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:29,130 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:29,130 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:29,130 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:29,131 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:29,240 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:29,240 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:29,240 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:29,241 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:29,348 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:29,348 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:29,348 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:29,349 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:29,453 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:29,454 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:29,454 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:29,455 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:29,524 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:29,524 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:29,904 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:29,905 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:29,905 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:29,905 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:30,007 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:30,007 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:30,008 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:30,008 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:30,114 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:30,114 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:30,114 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:30,115 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:30,220 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:30,220 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:30,220 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:30,221 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:30,330 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:30,331 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:30,331 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:30,331 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:30,527 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:30,786 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:30,786 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:30,787 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:30,787 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:30,892 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:30,892 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:30,892 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:30,893 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:30,997 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:30,998 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:30,998 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:30,998 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:31,107 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:31,108 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:31,108 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:31,109 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:31,210 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:31,211 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:31,211 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:31,212 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:31,532 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:31,533 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:31,662 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:31,663 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:31,663 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:31,664 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:31,782 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:31,783 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:31,783 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:31,784 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:31,901 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:31,901 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:31,901 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:31,903 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:32,015 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:32,016 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:32,016 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:32,017 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:32,132 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:32,132 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:32,132 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:32,133 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:32,535 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:32,622 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:32,623 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:32,623 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:32,623 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:32,731 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:32,731 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:32,731 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:32,732 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:32,838 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:32,838 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:32,838 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:32,839 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:32,946 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:32,947 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:32,947 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:32,947 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:33,074 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:33,075 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:33,075 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:33,076 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:33,534 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:33,534 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:33,534 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:33,535 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:33,536 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:33,536 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:33,642 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:33,642 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:33,642 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:33,643 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:33,748 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:33,749 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:33,749 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:33,749 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:33,859 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:33,860 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:33,860 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:33,860 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:33,959 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:33,959 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:33,959 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:33,960 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:34,541 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:34,572 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:34,572 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:34,572 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:34,573 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:34,679 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:34,679 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:34,679 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:34,680 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:34,782 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:34,782 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:34,783 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:34,783 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:34,885 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:34,886 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:34,886 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:34,886 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:35,009 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:35,010 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:35,010 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:35,010 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:35,546 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:35,547 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:37,287 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-29 21:17:37,288 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: stop_status
+2022-08-29 21:17:37,570 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:38,600 DEBUG   SenderThread:36368 [sender.py:send():302] send: stats
+2022-08-29 21:17:39,591 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:41,618 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:43,644 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:45,672 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:47,122 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-29 21:17:47,123 DEBUG   SenderThread:36368 [sender.py:send():302] send: history
+2022-08-29 21:17:47,123 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:47,124 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:47,144 DEBUG   SenderThread:36368 [sender.py:send():302] send: telemetry
+2022-08-29 21:17:47,145 DEBUG   SenderThread:36368 [sender.py:send():302] send: exit
+2022-08-29 21:17:47,145 INFO    SenderThread:36368 [sender.py:send_exit():438] handling exit code: 0
+2022-08-29 21:17:47,146 INFO    SenderThread:36368 [sender.py:send_exit():440] handling runtime: 73
+2022-08-29 21:17:47,146 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:47,146 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:47,147 INFO    SenderThread:36368 [sender.py:send_exit():446] send defer
+2022-08-29 21:17:47,147 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:47,147 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:47,147 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-29 21:17:47,147 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:47,148 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-29 21:17:47,148 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 1
+2022-08-29 21:17:47,148 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:47,148 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-29 21:17:47,195 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:47,195 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-29 21:17:47,196 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 2
+2022-08-29 21:17:47,196 DEBUG   SenderThread:36368 [sender.py:send():302] send: stats
+2022-08-29 21:17:47,196 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:47,196 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-29 21:17:47,196 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:47,196 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-29 21:17:47,196 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 3
+2022-08-29 21:17:47,197 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:47,197 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-29 21:17:47,197 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:47,197 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-29 21:17:47,197 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 4
+2022-08-29 21:17:47,197 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:47,197 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-29 21:17:47,197 DEBUG   SenderThread:36368 [sender.py:send():302] send: summary
+2022-08-29 21:17:47,198 INFO    SenderThread:36368 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-29 21:17:47,198 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:47,198 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-29 21:17:47,198 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 5
+2022-08-29 21:17:47,199 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:47,199 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-29 21:17:47,199 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:47,199 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-29 21:17:47,253 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:47,391 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 6
+2022-08-29 21:17:47,391 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:47,392 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:47,392 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-29 21:17:47,393 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:47,393 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-29 21:17:47,504 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:47,692 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\config.yaml
+2022-08-29 21:17:47,693 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:47,693 INFO    Thread-16 :36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:49,024 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 7
+2022-08-29 21:17:49,024 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:49,026 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:49,027 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-29 21:17:49,027 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:49,027 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-08-29 21:17:49,027 INFO    SenderThread:36368 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-29 21:17:49,131 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:49,708 INFO    SenderThread:36368 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:49,709 INFO    SenderThread:36368 [dir_watcher.py:finish():392] scan: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files
+2022-08-29 21:17:49,710 INFO    SenderThread:36368 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\conda-environment.yaml conda-environment.yaml
+2022-08-29 21:17:49,710 INFO    SenderThread:36368 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\config.yaml config.yaml
+2022-08-29 21:17:49,713 INFO    SenderThread:36368 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log output.log
+2022-08-29 21:17:49,713 INFO    SenderThread:36368 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\requirements.txt requirements.txt
+2022-08-29 21:17:49,715 INFO    SenderThread:36368 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-metadata.json wandb-metadata.json
+2022-08-29 21:17:49,717 INFO    SenderThread:36368 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json wandb-summary.json
+2022-08-29 21:17:49,718 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 8
+2022-08-29 21:17:49,719 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:49,722 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:49,722 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-29 21:17:49,724 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:49,724 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-08-29 21:17:49,725 INFO    SenderThread:36368 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-29 21:17:49,832 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:49,833 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:49,938 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:49,939 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:50,047 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:50,048 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:50,156 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:50,157 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:50,210 INFO    Thread-26 :36368 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\requirements.txt
+2022-08-29 21:17:50,210 INFO    Thread-23 :36368 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\conda-environment.yaml
+2022-08-29 21:17:50,219 INFO    Thread-25 :36368 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\output.log
+2022-08-29 21:17:50,265 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:50,266 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:50,311 INFO    Thread-24 :36368 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\config.yaml
+2022-08-29 21:17:50,311 INFO    Thread-27 :36368 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\files\wandb-summary.json
+2022-08-29 21:17:50,373 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:50,374 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:50,482 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:50,483 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:50,527 INFO    Thread-15 (_thread_body):36368 [sender.py:transition_state():459] send defer: 9
+2022-08-29 21:17:50,528 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:50,529 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-29 21:17:50,529 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:50,529 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-08-29 21:17:50,591 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:50,939 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 10
+2022-08-29 21:17:50,939 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:50,941 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:50,941 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-29 21:17:50,942 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:50,942 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-08-29 21:17:50,942 INFO    SenderThread:36368 [sender.py:transition_state():459] send defer: 11
+2022-08-29 21:17:50,944 DEBUG   SenderThread:36368 [sender.py:send():302] send: final
+2022-08-29 21:17:50,945 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: defer
+2022-08-29 21:17:50,945 INFO    HandlerThread:36368 [handler.py:handle_request_defer():164] handle defer: 11
+2022-08-29 21:17:50,946 DEBUG   SenderThread:36368 [sender.py:send():302] send: footer
+2022-08-29 21:17:50,946 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: defer
+2022-08-29 21:17:50,946 INFO    SenderThread:36368 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-08-29 21:17:51,055 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-29 21:17:51,056 DEBUG   SenderThread:36368 [sender.py:send_request():316] send_request: poll_exit
+2022-08-29 21:17:51,056 INFO    SenderThread:36368 [file_pusher.py:join():176] waiting for file pusher
+2022-08-29 21:17:51,492 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-29 21:17:51,494 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-29 21:17:51,496 DEBUG   HandlerThread:36368 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-29 21:17:51,496 INFO    HandlerThread:36368 [handler.py:finish():810] shutting down handler
+2022-08-29 21:17:51,959 INFO    WriterThread:36368 [datastore.py:close():279] close: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220829_211633-3iemtl38\run-3iemtl38.wandb
+2022-08-29 21:17:52,379 INFO    SenderThread:36368 [sender.py:finish():1312] shutting down sender
+2022-08-29 21:17:52,379 INFO    SenderThread:36368 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-29 21:17:52,379 INFO    SenderThread:36368 [file_pusher.py:join():176] waiting for file pusher
+2022-08-29 21:17:53,516 INFO    MainThread:36368 [internal.py:handle_exit():80] Internal process exited

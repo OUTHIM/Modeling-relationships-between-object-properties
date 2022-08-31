@@ -59,32 +59,32 @@ def generate_graphs(quantized_data_filepath, quantization_levels_filepath, save_
         for (node_type, value) in row.items():
             # print('generating node {0}/{1}'.format(node_idx, node_num))
             value = float(value)
-            if node_type != 'name':
-                # if the attribute value node already exists, point current attribute node to the exsiting one
-                if value_to_node_idx[node_type][value] != None: 
-                    attr_node_idx = value_to_node_idx[node_type][value]
-                
-                # otherwise, create node for certain attribute value
-                else:
-                    G.add_nodes_from([
-                    (node_idx,{"node_type":node_type, "node_label":value, "node_feature":torch.Tensor([value]).type(torch.LongTensor)})
+            # if node_type != 'name':
+            # if the attribute value node already exists, point current attribute node to the exsiting one
+            if value_to_node_idx[node_type][value] != None: 
+                attr_node_idx = value_to_node_idx[node_type][value]
+            
+            # otherwise, create node for certain attribute value
+            else:
+                G.add_nodes_from([
+                (node_idx,{"node_type":node_type, "node_label":value, "node_feature":torch.Tensor([value]).type(torch.LongTensor)})
+                ])
+
+                # record the node index of the attribute value node created
+                value_to_node_idx[node_type][value] = node_idx
+                attr_node_idx = node_idx
+                node_idx += 1 
+
+            # add bi-directional edges
+            if if_directed == True:
+                G.add_edges_from([
+                    (center_node, attr_node_idx,{'edge_type':'name-'+ node_type}),
+                    (attr_node_idx, center_node, {'edge_type': node_type + '-name'})
                     ])
-
-                    # record the node index of the attribute value node created
-                    value_to_node_idx[node_type][value] = node_idx
-                    attr_node_idx = node_idx
-                    node_idx += 1 
-
-                # add bi-directional edges
-                if if_directed == True:
-                    G.add_edges_from([
-                        (center_node, attr_node_idx,{'edge_type':'name-'+ node_type}),
-                        (attr_node_idx, center_node, {'edge_type': node_type + '-name'})
-                        ])
-                else:
-                    G.add_edges_from([
-                        (center_node, attr_node_idx,{'edge_type':'name-'+ node_type}),
-                        (attr_node_idx, center_node, {'edge_type': 'name-' + node_type})
+            else:
+                G.add_edges_from([
+                    (center_node, attr_node_idx,{'edge_type':'name-'+ node_type}),
+                    (attr_node_idx, center_node, {'edge_type': 'name-' + node_type})
                         ])
 
 

@@ -12,6 +12,7 @@ import pickle
 from torch.utils.data import DataLoader
 from deepsnap.batch import Batch
 import torch.nn.functional as F
+import wandb
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[1]  # root directory
@@ -144,7 +145,7 @@ def train_custom(model, dataloader, optimizer, args):
     return model
 
 # For training with softmax heteGraphSAGE
-def train_softmax(model, dataloader, optimizer, args, evaluation_epoch, wandb):
+def train_softmax(model, dataloader, optimizer, args, evaluation_epoch, wandb, dataset_name):
     print('Training with softmax model...')
     for epoch in range(1, args['epochs'] + 1):
         for train_batch in dataloader:
@@ -185,8 +186,8 @@ def train_softmax(model, dataloader, optimizer, args, evaluation_epoch, wandb):
             if epoch % evaluation_epoch == 0 and epoch != 0:
                 FILE = Path(__file__).resolve()
                 ROOT = FILE.parents[1]
-                experiment_folder_path = os.path.join(ROOT, 'experiment')
-                attr_acc, avg_acc = evaluation(experiment_folder_path=experiment_folder_path, model = model)
+                experiment_folder_path = os.path.join(ROOT, 'experiment') if dataset_name == 'amazon' else os.path.join(ROOT, 'dataset/shop_vrb')
+                attr_acc, avg_acc = evaluation(experiment_folder_path=experiment_folder_path, model = model, dataset_name = dataset_name)
                 material_acc = attr_acc['Material']
                 colour_acc = attr_acc['Colour']
                 weight_acc = attr_acc['Weight']
@@ -303,7 +304,7 @@ def start_training(hetero, args, save_path, save_file = True, file_name = 'best_
     elif train_with_softmax:
         custom_dataset = CustomDataset([hetero], split_types, disjoint = disjoint, negative_sampling = False, sampling_epoch=sampling_epoch, mp_edge_ratio = mp_edge_ratio)
         dataloader = DataLoader(custom_dataset, batch_size=1, collate_fn=Batch.collate())
-        best_model = train_softmax(model, dataloader, optimizer, args, evaluation_epoch=evaluation_epoch, wandb = wandb)
+        best_model = train_softmax(model, dataloader, optimizer, args, evaluation_epoch=evaluation_epoch, wandb = wandb, dataset_name=args['dataset_name'])
     else:
         dataloaders = process_dataset(hetero, directed = args['directed'], split_types=split_types)
         if retrain_hard_samples:
@@ -321,17 +322,44 @@ def start_training(hetero, args, save_path, save_file = True, file_name = 'best_
 
 if __name__ == '__main__':
     # # arguments to tune
+    # args = {
+    #     'dataset_name': 'shop_vrb',
+    #     "device": "cuda",
+    #     "epochs": 200,
+    #     "lr": 0.01,
+    #     "weight_decay": 1e-4,
+    #     'encoder_layer_num': 3,
+    #     "hidden_size": 16,
+    #     'layer_num': 3,
+    #     'directed' : True
+        # }
     args = {
+        'custom_train': False,
+        'train_with_softmax': True,
+        'disjoint': True,
+
         'dataset_name': 'shop_vrb',
+
+        'sampling_epoch': 5,
+        'evaluation_epoch': 30,
+        'drop_softmax_ratio': None,
+        'quantization_strategy': 'kmeans',
+        'num_quantization_level': 10,
+        'message_passing_edge_ratio': 0.7,
+        'node_num': 1431,
         "device": "cuda",
-        "epochs": 200,
+        "epochs": 30,
         "lr": 0.01,
         "weight_decay": 1e-4,
-        'encoder_layer_num': 3,
-        "hidden_size": 16,
-        'layer_num': 3,
-        'directed' : True
-        }
+        'encoder_layer_num': 1,
+        "hidden_size": 32,
+        'layer_num': 1,
+        'directed' : True,
+        'retrain_hard_samples': False,
+        'save_hard_samples': False,
+        'negative_sampling_ratio':1
+    }
+
 
     # args = {
     #     'dataset_name': 'amazon',
@@ -344,6 +372,15 @@ if __name__ == '__main__':
     #     'layer_num': 4,
     #     'directed' : True
     #     }
+    wandb_mode = 'disabled'
+    # wandb_mode = None
+    wandb_name = 'negative sampling'
+    wandb.init(
+    mode = wandb_mode,
+    project = 'modelling relationship between object properties',
+    name = wandb_name,
+    config = args
+    )
 
     dataset_name = args['dataset_name']
     cwd = os.getcwd()
@@ -353,4 +390,10 @@ if __name__ == '__main__':
     hetero = HeteroGraph(G)
     CURRENT_FILE = Path(__file__).resolve()
     FATHER = CURRENT_FILE.parents[0]  # root directory
-    start_training(hetero, args, save_path = FATHER, save_file=True)
+    # start_training(hetero, args, save_path = FATHER, save_file=True)
+    start_training(
+        hetero, args, save_path = FATHER, save_file=True, save_hard_samples=args['save_hard_samples'],
+        retrain_hard_samples = args['retrain_hard_samples'], custom_train=args['custom_train'],
+        negative_sampling = True, negative_sampling_ratio = args['negative_sampling_ratio'], sampling_epoch = args['sampling_epoch'], train_with_softmax = args['train_with_softmax'],
+        evaluation_epoch = args['evaluation_epoch'], mp_edge_ratio = args['message_passing_edge_ratio'], wandb = wandb, drop_softmax_ratio=args['drop_softmax_ratio'],
+        disjoint = args['disjoint'])

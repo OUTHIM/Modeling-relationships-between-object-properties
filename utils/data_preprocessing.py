@@ -65,12 +65,13 @@ class CustomDataset(Dataset):
         return hetero
 
     def create_disjoint_dataset(self, hetero, split_types, mp_edge_ratio):
-        '''If you need to test the effect on single attribute e.g. Weight, uncomment the following code'''
+        # '''If you need to test the effect on single attribute e.g. Weight, uncomment the following code'''
         # message_type = ('name', 'name-Weight', 'Weight')
         # edge_label = {}
         # edge_label_index = {}
         # edge_label_index[message_type] = copy.deepcopy(hetero.edge_index[message_type])
         # hetero.edge_index[message_type] = torch.tensor([[0],[0]])
+        # del hetero.edge_index[message_type]
         # # for split_type in split_types:
         # #     link_type = (split_type[2], split_type[2] + '-' + split_type[0], split_type[0])
         # #     edge_index[link_type] = copy.deepcopy(hetero.edge_index[link_type])
@@ -84,6 +85,10 @@ class CustomDataset(Dataset):
         edge_label_index = {}
         edge_index = {}
         for message_type in split_types:
+            # if message_type != ('name', 'name-Weight','Weight'):
+            #     # message_type != ('name', 'name-Weight','Weight') and 
+            #     edge_index[message_type] = hetero.edge_index[message_type]
+            #     continue
             # create message-passing edges mask for sampling
             opposite_message_type = (message_type[2], message_type[2] + '-' + message_type[0], message_type[0])
 
@@ -103,11 +108,11 @@ class CustomDataset(Dataset):
 
             opposite_edge_index = torch.stack((copy.deepcopy(edge_index[message_type][1]), copy.deepcopy(edge_index[message_type][0])), dim = 0)
             edge_index[opposite_message_type] = opposite_edge_index
+        
 
         hetero.edge_label = edge_label
         hetero.edge_index = edge_index
         hetero.edge_label_index = edge_label_index
-
         return hetero
 
 

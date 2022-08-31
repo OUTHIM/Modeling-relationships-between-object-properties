@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 85, in <module>
+    quantize.quantization(df, num_levels, save_path = FATHER, save_file = True, strategy=strategy, figure_on = False)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\dataset\amazon\quantize.py", line 144, in quantization
+    df[head][i] = temp[value]
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 1075, in __setitem__
+    cacher_needs_updating = self._check_is_chained_assignment_possible()
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 1256, in _check_is_chained_assignment_possible
+    self._check_setitem_copy(t="referent", force=True)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\generic.py", line 4018, in _check_setitem_copy
+    warnings.warn(t, com.SettingWithCopyWarning, stacklevel=find_stack_level())
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\util\_exceptions.py", line 32, in find_stack_level
+    stack = inspect.stack()
+  File "C:\Apps\Anaconda\envs\fyp\lib\inspect.py", line 1678, in stack
+    return getouterframes(sys._getframe(1), context)
+  File "C:\Apps\Anaconda\envs\fyp\lib\inspect.py", line 1655, in getouterframes
+    frameinfo = (frame,) + getframeinfo(frame, context)
+  File "C:\Apps\Anaconda\envs\fyp\lib\inspect.py", line 1625, in getframeinfo
+    filename = getsourcefile(frame) or getfile(frame)
+  File "C:\Apps\Anaconda\envs\fyp\lib\inspect.py", line 826, in getsourcefile
+    if os.path.exists(filename):
+  File "C:\Apps\Anaconda\envs\fyp\lib\genericpath.py", line 19, in exists
+    os.stat(path)

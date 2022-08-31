@@ -1,0 +1,1442 @@
+Quantization finished!
+Training with softmax model...
+Current epoch: 01/200 Train loss: 24.0411, Train accuracy: 0.4895
+Current epoch: 02/200 Train loss: 21.9739, Train accuracy: 0.5634
+Current epoch: 03/200 Train loss: 20.6237, Train accuracy: 0.6176
+Current epoch: 04/200 Train loss: 19.6725, Train accuracy: 0.6394
+Current epoch: 05/200 Train loss: 19.3481, Train accuracy: 0.6477
+(195, 8)
+Accuracy on attribute Material is 0.38461538461538464
+(195, 18)
+Accuracy on attribute Colour is 0.3282051282051282
+(195, 15)
+Accuracy on attribute Weight is 0.6615384615384615
+(195, 15)
+Accuracy on attribute Volume is 0.6358974358974359
+(195, 10)
+Accuracy on attribute Length is 0.26153846153846155
+(195, 10)
+Accuracy on attribute Width is 0.3230769230769231
+(195, 8)
+Accuracy on attribute Height is 0.5692307692307692
+(195, 5)
+Accuracy on attribute Functionality is 0.7384615384615385
+(195, 2)
+Accuracy on attribute Button is 0.764102564102564
+(195, 2)
+Accuracy on attribute Lip is 0.7435897435897436
+(195, 2)
+Accuracy on attribute Fillability is 0.6974358974358974
+(195, 2)
+Accuracy on attribute Washability is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Dismountability is 0.6256410256410256
+(195, 4)
+Accuracy on attribute Shape is 0.6666666666666666
+(195, 2)
+Accuracy on attribute Handle is 0.5948717948717949
+Overall evaluation accuracy is: 0.5952136752136752
+Current epoch: 06/200 Train loss: 19.1325, Train accuracy: 0.6800
+Current epoch: 07/200 Train loss: 18.7251, Train accuracy: 0.6988
+Current epoch: 08/200 Train loss: 18.3990, Train accuracy: 0.7085
+Current epoch: 09/200 Train loss: 18.4690, Train accuracy: 0.7193
+Current epoch: 10/200 Train loss: 18.2479, Train accuracy: 0.7292
+(195, 8)
+Accuracy on attribute Material is 0.41025641025641024
+(195, 18)
+Accuracy on attribute Colour is 0.37435897435897436
+(195, 15)
+Accuracy on attribute Weight is 0.5692307692307692
+(195, 15)
+Accuracy on attribute Volume is 0.4461538461538462
+(195, 10)
+Accuracy on attribute Length is 0.36923076923076925
+(195, 10)
+Accuracy on attribute Width is 0.3230769230769231
+(195, 8)
+Accuracy on attribute Height is 0.6923076923076923
+(195, 5)
+Accuracy on attribute Functionality is 0.8769230769230769
+(195, 2)
+Accuracy on attribute Button is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Lip is 0.8358974358974359
+(195, 2)
+Accuracy on attribute Fillability is 0.7743589743589744
+(195, 2)
+Accuracy on attribute Washability is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Dismountability is 0.5076923076923077
+(195, 4)
+Accuracy on attribute Shape is 0.764102564102564
+(195, 2)
+Accuracy on attribute Handle is 0.7794871794871795
+Overall evaluation accuracy is: 0.6345299145299145
+Current epoch: 11/200 Train loss: 18.3618, Train accuracy: 0.7215
+Current epoch: 12/200 Train loss: 18.3379, Train accuracy: 0.7305
+Current epoch: 13/200 Train loss: 18.0435, Train accuracy: 0.7338
+Current epoch: 14/200 Train loss: 17.9007, Train accuracy: 0.7373
+Current epoch: 15/200 Train loss: 17.8476, Train accuracy: 0.7428
+(195, 8)
+Accuracy on attribute Material is 0.4153846153846154
+(195, 18)
+Accuracy on attribute Colour is 0.3487179487179487
+(195, 15)
+Accuracy on attribute Weight is 0.5641025641025641
+(195, 15)
+Accuracy on attribute Volume is 0.4512820512820513
+(195, 10)
+Accuracy on attribute Length is 0.4358974358974359
+(195, 10)
+Accuracy on attribute Width is 0.3128205128205128
+(195, 8)
+Accuracy on attribute Height is 0.6256410256410256
+(195, 5)
+Accuracy on attribute Functionality is 0.8974358974358975
+(195, 2)
+Accuracy on attribute Button is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Lip is 0.8974358974358975
+(195, 2)
+Accuracy on attribute Fillability is 0.47692307692307695
+(195, 2)
+Accuracy on attribute Washability is 0.8
+(195, 2)
+Accuracy on attribute Dismountability is 0.7794871794871795
+(195, 4)
+Accuracy on attribute Shape is 0.7846153846153846
+(195, 2)
+Accuracy on attribute Handle is 0.6717948717948717
+Overall evaluation accuracy is: 0.6276923076923077
+Current epoch: 16/200 Train loss: 17.6908, Train accuracy: 0.7533
+Current epoch: 17/200 Train loss: 17.7734, Train accuracy: 0.7714
+Current epoch: 18/200 Train loss: 17.6579, Train accuracy: 0.7780
+Current epoch: 19/200 Train loss: 17.5277, Train accuracy: 0.7838
+Current epoch: 20/200 Train loss: 17.5030, Train accuracy: 0.7886
+(195, 8)
+Accuracy on attribute Material is 0.4205128205128205
+(195, 18)
+Accuracy on attribute Colour is 0.4153846153846154
+(195, 15)
+Accuracy on attribute Weight is 0.5538461538461539
+(195, 15)
+Accuracy on attribute Volume is 0.4666666666666667
+(195, 10)
+Accuracy on attribute Length is 0.4461538461538462
+(195, 10)
+Accuracy on attribute Width is 0.3076923076923077
+(195, 8)
+Accuracy on attribute Height is 0.6153846153846154
+(195, 5)
+Accuracy on attribute Functionality is 0.9025641025641026
+(195, 2)
+Accuracy on attribute Button is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Lip is 0.8205128205128205
+(195, 2)
+Accuracy on attribute Fillability is 0.8769230769230769
+(195, 2)
+Accuracy on attribute Washability is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Dismountability is 0.8923076923076924
+(195, 4)
+Accuracy on attribute Shape is 0.764102564102564
+(195, 2)
+Accuracy on attribute Handle is 0.9076923076923077
+Overall evaluation accuracy is: 0.6837606837606839
+Current epoch: 21/200 Train loss: 17.4966, Train accuracy: 0.7934
+Current epoch: 22/200 Train loss: 17.4086, Train accuracy: 0.7993
+Current epoch: 23/200 Train loss: 17.3817, Train accuracy: 0.7994
+Current epoch: 24/200 Train loss: 17.3470, Train accuracy: 0.7883
+Current epoch: 25/200 Train loss: 17.3506, Train accuracy: 0.7852
+(195, 8)
+Accuracy on attribute Material is 0.4153846153846154
+(195, 18)
+Accuracy on attribute Colour is 0.4307692307692308
+(195, 15)
+Accuracy on attribute Weight is 0.5743589743589743
+(195, 15)
+Accuracy on attribute Volume is 0.46153846153846156
+(195, 10)
+Accuracy on attribute Length is 0.4717948717948718
+(195, 10)
+Accuracy on attribute Width is 0.3230769230769231
+(195, 8)
+Accuracy on attribute Height is 0.6820512820512821
+(195, 5)
+Accuracy on attribute Functionality is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Button is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Lip is 0.9128205128205128
+(195, 2)
+Accuracy on attribute Fillability is 0.6358974358974359
+(195, 2)
+Accuracy on attribute Washability is 0.7384615384615385
+(195, 2)
+Accuracy on attribute Dismountability is 0.9128205128205128
+(195, 4)
+Accuracy on attribute Shape is 0.8051282051282052
+(195, 2)
+Accuracy on attribute Handle is 0.8358974358974359
+Overall evaluation accuracy is: 0.6711111111111112
+Current epoch: 26/200 Train loss: 17.3399, Train accuracy: 0.7944
+Current epoch: 27/200 Train loss: 17.3390, Train accuracy: 0.7907
+Current epoch: 28/200 Train loss: 17.2700, Train accuracy: 0.7841
+Current epoch: 29/200 Train loss: 17.2113, Train accuracy: 0.7758
+Current epoch: 30/200 Train loss: 17.1666, Train accuracy: 0.7726
+(195, 8)
+Accuracy on attribute Material is 0.49743589743589745
+(195, 18)
+Accuracy on attribute Colour is 0.4307692307692308
+(195, 15)
+Accuracy on attribute Weight is 0.5743589743589743
+(195, 15)
+Accuracy on attribute Volume is 0.46153846153846156
+(195, 10)
+Accuracy on attribute Length is 0.4564102564102564
+(195, 10)
+Accuracy on attribute Width is 0.30256410256410254
+(195, 8)
+Accuracy on attribute Height is 0.6820512820512821
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.7794871794871795
+(195, 2)
+Accuracy on attribute Lip is 0.841025641025641
+(195, 2)
+Accuracy on attribute Fillability is 0.6410256410256411
+(195, 2)
+Accuracy on attribute Washability is 0.7333333333333333
+(195, 2)
+Accuracy on attribute Dismountability is 0.8
+(195, 4)
+Accuracy on attribute Shape is 0.8102564102564103
+(195, 2)
+Accuracy on attribute Handle is 0.8102564102564103
+Overall evaluation accuracy is: 0.6509401709401711
+Current epoch: 31/200 Train loss: 17.2343, Train accuracy: 0.7809
+Current epoch: 32/200 Train loss: 17.2571, Train accuracy: 0.7914
+Current epoch: 33/200 Train loss: 17.2042, Train accuracy: 0.7978
+Current epoch: 34/200 Train loss: 17.0874, Train accuracy: 0.7985
+Current epoch: 35/200 Train loss: 17.0672, Train accuracy: 0.7913
+(195, 8)
+Accuracy on attribute Material is 0.46153846153846156
+(195, 18)
+Accuracy on attribute Colour is 0.5128205128205128
+(195, 15)
+Accuracy on attribute Weight is 0.5794871794871795
+(195, 15)
+Accuracy on attribute Volume is 0.441025641025641
+(195, 10)
+Accuracy on attribute Length is 0.46153846153846156
+(195, 10)
+Accuracy on attribute Width is 0.3076923076923077
+(195, 8)
+Accuracy on attribute Height is 0.7025641025641025
+(195, 5)
+Accuracy on attribute Functionality is 0.9179487179487179
+(195, 2)
+Accuracy on attribute Button is 0.7333333333333333
+(195, 2)
+Accuracy on attribute Lip is 0.8358974358974359
+(195, 2)
+Accuracy on attribute Fillability is 0.7692307692307693
+(195, 2)
+Accuracy on attribute Washability is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Dismountability is 0.7435897435897436
+(195, 4)
+Accuracy on attribute Shape is 0.7794871794871795
+(195, 2)
+Accuracy on attribute Handle is 0.8307692307692308
+Overall evaluation accuracy is: 0.6676923076923078
+Current epoch: 36/200 Train loss: 17.0592, Train accuracy: 0.7862
+Current epoch: 37/200 Train loss: 17.1556, Train accuracy: 0.7955
+Current epoch: 38/200 Train loss: 17.0956, Train accuracy: 0.8000
+Current epoch: 39/200 Train loss: 17.0115, Train accuracy: 0.8018
+Current epoch: 40/200 Train loss: 17.0126, Train accuracy: 0.8111
+(195, 8)
+Accuracy on attribute Material is 0.46153846153846156
+(195, 18)
+Accuracy on attribute Colour is 0.5025641025641026
+(195, 15)
+Accuracy on attribute Weight is 0.5538461538461539
+(195, 15)
+Accuracy on attribute Volume is 0.4307692307692308
+(195, 10)
+Accuracy on attribute Length is 0.47692307692307695
+(195, 10)
+Accuracy on attribute Width is 0.3282051282051282
+(195, 8)
+Accuracy on attribute Height is 0.6820512820512821
+(195, 5)
+Accuracy on attribute Functionality is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Button is 0.8256410256410256
+(195, 2)
+Accuracy on attribute Lip is 0.8512820512820513
+(195, 2)
+Accuracy on attribute Fillability is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Washability is 0.8564102564102564
+(195, 2)
+Accuracy on attribute Dismountability is 0.6410256410256411
+(195, 4)
+Accuracy on attribute Shape is 0.7948717948717948
+(195, 2)
+Accuracy on attribute Handle is 0.7846153846153846
+Overall evaluation accuracy is: 0.6717948717948719
+Current epoch: 41/200 Train loss: 16.9803, Train accuracy: 0.8151
+Current epoch: 42/200 Train loss: 16.9333, Train accuracy: 0.8120
+Current epoch: 43/200 Train loss: 16.8953, Train accuracy: 0.8109
+Current epoch: 44/200 Train loss: 16.9434, Train accuracy: 0.8178
+Current epoch: 45/200 Train loss: 16.8863, Train accuracy: 0.8121
+(195, 8)
+Accuracy on attribute Material is 0.5025641025641026
+(195, 18)
+Accuracy on attribute Colour is 0.517948717948718
+(195, 15)
+Accuracy on attribute Weight is 0.5435897435897435
+(195, 15)
+Accuracy on attribute Volume is 0.48205128205128206
+(195, 10)
+Accuracy on attribute Length is 0.5333333333333333
+(195, 10)
+Accuracy on attribute Width is 0.3128205128205128
+(195, 8)
+Accuracy on attribute Height is 0.6717948717948717
+(195, 5)
+Accuracy on attribute Functionality is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Button is 0.8102564102564103
+(195, 2)
+Accuracy on attribute Lip is 0.9128205128205128
+(195, 2)
+Accuracy on attribute Fillability is 0.7538461538461538
+(195, 2)
+Accuracy on attribute Washability is 0.7846153846153846
+(195, 2)
+Accuracy on attribute Dismountability is 0.8205128205128205
+(195, 4)
+Accuracy on attribute Shape is 0.8205128205128205
+(195, 2)
+Accuracy on attribute Handle is 0.7948717948717948
+Overall evaluation accuracy is: 0.6796581196581197
+Current epoch: 46/200 Train loss: 16.8609, Train accuracy: 0.8070
+Current epoch: 47/200 Train loss: 16.8465, Train accuracy: 0.8137
+Current epoch: 48/200 Train loss: 16.8735, Train accuracy: 0.8284
+Current epoch: 49/200 Train loss: 16.8905, Train accuracy: 0.8297
+Current epoch: 50/200 Train loss: 16.8992, Train accuracy: 0.8210
+(195, 8)
+Accuracy on attribute Material is 0.5384615384615384
+(195, 18)
+Accuracy on attribute Colour is 0.5692307692307692
+(195, 15)
+Accuracy on attribute Weight is 0.558974358974359
+(195, 15)
+Accuracy on attribute Volume is 0.5076923076923077
+(195, 10)
+Accuracy on attribute Length is 0.5076923076923077
+(195, 10)
+Accuracy on attribute Width is 0.2923076923076923
+(195, 8)
+Accuracy on attribute Height is 0.6717948717948717
+(195, 5)
+Accuracy on attribute Functionality is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Button is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Lip is 0.8871794871794871
+(195, 2)
+Accuracy on attribute Fillability is 0.8717948717948718
+(195, 2)
+Accuracy on attribute Washability is 0.6666666666666666
+(195, 2)
+Accuracy on attribute Dismountability is 0.9230769230769231
+(195, 4)
+Accuracy on attribute Shape is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Handle is 0.7692307692307693
+Overall evaluation accuracy is: 0.7001709401709403
+Current epoch: 51/200 Train loss: 16.9202, Train accuracy: 0.8111
+Current epoch: 52/200 Train loss: 16.7973, Train accuracy: 0.8012
+Current epoch: 53/200 Train loss: 16.8889, Train accuracy: 0.8033
+Current epoch: 54/200 Train loss: 16.7387, Train accuracy: 0.8127
+Current epoch: 55/200 Train loss: 16.7186, Train accuracy: 0.8193
+(195, 8)
+Accuracy on attribute Material is 0.5692307692307692
+(195, 18)
+Accuracy on attribute Colour is 0.5641025641025641
+(195, 15)
+Accuracy on attribute Weight is 0.5743589743589743
+(195, 15)
+Accuracy on attribute Volume is 0.5384615384615384
+(195, 10)
+Accuracy on attribute Length is 0.49230769230769234
+(195, 10)
+Accuracy on attribute Width is 0.2923076923076923
+(195, 8)
+Accuracy on attribute Height is 0.6923076923076923
+(195, 5)
+Accuracy on attribute Functionality is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Button is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Lip is 0.8307692307692308
+(195, 2)
+Accuracy on attribute Fillability is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Washability is 0.8358974358974359
+(195, 2)
+Accuracy on attribute Dismountability is 0.7794871794871795
+(195, 4)
+Accuracy on attribute Shape is 0.8666666666666667
+(195, 2)
+Accuracy on attribute Handle is 0.7487179487179487
+Overall evaluation accuracy is: 0.7073504273504274
+Current epoch: 56/200 Train loss: 16.7294, Train accuracy: 0.8231
+Current epoch: 57/200 Train loss: 16.7208, Train accuracy: 0.8322
+Current epoch: 58/200 Train loss: 16.6978, Train accuracy: 0.8357
+Current epoch: 59/200 Train loss: 16.7617, Train accuracy: 0.8368
+Current epoch: 60/200 Train loss: 16.7030, Train accuracy: 0.8402
+(195, 8)
+Accuracy on attribute Material is 0.5076923076923077
+(195, 18)
+Accuracy on attribute Colour is 0.558974358974359
+(195, 15)
+Accuracy on attribute Weight is 0.5743589743589743
+(195, 15)
+Accuracy on attribute Volume is 0.5487179487179488
+(195, 10)
+Accuracy on attribute Length is 0.5230769230769231
+(195, 10)
+Accuracy on attribute Width is 0.3076923076923077
+(195, 8)
+Accuracy on attribute Height is 0.7128205128205128
+(195, 5)
+Accuracy on attribute Functionality is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Button is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Lip is 0.8666666666666667
+(195, 2)
+Accuracy on attribute Fillability is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Washability is 0.7538461538461538
+(195, 2)
+Accuracy on attribute Dismountability is 0.8102564102564103
+(195, 4)
+Accuracy on attribute Shape is 0.882051282051282
+(195, 2)
+Accuracy on attribute Handle is 0.7743589743589744
+Overall evaluation accuracy is: 0.7107692307692308
+Current epoch: 61/200 Train loss: 16.7148, Train accuracy: 0.8475
+Current epoch: 62/200 Train loss: 16.6822, Train accuracy: 0.8503
+Current epoch: 63/200 Train loss: 16.6401, Train accuracy: 0.8478
+Current epoch: 64/200 Train loss: 16.6328, Train accuracy: 0.8473
+Current epoch: 65/200 Train loss: 16.6239, Train accuracy: 0.8466
+(195, 8)
+Accuracy on attribute Material is 0.5743589743589743
+(195, 18)
+Accuracy on attribute Colour is 0.5384615384615384
+(195, 15)
+Accuracy on attribute Weight is 0.5282051282051282
+(195, 15)
+Accuracy on attribute Volume is 0.5692307692307692
+(195, 10)
+Accuracy on attribute Length is 0.49230769230769234
+(195, 10)
+Accuracy on attribute Width is 0.31794871794871793
+(195, 8)
+Accuracy on attribute Height is 0.7076923076923077
+(195, 5)
+Accuracy on attribute Functionality is 0.9179487179487179
+(195, 2)
+Accuracy on attribute Button is 0.9230769230769231
+(195, 2)
+Accuracy on attribute Lip is 0.9179487179487179
+(195, 2)
+Accuracy on attribute Fillability is 0.7794871794871795
+(195, 2)
+Accuracy on attribute Washability is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Dismountability is 0.9025641025641026
+(195, 4)
+Accuracy on attribute Shape is 0.8564102564102564
+(195, 2)
+Accuracy on attribute Handle is 0.7282051282051282
+Overall evaluation accuracy is: 0.714871794871795
+Current epoch: 66/200 Train loss: 16.6253, Train accuracy: 0.8505
+Current epoch: 67/200 Train loss: 16.5956, Train accuracy: 0.8464
+Current epoch: 68/200 Train loss: 16.6168, Train accuracy: 0.8440
+Current epoch: 69/200 Train loss: 16.5807, Train accuracy: 0.8490
+Current epoch: 70/200 Train loss: 16.5691, Train accuracy: 0.8526
+(195, 8)
+Accuracy on attribute Material is 0.5641025641025641
+(195, 18)
+Accuracy on attribute Colour is 0.5743589743589743
+(195, 15)
+Accuracy on attribute Weight is 0.5025641025641026
+(195, 15)
+Accuracy on attribute Volume is 0.558974358974359
+(195, 10)
+Accuracy on attribute Length is 0.49230769230769234
+(195, 10)
+Accuracy on attribute Width is 0.3076923076923077
+(195, 8)
+Accuracy on attribute Height is 0.7076923076923077
+(195, 5)
+Accuracy on attribute Functionality is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Button is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Lip is 0.7794871794871795
+(195, 2)
+Accuracy on attribute Fillability is 0.8974358974358975
+(195, 2)
+Accuracy on attribute Washability is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Dismountability is 0.7794871794871795
+(195, 4)
+Accuracy on attribute Shape is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Handle is 0.7282051282051282
+Overall evaluation accuracy is: 0.705982905982906
+Current epoch: 71/200 Train loss: 16.5969, Train accuracy: 0.8567
+Current epoch: 72/200 Train loss: 16.5523, Train accuracy: 0.8595
+Current epoch: 73/200 Train loss: 16.5106, Train accuracy: 0.8614
+Current epoch: 74/200 Train loss: 16.4961, Train accuracy: 0.8625
+Current epoch: 75/200 Train loss: 16.4644, Train accuracy: 0.8627
+(195, 8)
+Accuracy on attribute Material is 0.5794871794871795
+(195, 18)
+Accuracy on attribute Colour is 0.5794871794871795
+(195, 15)
+Accuracy on attribute Weight is 0.5641025641025641
+(195, 15)
+Accuracy on attribute Volume is 0.5487179487179488
+(195, 10)
+Accuracy on attribute Length is 0.48717948717948717
+(195, 10)
+Accuracy on attribute Width is 0.29743589743589743
+(195, 8)
+Accuracy on attribute Height is 0.717948717948718
+(195, 5)
+Accuracy on attribute Functionality is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Button is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Lip is 0.8615384615384616
+(195, 2)
+Accuracy on attribute Fillability is 0.8153846153846154
+(195, 2)
+Accuracy on attribute Washability is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Dismountability is 0.7743589743589744
+(195, 4)
+Accuracy on attribute Shape is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Handle is 0.8512820512820513
+Overall evaluation accuracy is: 0.718974358974359
+Current epoch: 76/200 Train loss: 16.4381, Train accuracy: 0.8585
+Current epoch: 77/200 Train loss: 16.5323, Train accuracy: 0.8637
+Current epoch: 78/200 Train loss: 16.4300, Train accuracy: 0.8673
+Current epoch: 79/200 Train loss: 16.4127, Train accuracy: 0.8728
+Current epoch: 80/200 Train loss: 16.3713, Train accuracy: 0.8733
+(195, 8)
+Accuracy on attribute Material is 0.6051282051282051
+(195, 18)
+Accuracy on attribute Colour is 0.5641025641025641
+(195, 15)
+Accuracy on attribute Weight is 0.6153846153846154
+(195, 15)
+Accuracy on attribute Volume is 0.5384615384615384
+(195, 10)
+Accuracy on attribute Length is 0.5076923076923077
+(195, 10)
+Accuracy on attribute Width is 0.29743589743589743
+(195, 8)
+Accuracy on attribute Height is 0.7128205128205128
+(195, 5)
+Accuracy on attribute Functionality is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Button is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Lip is 0.8974358974358975
+(195, 2)
+Accuracy on attribute Fillability is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Washability is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Dismountability is 0.8923076923076924
+(195, 4)
+Accuracy on attribute Shape is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Handle is 0.882051282051282
+Overall evaluation accuracy is: 0.7446153846153847
+Current epoch: 81/200 Train loss: 16.4043, Train accuracy: 0.8773
+Current epoch: 82/200 Train loss: 16.3946, Train accuracy: 0.8781
+Current epoch: 83/200 Train loss: 16.3387, Train accuracy: 0.8799
+Current epoch: 84/200 Train loss: 16.3012, Train accuracy: 0.8801
+Current epoch: 85/200 Train loss: 16.2550, Train accuracy: 0.8782
+(195, 8)
+Accuracy on attribute Material is 0.7384615384615385
+(195, 18)
+Accuracy on attribute Colour is 0.5230769230769231
+(195, 15)
+Accuracy on attribute Weight is 0.5846153846153846
+(195, 15)
+Accuracy on attribute Volume is 0.6256410256410256
+(195, 10)
+Accuracy on attribute Length is 0.5025641025641026
+(195, 10)
+Accuracy on attribute Width is 0.3076923076923077
+(195, 8)
+Accuracy on attribute Height is 0.7384615384615385
+(195, 5)
+Accuracy on attribute Functionality is 0.9179487179487179
+(195, 2)
+Accuracy on attribute Button is 0.9282051282051282
+(195, 2)
+Accuracy on attribute Lip is 0.9076923076923077
+(195, 2)
+Accuracy on attribute Fillability is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Washability is 0.7897435897435897
+(195, 2)
+Accuracy on attribute Dismountability is 0.9128205128205128
+(195, 4)
+Accuracy on attribute Shape is 0.8564102564102564
+(195, 2)
+Accuracy on attribute Handle is 0.8615384615384616
+Overall evaluation accuracy is: 0.7425641025641028
+Current epoch: 86/200 Train loss: 16.2322, Train accuracy: 0.8752
+Current epoch: 87/200 Train loss: 16.1938, Train accuracy: 0.8752
+Current epoch: 88/200 Train loss: 16.1493, Train accuracy: 0.8798
+Current epoch: 89/200 Train loss: 16.1127, Train accuracy: 0.8792
+Current epoch: 90/200 Train loss: 16.0782, Train accuracy: 0.8799
+(195, 8)
+Accuracy on attribute Material is 0.7282051282051282
+(195, 18)
+Accuracy on attribute Colour is 0.5230769230769231
+(195, 15)
+Accuracy on attribute Weight is 0.5948717948717949
+(195, 15)
+Accuracy on attribute Volume is 0.5487179487179488
+(195, 10)
+Accuracy on attribute Length is 0.49743589743589745
+(195, 10)
+Accuracy on attribute Width is 0.4205128205128205
+(195, 8)
+Accuracy on attribute Height is 0.7025641025641025
+(195, 5)
+Accuracy on attribute Functionality is 0.9179487179487179
+(195, 2)
+Accuracy on attribute Button is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Lip is 0.7948717948717948
+(195, 2)
+Accuracy on attribute Fillability is 0.8358974358974359
+(195, 2)
+Accuracy on attribute Washability is 0.958974358974359
+(195, 2)
+Accuracy on attribute Dismountability is 0.9230769230769231
+(195, 4)
+Accuracy on attribute Shape is 0.8769230769230769
+(195, 2)
+Accuracy on attribute Handle is 0.8923076923076924
+Overall evaluation accuracy is: 0.7456410256410257
+Current epoch: 91/200 Train loss: 16.0507, Train accuracy: 0.8777
+Current epoch: 92/200 Train loss: 16.0692, Train accuracy: 0.8843
+Current epoch: 93/200 Train loss: 16.0234, Train accuracy: 0.8927
+Current epoch: 94/200 Train loss: 16.0151, Train accuracy: 0.8936
+Current epoch: 95/200 Train loss: 15.9901, Train accuracy: 0.8916
+(195, 8)
+Accuracy on attribute Material is 0.7230769230769231
+(195, 18)
+Accuracy on attribute Colour is 0.5384615384615384
+(195, 15)
+Accuracy on attribute Weight is 0.5897435897435898
+(195, 15)
+Accuracy on attribute Volume is 0.5025641025641026
+(195, 10)
+Accuracy on attribute Length is 0.47692307692307695
+(195, 10)
+Accuracy on attribute Width is 0.4256410256410256
+(195, 8)
+Accuracy on attribute Height is 0.7128205128205128
+(195, 5)
+Accuracy on attribute Functionality is 0.9282051282051282
+(195, 2)
+Accuracy on attribute Button is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Lip is 0.6512820512820513
+(195, 2)
+Accuracy on attribute Fillability is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Washability is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Dismountability is 0.7743589743589744
+(195, 4)
+Accuracy on attribute Shape is 0.8769230769230769
+(195, 2)
+Accuracy on attribute Handle is 0.8358974358974359
+Overall evaluation accuracy is: 0.7264957264957267
+Current epoch: 96/200 Train loss: 15.9880, Train accuracy: 0.8955
+Current epoch: 97/200 Train loss: 15.9644, Train accuracy: 0.8968
+Current epoch: 98/200 Train loss: 15.9619, Train accuracy: 0.8986
+Current epoch: 99/200 Train loss: 15.9520, Train accuracy: 0.8954
+Current epoch: 100/200 Train loss: 15.9192, Train accuracy: 0.8987
+(195, 8)
+Accuracy on attribute Material is 0.7384615384615385
+(195, 18)
+Accuracy on attribute Colour is 0.5846153846153846
+(195, 15)
+Accuracy on attribute Weight is 0.5897435897435898
+(195, 15)
+Accuracy on attribute Volume is 0.5025641025641026
+(195, 10)
+Accuracy on attribute Length is 0.49743589743589745
+(195, 10)
+Accuracy on attribute Width is 0.4358974358974359
+(195, 8)
+Accuracy on attribute Height is 0.7230769230769231
+(195, 5)
+Accuracy on attribute Functionality is 0.9230769230769231
+(195, 2)
+Accuracy on attribute Button is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Lip is 0.6153846153846154
+(195, 2)
+Accuracy on attribute Fillability is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Washability is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Dismountability is 0.841025641025641
+(195, 4)
+Accuracy on attribute Shape is 0.8666666666666667
+(195, 2)
+Accuracy on attribute Handle is 0.8256410256410256
+Overall evaluation accuracy is: 0.7336752136752139
+Current epoch: 101/200 Train loss: 15.8988, Train accuracy: 0.9013
+Current epoch: 102/200 Train loss: 15.9481, Train accuracy: 0.8922
+Current epoch: 103/200 Train loss: 15.9204, Train accuracy: 0.8913
+Current epoch: 104/200 Train loss: 15.8973, Train accuracy: 0.8943
+Current epoch: 105/200 Train loss: 15.8632, Train accuracy: 0.8905
+(195, 8)
+Accuracy on attribute Material is 0.7230769230769231
+(195, 18)
+Accuracy on attribute Colour is 0.5794871794871795
+(195, 15)
+Accuracy on attribute Weight is 0.5948717948717949
+(195, 15)
+Accuracy on attribute Volume is 0.558974358974359
+(195, 10)
+Accuracy on attribute Length is 0.49743589743589745
+(195, 10)
+Accuracy on attribute Width is 0.4307692307692308
+(195, 8)
+Accuracy on attribute Height is 0.7333333333333333
+(195, 5)
+Accuracy on attribute Functionality is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Button is 0.9179487179487179
+(195, 2)
+Accuracy on attribute Lip is 0.882051282051282
+(195, 2)
+Accuracy on attribute Fillability is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Washability is 0.8923076923076924
+(195, 2)
+Accuracy on attribute Dismountability is 0.7435897435897436
+(195, 4)
+Accuracy on attribute Shape is 0.8666666666666667
+(195, 2)
+Accuracy on attribute Handle is 0.8358974358974359
+Overall evaluation accuracy is: 0.7425641025641028
+Current epoch: 106/200 Train loss: 15.9023, Train accuracy: 0.8932
+Current epoch: 107/200 Train loss: 15.8627, Train accuracy: 0.8898
+Current epoch: 108/200 Train loss: 15.8455, Train accuracy: 0.8881
+Current epoch: 109/200 Train loss: 15.8512, Train accuracy: 0.8941
+Current epoch: 110/200 Train loss: 15.8438, Train accuracy: 0.8804
+(195, 8)
+Accuracy on attribute Material is 0.7487179487179487
+(195, 18)
+Accuracy on attribute Colour is 0.5487179487179488
+(195, 15)
+Accuracy on attribute Weight is 0.5897435897435898
+(195, 15)
+Accuracy on attribute Volume is 0.5897435897435898
+(195, 10)
+Accuracy on attribute Length is 0.46153846153846156
+(195, 10)
+Accuracy on attribute Width is 0.38974358974358975
+(195, 8)
+Accuracy on attribute Height is 0.7230769230769231
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Lip is 0.8358974358974359
+(195, 2)
+Accuracy on attribute Fillability is 0.7282051282051282
+(195, 2)
+Accuracy on attribute Washability is 0.9794871794871794
+(195, 2)
+Accuracy on attribute Dismountability is 0.8717948717948718
+(195, 4)
+Accuracy on attribute Shape is 0.8615384615384616
+(195, 2)
+Accuracy on attribute Handle is 0.6564102564102564
+Overall evaluation accuracy is: 0.7254700854700855
+Current epoch: 111/200 Train loss: 15.8383, Train accuracy: 0.8793
+Current epoch: 112/200 Train loss: 15.8372, Train accuracy: 0.8866
+Current epoch: 113/200 Train loss: 15.8107, Train accuracy: 0.8927
+Current epoch: 114/200 Train loss: 15.8011, Train accuracy: 0.8781
+Current epoch: 115/200 Train loss: 15.7972, Train accuracy: 0.8930
+(195, 8)
+Accuracy on attribute Material is 0.7487179487179487
+(195, 18)
+Accuracy on attribute Colour is 0.5538461538461539
+(195, 15)
+Accuracy on attribute Weight is 0.6205128205128205
+(195, 15)
+Accuracy on attribute Volume is 0.6102564102564103
+(195, 10)
+Accuracy on attribute Length is 0.47692307692307695
+(195, 10)
+Accuracy on attribute Width is 0.35384615384615387
+(195, 8)
+Accuracy on attribute Height is 0.7230769230769231
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.958974358974359
+(195, 2)
+Accuracy on attribute Lip is 0.8512820512820513
+(195, 2)
+Accuracy on attribute Fillability is 0.9333333333333333
+(195, 2)
+Accuracy on attribute Washability is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Dismountability is 0.8923076923076924
+(195, 4)
+Accuracy on attribute Shape is 0.8615384615384616
+(195, 2)
+Accuracy on attribute Handle is 0.7487179487179487
+Overall evaluation accuracy is: 0.7494017094017094
+Current epoch: 116/200 Train loss: 15.7934, Train accuracy: 0.9003
+Current epoch: 117/200 Train loss: 15.7937, Train accuracy: 0.9042
+Current epoch: 118/200 Train loss: 15.7587, Train accuracy: 0.9102
+Current epoch: 119/200 Train loss: 15.7626, Train accuracy: 0.9134
+Current epoch: 120/200 Train loss: 15.7455, Train accuracy: 0.9183
+(195, 8)
+Accuracy on attribute Material is 0.7487179487179487
+(195, 18)
+Accuracy on attribute Colour is 0.558974358974359
+(195, 15)
+Accuracy on attribute Weight is 0.6307692307692307
+(195, 15)
+Accuracy on attribute Volume is 0.5794871794871795
+(195, 10)
+Accuracy on attribute Length is 0.46153846153846156
+(195, 10)
+Accuracy on attribute Width is 0.3384615384615385
+(195, 8)
+Accuracy on attribute Height is 0.7282051282051282
+(195, 5)
+Accuracy on attribute Functionality is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Button is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Lip is 0.8717948717948718
+(195, 2)
+Accuracy on attribute Fillability is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Washability is 0.9128205128205128
+(195, 2)
+Accuracy on attribute Dismountability is 0.8974358974358975
+(195, 4)
+Accuracy on attribute Shape is 0.8666666666666667
+(195, 2)
+Accuracy on attribute Handle is 0.9076923076923077
+Overall evaluation accuracy is: 0.7579487179487181
+Current epoch: 121/200 Train loss: 15.7301, Train accuracy: 0.9210
+Current epoch: 122/200 Train loss: 15.7098, Train accuracy: 0.9236
+Current epoch: 123/200 Train loss: 15.6962, Train accuracy: 0.9248
+Current epoch: 124/200 Train loss: 15.6861, Train accuracy: 0.9255
+Current epoch: 125/200 Train loss: 15.6830, Train accuracy: 0.9143
+(195, 8)
+Accuracy on attribute Material is 0.7538461538461538
+(195, 18)
+Accuracy on attribute Colour is 0.558974358974359
+(195, 15)
+Accuracy on attribute Weight is 0.6205128205128205
+(195, 15)
+Accuracy on attribute Volume is 0.6205128205128205
+(195, 10)
+Accuracy on attribute Length is 0.4358974358974359
+(195, 10)
+Accuracy on attribute Width is 0.3384615384615385
+(195, 8)
+Accuracy on attribute Height is 0.7282051282051282
+(195, 5)
+Accuracy on attribute Functionality is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Button is 0.9025641025641026
+(195, 2)
+Accuracy on attribute Lip is 0.8871794871794871
+(195, 2)
+Accuracy on attribute Fillability is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Washability is 0.9794871794871794
+(195, 2)
+Accuracy on attribute Dismountability is 0.8974358974358975
+(195, 4)
+Accuracy on attribute Shape is 0.8615384615384616
+(195, 2)
+Accuracy on attribute Handle is 0.9230769230769231
+Overall evaluation accuracy is: 0.7617094017094018
+Current epoch: 126/200 Train loss: 15.6760, Train accuracy: 0.9165
+Current epoch: 127/200 Train loss: 15.6531, Train accuracy: 0.9189
+Current epoch: 128/200 Train loss: 15.6587, Train accuracy: 0.9211
+Current epoch: 129/200 Train loss: 15.6394, Train accuracy: 0.9235
+Current epoch: 130/200 Train loss: 15.6398, Train accuracy: 0.9261
+(195, 8)
+Accuracy on attribute Material is 0.7538461538461538
+(195, 18)
+Accuracy on attribute Colour is 0.5641025641025641
+(195, 15)
+Accuracy on attribute Weight is 0.5692307692307692
+(195, 15)
+Accuracy on attribute Volume is 0.6205128205128205
+(195, 10)
+Accuracy on attribute Length is 0.4717948717948718
+(195, 10)
+Accuracy on attribute Width is 0.3128205128205128
+(195, 8)
+Accuracy on attribute Height is 0.7384615384615385
+(195, 5)
+Accuracy on attribute Functionality is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Button is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Lip is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Fillability is 0.958974358974359
+(195, 2)
+Accuracy on attribute Washability is 0.9794871794871794
+(195, 2)
+Accuracy on attribute Dismountability is 0.9282051282051282
+(195, 4)
+Accuracy on attribute Shape is 0.8512820512820513
+(195, 2)
+Accuracy on attribute Handle is 0.7948717948717948
+Overall evaluation accuracy is: 0.7538461538461539
+Current epoch: 131/200 Train loss: 15.6348, Train accuracy: 0.9272
+Current epoch: 132/200 Train loss: 15.6338, Train accuracy: 0.9252
+Current epoch: 133/200 Train loss: 15.6131, Train accuracy: 0.9167
+Current epoch: 134/200 Train loss: 15.6226, Train accuracy: 0.9163
+Current epoch: 135/200 Train loss: 15.6332, Train accuracy: 0.9221
+(195, 8)
+Accuracy on attribute Material is 0.7538461538461538
+(195, 18)
+Accuracy on attribute Colour is 0.5538461538461539
+(195, 15)
+Accuracy on attribute Weight is 0.5435897435897435
+(195, 15)
+Accuracy on attribute Volume is 0.6256410256410256
+(195, 10)
+Accuracy on attribute Length is 0.48717948717948717
+(195, 10)
+Accuracy on attribute Width is 0.3282051282051282
+(195, 8)
+Accuracy on attribute Height is 0.7333333333333333
+(195, 5)
+Accuracy on attribute Functionality is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Button is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Lip is 0.9230769230769231
+(195, 2)
+Accuracy on attribute Fillability is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Washability is 0.9794871794871794
+(195, 2)
+Accuracy on attribute Dismountability is 0.7794871794871795
+(195, 4)
+Accuracy on attribute Shape is 0.8512820512820513
+(195, 2)
+Accuracy on attribute Handle is 0.8358974358974359
+Overall evaluation accuracy is: 0.7500854700854702
+Current epoch: 136/200 Train loss: 15.6031, Train accuracy: 0.9235
+Current epoch: 137/200 Train loss: 15.5903, Train accuracy: 0.9206
+Current epoch: 138/200 Train loss: 15.6022, Train accuracy: 0.9263
+Current epoch: 139/200 Train loss: 15.5997, Train accuracy: 0.9288
+Current epoch: 140/200 Train loss: 15.5637, Train accuracy: 0.9302
+(195, 8)
+Accuracy on attribute Material is 0.7538461538461538
+(195, 18)
+Accuracy on attribute Colour is 0.558974358974359
+(195, 15)
+Accuracy on attribute Weight is 0.5743589743589743
+(195, 15)
+Accuracy on attribute Volume is 0.6358974358974359
+(195, 10)
+Accuracy on attribute Length is 0.4666666666666667
+(195, 10)
+Accuracy on attribute Width is 0.31794871794871793
+(195, 8)
+Accuracy on attribute Height is 0.7384615384615385
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Lip is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Fillability is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Washability is 0.9794871794871794
+(195, 2)
+Accuracy on attribute Dismountability is 0.8923076923076924
+(195, 4)
+Accuracy on attribute Shape is 0.841025641025641
+(195, 2)
+Accuracy on attribute Handle is 0.8717948717948718
+Overall evaluation accuracy is: 0.7569230769230769
+Current epoch: 141/200 Train loss: 15.5536, Train accuracy: 0.9323
+Current epoch: 142/200 Train loss: 15.5437, Train accuracy: 0.9331
+Current epoch: 143/200 Train loss: 15.5397, Train accuracy: 0.9348
+Current epoch: 144/200 Train loss: 15.5346, Train accuracy: 0.9256
+Current epoch: 145/200 Train loss: 15.5266, Train accuracy: 0.9275
+(195, 8)
+Accuracy on attribute Material is 0.7538461538461538
+(195, 18)
+Accuracy on attribute Colour is 0.5487179487179488
+(195, 15)
+Accuracy on attribute Weight is 0.5948717948717949
+(195, 15)
+Accuracy on attribute Volume is 0.6410256410256411
+(195, 10)
+Accuracy on attribute Length is 0.4717948717948718
+(195, 10)
+Accuracy on attribute Width is 0.3230769230769231
+(195, 8)
+Accuracy on attribute Height is 0.7128205128205128
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Lip is 0.8
+(195, 2)
+Accuracy on attribute Fillability is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Washability is 0.8717948717948718
+(195, 2)
+Accuracy on attribute Dismountability is 0.9025641025641026
+(195, 4)
+Accuracy on attribute Shape is 0.8615384615384616
+(195, 2)
+Accuracy on attribute Handle is 0.882051282051282
+Overall evaluation accuracy is: 0.7500854700854701
+Current epoch: 146/200 Train loss: 15.5203, Train accuracy: 0.9310
+Current epoch: 147/200 Train loss: 15.5181, Train accuracy: 0.9326
+Current epoch: 148/200 Train loss: 15.5387, Train accuracy: 0.9317
+Current epoch: 149/200 Train loss: 15.5130, Train accuracy: 0.9294
+Current epoch: 150/200 Train loss: 15.5056, Train accuracy: 0.9288
+(195, 8)
+Accuracy on attribute Material is 0.7487179487179487
+(195, 18)
+Accuracy on attribute Colour is 0.5692307692307692
+(195, 15)
+Accuracy on attribute Weight is 0.5692307692307692
+(195, 15)
+Accuracy on attribute Volume is 0.6410256410256411
+(195, 10)
+Accuracy on attribute Length is 0.4717948717948718
+(195, 10)
+Accuracy on attribute Width is 0.3435897435897436
+(195, 8)
+Accuracy on attribute Height is 0.6871794871794872
+(195, 5)
+Accuracy on attribute Functionality is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Button is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Lip is 0.7846153846153846
+(195, 2)
+Accuracy on attribute Fillability is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Washability is 0.8666666666666667
+(195, 2)
+Accuracy on attribute Dismountability is 0.8769230769230769
+(195, 4)
+Accuracy on attribute Shape is 0.8512820512820513
+(195, 2)
+Accuracy on attribute Handle is 0.8769230769230769
+Overall evaluation accuracy is: 0.7435897435897437
+Current epoch: 151/200 Train loss: 15.4956, Train accuracy: 0.9283
+Current epoch: 152/200 Train loss: 15.5032, Train accuracy: 0.9061
+Current epoch: 153/200 Train loss: 15.5287, Train accuracy: 0.9037
+Current epoch: 154/200 Train loss: 15.5246, Train accuracy: 0.9113
+Current epoch: 155/200 Train loss: 15.5089, Train accuracy: 0.9206
+(195, 8)
+Accuracy on attribute Material is 0.7538461538461538
+(195, 18)
+Accuracy on attribute Colour is 0.5641025641025641
+(195, 15)
+Accuracy on attribute Weight is 0.558974358974359
+(195, 15)
+Accuracy on attribute Volume is 0.6051282051282051
+(195, 10)
+Accuracy on attribute Length is 0.4564102564102564
+(195, 10)
+Accuracy on attribute Width is 0.3487179487179487
+(195, 8)
+Accuracy on attribute Height is 0.6974358974358974
+(195, 5)
+Accuracy on attribute Functionality is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Button is 0.9025641025641026
+(195, 2)
+Accuracy on attribute Lip is 0.8102564102564103
+(195, 2)
+Accuracy on attribute Fillability is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Washability is 0.9692307692307692
+(195, 2)
+Accuracy on attribute Dismountability is 0.8871794871794871
+(195, 4)
+Accuracy on attribute Shape is 0.8564102564102564
+(195, 2)
+Accuracy on attribute Handle is 0.7076923076923077
+Overall evaluation accuracy is: 0.7357264957264957
+Current epoch: 156/200 Train loss: 15.5133, Train accuracy: 0.9249
+Current epoch: 157/200 Train loss: 15.4999, Train accuracy: 0.9268
+Current epoch: 158/200 Train loss: 15.5210, Train accuracy: 0.9224
+Current epoch: 159/200 Train loss: 15.4884, Train accuracy: 0.9231
+Current epoch: 160/200 Train loss: 15.4841, Train accuracy: 0.9282
+(195, 8)
+Accuracy on attribute Material is 0.7435897435897436
+(195, 18)
+Accuracy on attribute Colour is 0.558974358974359
+(195, 15)
+Accuracy on attribute Weight is 0.5641025641025641
+(195, 15)
+Accuracy on attribute Volume is 0.6051282051282051
+(195, 10)
+Accuracy on attribute Length is 0.46153846153846156
+(195, 10)
+Accuracy on attribute Width is 0.3230769230769231
+(195, 8)
+Accuracy on attribute Height is 0.7025641025641025
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Lip is 0.9025641025641026
+(195, 2)
+Accuracy on attribute Fillability is 0.8871794871794871
+(195, 2)
+Accuracy on attribute Washability is 0.9128205128205128
+(195, 2)
+Accuracy on attribute Dismountability is 0.6512820512820513
+(195, 4)
+Accuracy on attribute Shape is 0.8564102564102564
+(195, 2)
+Accuracy on attribute Handle is 0.841025641025641
+Overall evaluation accuracy is: 0.726837606837607
+Current epoch: 161/200 Train loss: 15.4719, Train accuracy: 0.9243
+Current epoch: 162/200 Train loss: 15.4783, Train accuracy: 0.9246
+Current epoch: 163/200 Train loss: 15.4625, Train accuracy: 0.9279
+Current epoch: 164/200 Train loss: 15.4667, Train accuracy: 0.9307
+Current epoch: 165/200 Train loss: 15.4605, Train accuracy: 0.9245
+(195, 8)
+Accuracy on attribute Material is 0.7282051282051282
+(195, 18)
+Accuracy on attribute Colour is 0.5538461538461539
+(195, 15)
+Accuracy on attribute Weight is 0.5487179487179488
+(195, 15)
+Accuracy on attribute Volume is 0.6153846153846154
+(195, 10)
+Accuracy on attribute Length is 0.46153846153846156
+(195, 10)
+Accuracy on attribute Width is 0.3282051282051282
+(195, 8)
+Accuracy on attribute Height is 0.7076923076923077
+(195, 5)
+Accuracy on attribute Functionality is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Button is 0.8871794871794871
+(195, 2)
+Accuracy on attribute Lip is 0.9230769230769231
+(195, 2)
+Accuracy on attribute Fillability is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Washability is 0.8205128205128205
+(195, 2)
+Accuracy on attribute Dismountability is 0.8923076923076924
+(195, 4)
+Accuracy on attribute Shape is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Handle is 0.8512820512820513
+Overall evaluation accuracy is: 0.7391452991452994
+Current epoch: 166/200 Train loss: 15.4679, Train accuracy: 0.9207
+Current epoch: 167/200 Train loss: 15.4504, Train accuracy: 0.9277
+Current epoch: 168/200 Train loss: 15.4464, Train accuracy: 0.9332
+Current epoch: 169/200 Train loss: 15.5134, Train accuracy: 0.9264
+Current epoch: 170/200 Train loss: 15.4631, Train accuracy: 0.9237
+(195, 8)
+Accuracy on attribute Material is 0.7333333333333333
+(195, 18)
+Accuracy on attribute Colour is 0.5538461538461539
+(195, 15)
+Accuracy on attribute Weight is 0.5076923076923077
+(195, 15)
+Accuracy on attribute Volume is 0.6307692307692307
+(195, 10)
+Accuracy on attribute Length is 0.4564102564102564
+(195, 10)
+Accuracy on attribute Width is 0.3435897435897436
+(195, 8)
+Accuracy on attribute Height is 0.7128205128205128
+(195, 5)
+Accuracy on attribute Functionality is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Button is 0.6666666666666666
+(195, 2)
+Accuracy on attribute Lip is 0.9230769230769231
+(195, 2)
+Accuracy on attribute Fillability is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Washability is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Dismountability is 0.9076923076923077
+(195, 4)
+Accuracy on attribute Shape is 0.841025641025641
+(195, 2)
+Accuracy on attribute Handle is 0.8871794871794871
+Overall evaluation accuracy is: 0.7333333333333335
+Current epoch: 171/200 Train loss: 15.4606, Train accuracy: 0.9218
+Current epoch: 172/200 Train loss: 15.4534, Train accuracy: 0.9205
+Current epoch: 173/200 Train loss: 15.4497, Train accuracy: 0.9126
+Current epoch: 174/200 Train loss: 15.4513, Train accuracy: 0.9020
+Current epoch: 175/200 Train loss: 15.5100, Train accuracy: 0.9013
+(195, 8)
+Accuracy on attribute Material is 0.7282051282051282
+(195, 18)
+Accuracy on attribute Colour is 0.5435897435897435
+(195, 15)
+Accuracy on attribute Weight is 0.5025641025641026
+(195, 15)
+Accuracy on attribute Volume is 0.6
+(195, 10)
+Accuracy on attribute Length is 0.4461538461538462
+(195, 10)
+Accuracy on attribute Width is 0.3333333333333333
+(195, 8)
+Accuracy on attribute Height is 0.717948717948718
+(195, 5)
+Accuracy on attribute Functionality is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Button is 0.8358974358974359
+(195, 2)
+Accuracy on attribute Lip is 0.8769230769230769
+(195, 2)
+Accuracy on attribute Fillability is 0.6820512820512821
+(195, 2)
+Accuracy on attribute Washability is 0.8307692307692308
+(195, 2)
+Accuracy on attribute Dismountability is 0.841025641025641
+(195, 4)
+Accuracy on attribute Shape is 0.8461538461538461
+(195, 2)
+Accuracy on attribute Handle is 0.8307692307692308
+Overall evaluation accuracy is: 0.7042735042735043
+Current epoch: 176/200 Train loss: 15.4663, Train accuracy: 0.9082
+Current epoch: 177/200 Train loss: 15.4509, Train accuracy: 0.9194
+Current epoch: 178/200 Train loss: 15.4422, Train accuracy: 0.9296
+Current epoch: 179/200 Train loss: 15.4456, Train accuracy: 0.9359
+Current epoch: 180/200 Train loss: 15.4373, Train accuracy: 0.9357
+(195, 8)
+Accuracy on attribute Material is 0.7333333333333333
+(195, 18)
+Accuracy on attribute Colour is 0.5641025641025641
+(195, 15)
+Accuracy on attribute Weight is 0.5025641025641026
+(195, 15)
+Accuracy on attribute Volume is 0.5794871794871795
+(195, 10)
+Accuracy on attribute Length is 0.4564102564102564
+(195, 10)
+Accuracy on attribute Width is 0.31794871794871793
+(195, 8)
+Accuracy on attribute Height is 0.7230769230769231
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.8358974358974359
+(195, 2)
+Accuracy on attribute Lip is 0.9025641025641026
+(195, 2)
+Accuracy on attribute Fillability is 0.9282051282051282
+(195, 2)
+Accuracy on attribute Washability is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Dismountability is 0.8923076923076924
+(195, 4)
+Accuracy on attribute Shape is 0.8512820512820513
+(195, 2)
+Accuracy on attribute Handle is 0.8871794871794871
+Overall evaluation accuracy is: 0.7370940170940172
+Current epoch: 181/200 Train loss: 15.4370, Train accuracy: 0.9352
+Current epoch: 182/200 Train loss: 15.4390, Train accuracy: 0.9223
+Current epoch: 183/200 Train loss: 15.4311, Train accuracy: 0.9258
+Current epoch: 184/200 Train loss: 15.4345, Train accuracy: 0.9315
+Current epoch: 185/200 Train loss: 15.4221, Train accuracy: 0.9339
+(195, 8)
+Accuracy on attribute Material is 0.7333333333333333
+(195, 18)
+Accuracy on attribute Colour is 0.5538461538461539
+(195, 15)
+Accuracy on attribute Weight is 0.5076923076923077
+(195, 15)
+Accuracy on attribute Volume is 0.558974358974359
+(195, 10)
+Accuracy on attribute Length is 0.4564102564102564
+(195, 10)
+Accuracy on attribute Width is 0.3076923076923077
+(195, 8)
+Accuracy on attribute Height is 0.7230769230769231
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.7589743589743589
+(195, 2)
+Accuracy on attribute Lip is 0.8102564102564103
+(195, 2)
+Accuracy on attribute Fillability is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Washability is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Dismountability is 0.9128205128205128
+(195, 4)
+Accuracy on attribute Shape is 0.8615384615384616
+(195, 2)
+Accuracy on attribute Handle is 0.9230769230769231
+Overall evaluation accuracy is: 0.7326495726495726
+Current epoch: 186/200 Train loss: 15.4180, Train accuracy: 0.9361
+Current epoch: 187/200 Train loss: 15.4268, Train accuracy: 0.9279
+Current epoch: 188/200 Train loss: 15.4032, Train accuracy: 0.9370
+Current epoch: 189/200 Train loss: 15.3975, Train accuracy: 0.9413
+Current epoch: 190/200 Train loss: 15.3929, Train accuracy: 0.9435
+(195, 8)
+Accuracy on attribute Material is 0.7435897435897436
+(195, 18)
+Accuracy on attribute Colour is 0.558974358974359
+(195, 15)
+Accuracy on attribute Weight is 0.517948717948718
+(195, 15)
+Accuracy on attribute Volume is 0.5948717948717949
+(195, 10)
+Accuracy on attribute Length is 0.46153846153846156
+(195, 10)
+Accuracy on attribute Width is 0.29743589743589743
+(195, 8)
+Accuracy on attribute Height is 0.7230769230769231
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.8512820512820513
+(195, 2)
+Accuracy on attribute Lip is 0.9076923076923077
+(195, 2)
+Accuracy on attribute Fillability is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Washability is 0.9794871794871794
+(195, 2)
+Accuracy on attribute Dismountability is 0.9230769230769231
+(195, 4)
+Accuracy on attribute Shape is 0.8512820512820513
+(195, 2)
+Accuracy on attribute Handle is 0.9230769230769231
+Overall evaluation accuracy is: 0.7487179487179488
+Current epoch: 191/200 Train loss: 15.3874, Train accuracy: 0.9338
+Current epoch: 192/200 Train loss: 15.3864, Train accuracy: 0.9343
+Current epoch: 193/200 Train loss: 15.4021, Train accuracy: 0.9246
+Current epoch: 194/200 Train loss: 15.3840, Train accuracy: 0.9338
+Current epoch: 195/200 Train loss: 15.3764, Train accuracy: 0.9397
+(195, 8)
+Accuracy on attribute Material is 0.7538461538461538
+(195, 18)
+Accuracy on attribute Colour is 0.5333333333333333
+(195, 15)
+Accuracy on attribute Weight is 0.5076923076923077
+(195, 15)
+Accuracy on attribute Volume is 0.6
+(195, 10)
+Accuracy on attribute Length is 0.4564102564102564
+(195, 10)
+Accuracy on attribute Width is 0.29743589743589743
+(195, 8)
+Accuracy on attribute Height is 0.7128205128205128
+(195, 5)
+Accuracy on attribute Functionality is 0.9384615384615385
+(195, 2)
+Accuracy on attribute Button is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Lip is 0.8974358974358975
+(195, 2)
+Accuracy on attribute Fillability is 0.9641025641025641
+(195, 2)
+Accuracy on attribute Washability is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Dismountability is 0.7538461538461538
+(195, 4)
+Accuracy on attribute Shape is 0.8666666666666667
+(195, 2)
+Accuracy on attribute Handle is 0.882051282051282
+Overall evaluation accuracy is: 0.7388034188034188
+Current epoch: 196/200 Train loss: 15.3809, Train accuracy: 0.9253
+Current epoch: 197/200 Train loss: 15.3770, Train accuracy: 0.9321
+Current epoch: 198/200 Train loss: 15.3777, Train accuracy: 0.9363
+Current epoch: 199/200 Train loss: 15.3700, Train accuracy: 0.9185
+Current epoch: 200/200 Train loss: 15.3663, Train accuracy: 0.9297
+(195, 8)
+Accuracy on attribute Material is 0.7487179487179487
+(195, 18)
+Accuracy on attribute Colour is 0.5384615384615384
+(195, 15)
+Accuracy on attribute Weight is 0.5025641025641026
+(195, 15)
+Accuracy on attribute Volume is 0.6
+(195, 10)
+Accuracy on attribute Length is 0.48205128205128206
+(195, 10)
+Accuracy on attribute Width is 0.29743589743589743
+(195, 8)
+Accuracy on attribute Height is 0.717948717948718
+(195, 5)
+Accuracy on attribute Functionality is 0.9435897435897436
+(195, 2)
+Accuracy on attribute Button is 0.9487179487179487
+(195, 2)
+Accuracy on attribute Lip is 0.9128205128205128
+(195, 2)
+Accuracy on attribute Fillability is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Washability is 0.9794871794871794
+(195, 2)
+Accuracy on attribute Dismountability is 0.5948717948717949
+(195, 4)
+Accuracy on attribute Shape is 0.8717948717948718
+(195, 2)
+Accuracy on attribute Handle is 0.8358974358974359
+Overall evaluation accuracy is: 0.7299145299145299

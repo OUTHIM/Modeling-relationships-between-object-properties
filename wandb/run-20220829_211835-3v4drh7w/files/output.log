@@ -1,0 +1,233 @@
+Quantization finished!
+Training with softmax model...
+Current epoch: 01/200 Train loss: 106.9702, Train accuracy: 0.3956
+Current epoch: 02/200 Train loss: 64.3833, Train accuracy: 0.4835
+Current epoch: 03/200 Train loss: 44.7120, Train accuracy: 0.5411
+Current epoch: 04/200 Train loss: 29.9139, Train accuracy: 0.5673
+Current epoch: 05/200 Train loss: 21.9635, Train accuracy: 0.5818
+Current epoch: 06/200 Train loss: 18.9089, Train accuracy: 0.5933
+Current epoch: 07/200 Train loss: 16.5211, Train accuracy: 0.5960
+Current epoch: 08/200 Train loss: 14.7131, Train accuracy: 0.5916
+Current epoch: 09/200 Train loss: 13.9985, Train accuracy: 0.6065
+Current epoch: 10/200 Train loss: 15.7274, Train accuracy: 0.6316
+Current epoch: 11/200 Train loss: 14.7711, Train accuracy: 0.6313
+Current epoch: 12/200 Train loss: 17.8695, Train accuracy: 0.6425
+Current epoch: 13/200 Train loss: 14.5573, Train accuracy: 0.6316
+Current epoch: 14/200 Train loss: 14.1719, Train accuracy: 0.6316
+Current epoch: 15/200 Train loss: 13.5084, Train accuracy: 0.6484
+Current epoch: 16/200 Train loss: 14.0094, Train accuracy: 0.6526
+Current epoch: 17/200 Train loss: 12.1704, Train accuracy: 0.6643
+Current epoch: 18/200 Train loss: 12.4468, Train accuracy: 0.6769
+Current epoch: 19/200 Train loss: 11.2896, Train accuracy: 0.6704
+Current epoch: 20/200 Train loss: 11.0580, Train accuracy: 0.6802
+Current epoch: 21/200 Train loss: 11.7807, Train accuracy: 0.6791
+Current epoch: 22/200 Train loss: 11.4538, Train accuracy: 0.6836
+Current epoch: 23/200 Train loss: 11.1481, Train accuracy: 0.6827
+Current epoch: 24/200 Train loss: 11.0936, Train accuracy: 0.6891
+Current epoch: 25/200 Train loss: 10.8475, Train accuracy: 0.6897
+Current epoch: 26/200 Train loss: 10.4518, Train accuracy: 0.6852
+Current epoch: 27/200 Train loss: 10.3034, Train accuracy: 0.6849
+Current epoch: 28/200 Train loss: 9.9822, Train accuracy: 0.6821
+Current epoch: 29/200 Train loss: 9.9961, Train accuracy: 0.6768
+Current epoch: 30/200 Train loss: 10.4855, Train accuracy: 0.6741
+Current epoch: 31/200 Train loss: 10.8410, Train accuracy: 0.6642
+Current epoch: 32/200 Train loss: 11.0033, Train accuracy: 0.6755
+Current epoch: 33/200 Train loss: 10.3298, Train accuracy: 0.6916
+Current epoch: 34/200 Train loss: 10.4105, Train accuracy: 0.6914
+Current epoch: 35/200 Train loss: 10.0675, Train accuracy: 0.6919
+Current epoch: 36/200 Train loss: 9.6768, Train accuracy: 0.6896
+Current epoch: 37/200 Train loss: 9.9103, Train accuracy: 0.6879
+Current epoch: 38/200 Train loss: 9.5076, Train accuracy: 0.6910
+Current epoch: 39/200 Train loss: 9.7043, Train accuracy: 0.6921
+Current epoch: 40/200 Train loss: 9.1776, Train accuracy: 0.6956
+Current epoch: 41/200 Train loss: 10.0836, Train accuracy: 0.6894
+Current epoch: 42/200 Train loss: 9.9790, Train accuracy: 0.6874
+Current epoch: 43/200 Train loss: 9.7895, Train accuracy: 0.6869
+Current epoch: 44/200 Train loss: 9.5846, Train accuracy: 0.6886
+Current epoch: 45/200 Train loss: 9.5164, Train accuracy: 0.6857
+Current epoch: 46/200 Train loss: 9.6080, Train accuracy: 0.6819
+Current epoch: 47/200 Train loss: 9.4733, Train accuracy: 0.6776
+Current epoch: 48/200 Train loss: 9.4419, Train accuracy: 0.6741
+Current epoch: 49/200 Train loss: 9.3083, Train accuracy: 0.6727
+Current epoch: 50/200 Train loss: 9.0770, Train accuracy: 0.6815
+Current epoch: 51/200 Train loss: 9.8645, Train accuracy: 0.6889
+Current epoch: 52/200 Train loss: 9.4068, Train accuracy: 0.6729
+Current epoch: 53/200 Train loss: 9.3530, Train accuracy: 0.6445
+Current epoch: 54/200 Train loss: 9.0539, Train accuracy: 0.6391
+Current epoch: 55/200 Train loss: 8.9487, Train accuracy: 0.6548
+Current epoch: 56/200 Train loss: 9.8033, Train accuracy: 0.6646
+Current epoch: 57/200 Train loss: 9.1523, Train accuracy: 0.6615
+Current epoch: 58/200 Train loss: 8.8839, Train accuracy: 0.6824
+Current epoch: 59/200 Train loss: 8.8259, Train accuracy: 0.7050
+Current epoch: 60/200 Train loss: 8.7306, Train accuracy: 0.7056
+Current epoch: 61/200 Train loss: 9.8513, Train accuracy: 0.6963
+Current epoch: 62/200 Train loss: 9.2799, Train accuracy: 0.7048
+Current epoch: 63/200 Train loss: 9.1121, Train accuracy: 0.7097
+Current epoch: 64/200 Train loss: 9.0715, Train accuracy: 0.6992
+Current epoch: 65/200 Train loss: 8.8233, Train accuracy: 0.6956
+Current epoch: 66/200 Train loss: 8.7088, Train accuracy: 0.6956
+Current epoch: 67/200 Train loss: 9.1455, Train accuracy: 0.7026
+Current epoch: 68/200 Train loss: 8.6003, Train accuracy: 0.6980
+Current epoch: 69/200 Train loss: 8.4890, Train accuracy: 0.6963
+Current epoch: 70/200 Train loss: 8.3409, Train accuracy: 0.6961
+Current epoch: 71/200 Train loss: 8.9737, Train accuracy: 0.6908
+Current epoch: 72/200 Train loss: 8.9373, Train accuracy: 0.6875
+Current epoch: 73/200 Train loss: 8.7859, Train accuracy: 0.6766
+Current epoch: 74/200 Train loss: 8.8969, Train accuracy: 0.6659
+Current epoch: 75/200 Train loss: 8.9321, Train accuracy: 0.6640
+Current epoch: 76/200 Train loss: 8.8297, Train accuracy: 0.6709
+Current epoch: 77/200 Train loss: 8.6583, Train accuracy: 0.6604
+Current epoch: 78/200 Train loss: 8.8028, Train accuracy: 0.6668
+Current epoch: 79/200 Train loss: 8.5301, Train accuracy: 0.6561
+Current epoch: 80/200 Train loss: 8.4288, Train accuracy: 0.6576
+Current epoch: 81/200 Train loss: 8.9591, Train accuracy: 0.6583
+Current epoch: 82/200 Train loss: 9.7833, Train accuracy: 0.6710
+Current epoch: 83/200 Train loss: 10.7894, Train accuracy: 0.6875
+Current epoch: 84/200 Train loss: 9.6382, Train accuracy: 0.6988
+Current epoch: 85/200 Train loss: 8.7308, Train accuracy: 0.7095
+Current epoch: 86/200 Train loss: 8.6411, Train accuracy: 0.7009
+Current epoch: 87/200 Train loss: 8.5375, Train accuracy: 0.7134
+Current epoch: 88/200 Train loss: 8.1739, Train accuracy: 0.7263
+Current epoch: 89/200 Train loss: 8.0989, Train accuracy: 0.7336
+Current epoch: 90/200 Train loss: 8.0163, Train accuracy: 0.7106
+Current epoch: 91/200 Train loss: 8.8995, Train accuracy: 0.6977
+Current epoch: 92/200 Train loss: 8.6868, Train accuracy: 0.6994
+Current epoch: 93/200 Train loss: 8.6047, Train accuracy: 0.7022
+Current epoch: 94/200 Train loss: 8.8029, Train accuracy: 0.6869
+Current epoch: 95/200 Train loss: 8.3534, Train accuracy: 0.6780
+Current epoch: 96/200 Train loss: 8.2507, Train accuracy: 0.6808
+Current epoch: 97/200 Train loss: 8.3125, Train accuracy: 0.7128
+Current epoch: 98/200 Train loss: 8.1768, Train accuracy: 0.7179
+Current epoch: 99/200 Train loss: 7.9997, Train accuracy: 0.7187
+Current epoch: 100/200 Train loss: 7.9540, Train accuracy: 0.7157
+Current epoch: 101/200 Train loss: 8.9169, Train accuracy: 0.7115
+Current epoch: 102/200 Train loss: 8.6547, Train accuracy: 0.6801
+Current epoch: 103/200 Train loss: 8.6526, Train accuracy: 0.6858
+Current epoch: 104/200 Train loss: 8.5694, Train accuracy: 0.6735
+Current epoch: 105/200 Train loss: 8.6256, Train accuracy: 0.6911
+Current epoch: 106/200 Train loss: 8.3468, Train accuracy: 0.7064
+Current epoch: 107/200 Train loss: 8.4471, Train accuracy: 0.7136
+Current epoch: 108/200 Train loss: 8.3108, Train accuracy: 0.7048
+Current epoch: 109/200 Train loss: 8.1972, Train accuracy: 0.7019
+Current epoch: 110/200 Train loss: 8.0420, Train accuracy: 0.7093
+Current epoch: 111/200 Train loss: 8.7377, Train accuracy: 0.6936
+Current epoch: 112/200 Train loss: 8.7896, Train accuracy: 0.6916
+Current epoch: 113/200 Train loss: 8.6701, Train accuracy: 0.6632
+Current epoch: 114/200 Train loss: 8.5135, Train accuracy: 0.6838
+Current epoch: 115/200 Train loss: 8.3909, Train accuracy: 0.6659
+Current epoch: 116/200 Train loss: 8.3293, Train accuracy: 0.6684
+Current epoch: 117/200 Train loss: 8.1803, Train accuracy: 0.6741
+Current epoch: 118/200 Train loss: 8.2909, Train accuracy: 0.6741
+Current epoch: 119/200 Train loss: 8.1934, Train accuracy: 0.6779
+Current epoch: 120/200 Train loss: 8.0328, Train accuracy: 0.6816
+Current epoch: 121/200 Train loss: 8.4505, Train accuracy: 0.6989
+Current epoch: 122/200 Train loss: 8.2957, Train accuracy: 0.7131
+Current epoch: 123/200 Train loss: 8.1471, Train accuracy: 0.7146
+Current epoch: 124/200 Train loss: 8.0654, Train accuracy: 0.7182
+Current epoch: 125/200 Train loss: 7.9946, Train accuracy: 0.7310
+Current epoch: 126/200 Train loss: 7.8646, Train accuracy: 0.7380
+Current epoch: 127/200 Train loss: 7.7470, Train accuracy: 0.7403
+Current epoch: 128/200 Train loss: 7.6614, Train accuracy: 0.7452
+Current epoch: 129/200 Train loss: 7.7430, Train accuracy: 0.7516
+Current epoch: 130/200 Train loss: 7.5157, Train accuracy: 0.7539
+Current epoch: 131/200 Train loss: 8.7987, Train accuracy: 0.7421
+Current epoch: 132/200 Train loss: 8.5876, Train accuracy: 0.7383
+Current epoch: 133/200 Train loss: 8.4253, Train accuracy: 0.7308
+Current epoch: 134/200 Train loss: 8.2973, Train accuracy: 0.7246
+Current epoch: 135/200 Train loss: 8.1935, Train accuracy: 0.7224
+Current epoch: 136/200 Train loss: 8.0914, Train accuracy: 0.7221
+Current epoch: 137/200 Train loss: 7.9754, Train accuracy: 0.7249
+Current epoch: 138/200 Train loss: 8.1951, Train accuracy: 0.7184
+Current epoch: 139/200 Train loss: 7.8098, Train accuracy: 0.7151
+Current epoch: 140/200 Train loss: 7.8994, Train accuracy: 0.7050
+Current epoch: 141/200 Train loss: 8.5720, Train accuracy: 0.6974
+Current epoch: 142/200 Train loss: 8.5357, Train accuracy: 0.7056
+Current epoch: 143/200 Train loss: 8.3609, Train accuracy: 0.7126
+Current epoch: 144/200 Train loss: 8.2682, Train accuracy: 0.7059
+Current epoch: 145/200 Train loss: 8.2621, Train accuracy: 0.6822
+Current epoch: 146/200 Train loss: 8.1166, Train accuracy: 0.6894
+Current epoch: 147/200 Train loss: 8.0423, Train accuracy: 0.6924
+Current epoch: 148/200 Train loss: 7.9260, Train accuracy: 0.6997
+Current epoch: 149/200 Train loss: 7.8128, Train accuracy: 0.7104
+Current epoch: 150/200 Train loss: 7.8699, Train accuracy: 0.7160
+Current epoch: 151/200 Train loss: 8.3409, Train accuracy: 0.7089
+Current epoch: 152/200 Train loss: 8.2754, Train accuracy: 0.7265
+Current epoch: 153/200 Train loss: 8.1876, Train accuracy: 0.7259
+Current epoch: 154/200 Train loss: 7.9755, Train accuracy: 0.7269
+Current epoch: 155/200 Train loss: 7.9322, Train accuracy: 0.7234
+Current epoch: 156/200 Train loss: 7.8271, Train accuracy: 0.7234
+Current epoch: 157/200 Train loss: 7.7291, Train accuracy: 0.7369
+Current epoch: 158/200 Train loss: 7.6350, Train accuracy: 0.7472
+Current epoch: 159/200 Train loss: 7.5489, Train accuracy: 0.7363
+Current epoch: 160/200 Train loss: 7.5941, Train accuracy: 0.7442
+Current epoch: 161/200 Train loss: 8.2494, Train accuracy: 0.7224
+Current epoch: 162/200 Train loss: 8.4792, Train accuracy: 0.7237
+Current epoch: 163/200 Train loss: 8.2302, Train accuracy: 0.7321
+Current epoch: 164/200 Train loss: 7.9802, Train accuracy: 0.7301
+Current epoch: 165/200 Train loss: 7.7980, Train accuracy: 0.7296
+Current epoch: 166/200 Train loss: 7.7529, Train accuracy: 0.7220
+Current epoch: 167/200 Train loss: 7.9219, Train accuracy: 0.7181
+Current epoch: 168/200 Train loss: 7.7937, Train accuracy: 0.7064
+Current epoch: 169/200 Train loss: 7.7499, Train accuracy: 0.7240
+Current epoch: 170/200 Train loss: 7.5191, Train accuracy: 0.7430
+Current epoch: 171/200 Train loss: 8.2863, Train accuracy: 0.7455
+Current epoch: 172/200 Train loss: 8.1187, Train accuracy: 0.7503
+Current epoch: 173/200 Train loss: 7.9382, Train accuracy: 0.7516
+Current epoch: 174/200 Train loss: 7.8402, Train accuracy: 0.7508
+Current epoch: 175/200 Train loss: 7.7081, Train accuracy: 0.7464
+Current epoch: 176/200 Train loss: 7.6252, Train accuracy: 0.7472
+Current epoch: 177/200 Train loss: 7.5417, Train accuracy: 0.7508
+Current epoch: 178/200 Train loss: 7.5039, Train accuracy: 0.7536
+Current epoch: 179/200 Train loss: 7.4164, Train accuracy: 0.7606
+Current epoch: 180/200 Train loss: 7.3656, Train accuracy: 0.7648
+Current epoch: 181/200 Train loss: 8.4028, Train accuracy: 0.7512
+Current epoch: 182/200 Train loss: 8.2619, Train accuracy: 0.7299
+Current epoch: 183/200 Train loss: 8.1632, Train accuracy: 0.7416
+Current epoch: 184/200 Train loss: 8.0409, Train accuracy: 0.7422
+Current epoch: 185/200 Train loss: 7.8616, Train accuracy: 0.7439
+Current epoch: 186/200 Train loss: 7.7254, Train accuracy: 0.7494
+Current epoch: 187/200 Train loss: 7.6341, Train accuracy: 0.7489
+Current epoch: 188/200 Train loss: 7.5195, Train accuracy: 0.7318
+Current epoch: 189/200 Train loss: 7.4255, Train accuracy: 0.7396
+Current epoch: 190/200 Train loss: 7.3528, Train accuracy: 0.7449
+Current epoch: 191/200 Train loss: 8.2547, Train accuracy: 0.7397
+Current epoch: 192/200 Train loss: 8.1136, Train accuracy: 0.7394
+Current epoch: 193/200 Train loss: 8.0818, Train accuracy: 0.7262
+Current epoch: 194/200 Train loss: 8.1551, Train accuracy: 0.7305
+Current epoch: 195/200 Train loss: 7.9609, Train accuracy: 0.7369
+Current epoch: 196/200 Train loss: 7.7454, Train accuracy: 0.7419
+Current epoch: 197/200 Train loss: 7.6078, Train accuracy: 0.7514
+Current epoch: 198/200 Train loss: 7.5287, Train accuracy: 0.7537
+Current epoch: 199/200 Train loss: 7.4714, Train accuracy: 0.7562
+Current epoch: 200/200 Train loss: 7.3903, Train accuracy: 0.7565
+(195, 8)
+Accuracy on attribute Material is 0.7230769230769231
+(195, 18)
+Accuracy on attribute Colour is 0.441025641025641
+(195, 10)
+Accuracy on attribute Weight is 0.6564102564102564
+(195, 10)
+Accuracy on attribute Volume is 0.6871794871794872
+(195, 10)
+Accuracy on attribute Length is 0.4512820512820513
+(195, 10)
+Accuracy on attribute Width is 0.24615384615384617
+(195, 10)
+Accuracy on attribute Height is 0.558974358974359
+(195, 5)
+Accuracy on attribute Functionality is 0.9538461538461539
+(195, 2)
+Accuracy on attribute Button is 0.9743589743589743
+(195, 2)
+Accuracy on attribute Lip is 0.9128205128205128
+(195, 2)
+Accuracy on attribute Fillability is 0.9282051282051282
+(195, 2)
+Accuracy on attribute Washability is 0.9794871794871794
+(195, 2)
+Accuracy on attribute Dismountability is 0.8512820512820513
+(195, 4)
+Accuracy on attribute Shape is 0.9025641025641026
+(195, 2)
+Accuracy on attribute Handle is 0.9282051282051282
+Overall evaluation accuracy is: 0.7463247863247864

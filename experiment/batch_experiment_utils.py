@@ -135,11 +135,11 @@ def test_samples(samples, folder_path, dataset_name = 'amazon', softmax_model=Fa
         # for Amazon, noted that the digitized value are float numbers
         # create edges
         for node_type in attribute_values:
-            if node_type != 'name':
-                G.add_edges_from([
-                    (node_idx, attr_to_node[node_type][str(attribute_values[node_type])],{'edge_type':'name-'+ node_type}),
-                    (attr_to_node[node_type][str(attribute_values[node_type])], node_idx, {'edge_type': node_type + '-name'})
-                    ])
+            # if node_type != 'name':
+            G.add_edges_from([
+                (node_idx, attr_to_node[node_type][str(attribute_values[node_type])],{'edge_type':'name-'+ node_type}),
+                (attr_to_node[node_type][str(attribute_values[node_type])], node_idx, {'edge_type': node_type + '-name'})
+                ])
     
     test_graph = HeteroGraph(G) # the heterogeneous graph with all test nodes inserted and linked
 

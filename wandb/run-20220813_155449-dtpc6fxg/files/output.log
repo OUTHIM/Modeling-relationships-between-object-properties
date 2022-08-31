@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 85, in <module>
+    quantize.quantization(df, num_levels, save_path = FATHER, save_file = True, strategy=strategy, figure_on = False)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\dataset\amazon\quantize.py", line 144, in quantization
+    df[head][i] = temp[value]
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 1075, in __setitem__
+    cacher_needs_updating = self._check_is_chained_assignment_possible()
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 1255, in _check_is_chained_assignment_possible
+    if ref is not None and ref._is_mixed_type:
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\generic.py", line 5680, in _is_mixed_type
+    return self.dtypes.nunique() > 1
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\base.py", line 1027, in nunique
+    uniqs = self.unique()
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\series.py", line 2088, in unique
+    return super().unique()
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\base.py", line 989, in unique
+    result = unique1d(values)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\algorithms.py", line 437, in unique
+    htable, values = _get_hashtable_algo(values)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\algorithms.py", line 284, in _get_hashtable_algo
+    ndtype = _check_object_for_strings(values)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\algorithms.py", line 326, in _check_object_for_strings
+    if lib.infer_dtype(values, skipna=False) in ["string"]:
+  File "pandas\_libs\lib.pyx", line 1450, in pandas._libs.lib.infer_dtype
+  File "pandas\_libs\lib.pyx", line 1308, in pandas._libs.lib._try_infer_map
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\numpy\core\_dtype.py", line 328, in _name_get
+    def _name_get(dtype):

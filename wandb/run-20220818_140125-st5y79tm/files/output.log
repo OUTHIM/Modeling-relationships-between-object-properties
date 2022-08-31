@@ -1,0 +1,14 @@
+
+Quantization finished!
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 105, in <module>
+    test_data.to_csv(path3, index=False)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\core\generic.py", line 3551, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\io\formats\format.py", line 1180, in to_csv
+    csv_formatter.save()
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\io\formats\csvs.py", line 241, in save
+    with get_handle(
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\yjn_1\\Documents\\GitHub\\Modeling-relationships-between-object-properties\\experiment\\test_data.csv'

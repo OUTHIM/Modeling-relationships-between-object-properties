@@ -30,7 +30,7 @@ def cal_hit_n(n, pred, true_false_list):
 
 
 # args
-test_attr = ['Volume']
+test_attr = ['Weight']
 threshold = 0.5
 correct_pred = 0
 acc = 0

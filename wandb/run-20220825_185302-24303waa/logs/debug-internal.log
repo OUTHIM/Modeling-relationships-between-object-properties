@@ -1,0 +1,207 @@
+2022-08-25 18:53:02,845 INFO    StreamThr :26508 [internal.py:wandb_internal():90] W&B internal server running at pid: 26508, started at: 2022-08-25 18:53:02.844533
+2022-08-25 18:53:02,848 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: status
+2022-08-25 18:53:02,851 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: status
+2022-08-25 18:53:02,853 DEBUG   SenderThread:26508 [sender.py:send():302] send: header
+2022-08-25 18:53:02,853 INFO    WriterThread:26508 [datastore.py:open_for_write():75] open: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\run-24303waa.wandb
+2022-08-25 18:53:02,906 DEBUG   SenderThread:26508 [sender.py:send():302] send: run
+2022-08-25 18:53:03,237 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: check_version
+2022-08-25 18:53:03,244 INFO    SenderThread:26508 [dir_watcher.py:__init__():216] watching files in: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files
+2022-08-25 18:53:03,244 INFO    SenderThread:26508 [sender.py:_start_run_threads():913] run started: 24303waa with start time 1661449982.835548
+2022-08-25 18:53:03,244 DEBUG   SenderThread:26508 [sender.py:send():302] send: summary
+2022-08-25 18:53:03,244 INFO    SenderThread:26508 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 18:53:03,244 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: check_version
+2022-08-25 18:53:03,293 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: run_start
+2022-08-25 18:53:03,324 DEBUG   HandlerThread:26508 [meta.py:__init__():35] meta init
+2022-08-25 18:53:03,324 DEBUG   HandlerThread:26508 [meta.py:__init__():50] meta init done
+2022-08-25 18:53:03,324 DEBUG   HandlerThread:26508 [meta.py:probe():216] probe
+2022-08-25 18:53:03,362 DEBUG   HandlerThread:26508 [meta.py:_setup_git():206] setup git
+2022-08-25 18:53:03,427 DEBUG   HandlerThread:26508 [meta.py:_setup_git():213] setup git done
+2022-08-25 18:53:03,427 DEBUG   HandlerThread:26508 [meta.py:_save_pip():54] save pip
+2022-08-25 18:53:03,429 DEBUG   HandlerThread:26508 [meta.py:_save_pip():68] save pip done
+2022-08-25 18:53:03,429 DEBUG   HandlerThread:26508 [meta.py:_save_conda():75] save conda
+2022-08-25 18:53:04,248 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\conda-environment.yaml
+2022-08-25 18:53:04,248 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\wandb-summary.json
+2022-08-25 18:53:04,248 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\requirements.txt
+2022-08-25 18:53:06,133 DEBUG   HandlerThread:26508 [meta.py:_save_conda():85] save conda done
+2022-08-25 18:53:06,133 DEBUG   HandlerThread:26508 [meta.py:probe():254] probe done
+2022-08-25 18:53:06,217 DEBUG   SenderThread:26508 [sender.py:send():302] send: files
+2022-08-25 18:53:06,218 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:53:06,218 INFO    SenderThread:26508 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-25 18:53:06,219 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:53:06,258 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\conda-environment.yaml
+2022-08-25 18:53:06,259 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\wandb-metadata.json
+2022-08-25 18:53:06,353 DEBUG   SenderThread:26508 [sender.py:send():302] send: telemetry
+2022-08-25 18:53:06,838 INFO    Thread-22 :26508 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\AppData\Local\Temp\tmpfbbko74awandb\3na8hzu3-wandb-metadata.json
+2022-08-25 18:53:21,363 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:53:21,368 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:53:34,619 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\config.yaml
+2022-08-25 18:53:35,123 DEBUG   SenderThread:26508 [sender.py:send():302] send: stats
+2022-08-25 18:53:36,533 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:53:36,533 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:53:51,699 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:53:51,699 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:54:02,896 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:04,913 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:06,893 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:54:06,893 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:54:08,870 DEBUG   SenderThread:26508 [sender.py:send():302] send: stats
+2022-08-25 18:54:10,994 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:13,009 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:15,034 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:17,052 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:19,066 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:21,080 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:22,044 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:54:22,044 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:54:23,100 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:25,123 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:27,144 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:29,157 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:31,183 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:33,196 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:35,215 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:37,218 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:37,234 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:54:37,234 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:54:39,227 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:41,243 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:41,893 DEBUG   SenderThread:26508 [sender.py:send():302] send: stats
+2022-08-25 18:54:43,268 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:45,283 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:47,303 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:49,316 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:51,332 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:52,385 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:54:52,385 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:54:53,347 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:55,370 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:57,388 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:54:59,409 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:55:01,428 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:55:03,447 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:55:05,454 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:55:07,477 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:55:07,550 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-25 18:55:07,550 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: stop_status
+2022-08-25 18:55:09,493 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:55:10,327 DEBUG   SenderThread:26508 [sender.py:send():302] send: telemetry
+2022-08-25 18:55:10,330 DEBUG   SenderThread:26508 [sender.py:send():302] send: exit
+2022-08-25 18:55:10,331 INFO    SenderThread:26508 [sender.py:send_exit():438] handling exit code: 0
+2022-08-25 18:55:10,331 INFO    SenderThread:26508 [sender.py:send_exit():440] handling runtime: 127
+2022-08-25 18:55:10,332 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:10,332 INFO    SenderThread:26508 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 18:55:10,333 INFO    SenderThread:26508 [sender.py:send_exit():446] send defer
+2022-08-25 18:55:10,333 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:10,333 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:10,334 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-25 18:55:10,334 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:10,334 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-25 18:55:10,334 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 1
+2022-08-25 18:55:10,334 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:10,335 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-25 18:55:10,402 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:10,403 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-25 18:55:10,403 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 2
+2022-08-25 18:55:10,404 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:10,404 DEBUG   SenderThread:26508 [sender.py:send():302] send: stats
+2022-08-25 18:55:10,404 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-25 18:55:10,404 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:10,405 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-25 18:55:10,405 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 3
+2022-08-25 18:55:10,405 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:10,405 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-25 18:55:10,405 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:10,405 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-25 18:55:10,405 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 4
+2022-08-25 18:55:10,405 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:10,405 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-25 18:55:10,405 DEBUG   SenderThread:26508 [sender.py:send():302] send: summary
+2022-08-25 18:55:10,406 INFO    SenderThread:26508 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-25 18:55:10,406 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:10,406 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-25 18:55:10,406 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 5
+2022-08-25 18:55:10,406 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:10,406 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-25 18:55:10,406 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:10,407 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-25 18:55:10,447 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:10,503 INFO    Thread-16 :26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\wandb-summary.json
+2022-08-25 18:55:10,578 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 6
+2022-08-25 18:55:10,578 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:10,583 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:10,583 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-25 18:55:10,583 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:10,583 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-25 18:55:10,686 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:11,054 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 7
+2022-08-25 18:55:11,054 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:11,054 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:11,054 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-25 18:55:11,054 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:11,054 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-08-25 18:55:11,054 INFO    SenderThread:26508 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-25 18:55:11,163 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:11,513 INFO    SenderThread:26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\config.yaml
+2022-08-25 18:55:11,513 INFO    SenderThread:26508 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:55:11,514 INFO    SenderThread:26508 [dir_watcher.py:finish():392] scan: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files
+2022-08-25 18:55:11,515 INFO    SenderThread:26508 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\conda-environment.yaml conda-environment.yaml
+2022-08-25 18:55:11,516 INFO    SenderThread:26508 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\config.yaml config.yaml
+2022-08-25 18:55:11,517 INFO    SenderThread:26508 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log output.log
+2022-08-25 18:55:11,527 INFO    SenderThread:26508 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\requirements.txt requirements.txt
+2022-08-25 18:55:11,528 INFO    SenderThread:26508 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\wandb-metadata.json wandb-metadata.json
+2022-08-25 18:55:11,528 INFO    SenderThread:26508 [dir_watcher.py:finish():406] scan save: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\wandb-summary.json wandb-summary.json
+2022-08-25 18:55:11,528 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 8
+2022-08-25 18:55:11,529 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:11,533 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:11,533 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-25 18:55:11,536 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:11,536 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-08-25 18:55:11,536 INFO    SenderThread:26508 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-25 18:55:11,652 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:11,653 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:11,757 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:11,758 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:11,865 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:11,865 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:11,975 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:11,977 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:12,048 INFO    Thread-26 :26508 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\requirements.txt
+2022-08-25 18:55:12,051 INFO    Thread-23 :26508 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\conda-environment.yaml
+2022-08-25 18:55:12,052 INFO    Thread-24 :26508 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\config.yaml
+2022-08-25 18:55:12,054 INFO    Thread-25 :26508 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\output.log
+2022-08-25 18:55:12,071 INFO    Thread-27 :26508 [upload_job.py:push():138] Uploaded file C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\files\wandb-summary.json
+2022-08-25 18:55:12,083 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:12,083 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:12,193 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:12,193 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:12,287 INFO    Thread-15 (_thread_body):26508 [sender.py:transition_state():459] send defer: 9
+2022-08-25 18:55:12,288 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:12,288 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-25 18:55:12,288 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:12,288 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-08-25 18:55:12,302 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:12,939 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 10
+2022-08-25 18:55:12,939 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:12,940 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:12,940 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-25 18:55:12,941 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:12,941 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-08-25 18:55:12,942 INFO    SenderThread:26508 [sender.py:transition_state():459] send defer: 11
+2022-08-25 18:55:12,943 DEBUG   SenderThread:26508 [sender.py:send():302] send: final
+2022-08-25 18:55:12,943 DEBUG   SenderThread:26508 [sender.py:send():302] send: footer
+2022-08-25 18:55:12,943 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: defer
+2022-08-25 18:55:12,944 INFO    HandlerThread:26508 [handler.py:handle_request_defer():164] handle defer: 11
+2022-08-25 18:55:12,944 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: defer
+2022-08-25 18:55:12,944 INFO    SenderThread:26508 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-08-25 18:55:13,053 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-25 18:55:13,053 DEBUG   SenderThread:26508 [sender.py:send_request():316] send_request: poll_exit
+2022-08-25 18:55:13,053 INFO    SenderThread:26508 [file_pusher.py:join():176] waiting for file pusher
+2022-08-25 18:55:13,457 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-25 18:55:13,459 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-25 18:55:13,460 DEBUG   HandlerThread:26508 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-25 18:55:13,460 INFO    HandlerThread:26508 [handler.py:finish():810] shutting down handler
+2022-08-25 18:55:13,948 INFO    WriterThread:26508 [datastore.py:close():279] close: C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\wandb\run-20220825_185302-24303waa\run-24303waa.wandb
+2022-08-25 18:55:14,351 INFO    SenderThread:26508 [sender.py:finish():1312] shutting down sender
+2022-08-25 18:55:14,351 INFO    SenderThread:26508 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-25 18:55:14,351 INFO    SenderThread:26508 [file_pusher.py:join():176] waiting for file pusher
+2022-08-25 18:55:15,464 INFO    MainThread:26508 [internal.py:handle_exit():80] Internal process exited

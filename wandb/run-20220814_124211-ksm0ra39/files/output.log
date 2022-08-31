@@ -1,0 +1,99 @@
+
+Quantization finished!
+Training with softmax model...
+Current epoch: 01/200 Train loss: 20.6806, Train accuracy: 0.5096
+Current epoch: 02/200 Train loss: 17.7747, Train accuracy: 0.5759
+Current epoch: 03/200 Train loss: 16.8713, Train accuracy: 0.6393
+Current epoch: 04/200 Train loss: 16.2409, Train accuracy: 0.6641
+Current epoch: 05/200 Train loss: 15.7728, Train accuracy: 0.6566
+(195, 8)
+Accuracy on attribute Material is 0.4512820512820513
+(195, 18)
+Accuracy on attribute Colour is 0.36923076923076925
+(195, 5)
+Accuracy on attribute Weight is 0.2358974358974359
+(195, 5)
+Accuracy on attribute Volume is 0.46153846153846156
+(195, 5)
+Accuracy on attribute Length is 0.31794871794871793
+(195, 5)
+Accuracy on attribute Width is 0.22564102564102564
+(195, 5)
+Accuracy on attribute Height is 0.39487179487179486
+(195, 5)
+Accuracy on attribute Functionality is 0.8666666666666667
+(195, 2)
+Accuracy on attribute Button is 0.8923076923076924
+(195, 2)
+Accuracy on attribute Lip is 0.7076923076923077
+(195, 2)
+Accuracy on attribute Fillability is 0.4564102564102564
+(195, 2)
+Accuracy on attribute Washability is 0.8615384615384616
+(195, 2)
+Accuracy on attribute Dismountability is 0.717948717948718
+(195, 4)
+Accuracy on attribute Shape is 0.6102564102564103
+(195, 2)
+Accuracy on attribute Handle is 0.7589743589743589
+Overall evaluation accuracy is: 0.5552136752136754
+Current epoch: 06/200 Train loss: 15.5768, Train accuracy: 0.6640
+Current epoch: 07/200 Train loss: 15.4777, Train accuracy: 0.6765
+Current epoch: 08/200 Train loss: 15.2652, Train accuracy: 0.6759
+Current epoch: 09/200 Train loss: 15.3179, Train accuracy: 0.7013
+Current epoch: 10/200 Train loss: 15.0499, Train accuracy: 0.7150
+(195, 8)
+Accuracy on attribute Material is 0.49743589743589745
+(195, 18)
+Accuracy on attribute Colour is 0.4358974358974359
+(195, 5)
+Accuracy on attribute Weight is 0.20512820512820512
+(195, 5)
+Accuracy on attribute Volume is 0.2512820512820513
+(195, 5)
+Accuracy on attribute Length is 0.4
+(195, 5)
+Accuracy on attribute Width is 0.28205128205128205
+(195, 5)
+Accuracy on attribute Height is 0.46153846153846156
+(195, 5)
+Accuracy on attribute Functionality is 0.9128205128205128
+(195, 2)
+Accuracy on attribute Button is 0.6717948717948717
+(195, 2)
+Accuracy on attribute Lip is 0.7589743589743589
+(195, 2)
+Accuracy on attribute Fillability is 0.6974358974358974
+(195, 2)
+Accuracy on attribute Washability is 0.6051282051282051
+(195, 2)
+Accuracy on attribute Dismountability is 0.7282051282051282
+(195, 4)
+Accuracy on attribute Shape is 0.7743589743589744
+(195, 2)
+Accuracy on attribute Handle is 0.8205128205128205
+Overall evaluation accuracy is: 0.5668376068376069
+Current epoch: 11/200 Train loss: 15.1408, Train accuracy: 0.7330
+Current epoch: 12/200 Train loss: 14.6911, Train accuracy: 0.7376
+Current epoch: 13/200 Train loss: 14.6187, Train accuracy: 0.7373
+Current epoch: 14/200 Train loss: 14.6335, Train accuracy: 0.7503
+Current epoch: 15/200 Train loss: 14.5414, Train accuracy: 0.7697
+Traceback (most recent call last):
+  File "c:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\train_experiment_model.py", line 124, in <module>
+    start_training(
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\train.py", line 306, in start_training
+    best_model = train_softmax(model, dataloader, optimizer, args, evaluation_epoch=evaluation_epoch, wandb = wandb)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\model\train.py", line 189, in train_softmax
+    attr_acc, avg_acc = evaluation(experiment_folder_path=experiment_folder_path, model = model)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\evaluation_experiment.py", line 68, in evaluation
+    results, real_bins, ordered_attr_names, quantization_num = test_samples(test_data, dataset_name='amazon', folder_path=experiment_folder_path, softmax_model=softmax_model, model = model)
+  File "C:\Users\yjn_1\Documents\GitHub\Modeling-relationships-between-object-properties\experiment\batch_experiment_utils.py", line 144, in test_samples
+    test_graph = HeteroGraph(G) # the heterogeneous graph with all test nodes inserted and linked
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\hetero_graph.py", line 94, in __init__
+    self._update_tensors(init=True)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\graph.py", line 524, in _update_tensors
+    self._update_index(init)
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\deepsnap\hetero_graph.py", line 620, in _update_index
+    list(self.G.edges(data=True)),
+  File "C:\Apps\Anaconda\envs\fyp\lib\site-packages\networkx\classes\reportviews.py", line 788, in <genexpr>
+    self._report(n, nbr, dd)

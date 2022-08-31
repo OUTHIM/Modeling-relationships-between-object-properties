@@ -54,6 +54,8 @@ class softmax_HeteroGNN(torch.nn.Module):
 
         # encoder layer
         x = forward_op(x, self.encoder_mlp)
+
+        # if not self.training:
         for i in range(len(self.layer_convs)):
             x = self.layer_convs[i](x, edge_index)
             # forward_op apply layers that matches the type of nodes
@@ -77,20 +79,27 @@ class softmax_HeteroGNN(torch.nn.Module):
             # Only in training mode
             if self.training and self.drop_softmax_ratio != None:
                 drop_dismult_num = math.floor(node_distmult.size()[1] * self.drop_softmax_ratio)
-                mask_drop = torch.zeros_like(node_distmult).to('cuda')
-                for _ in range(drop_dismult_num):
-                    indices_to_drop = torch.randint(0, node_distmult.size()[1], (node_distmult.size()[0],)).to('cuda')
+                mask_drop = torch.zeros_like(node_distmult, device='cuda')
+                # infinitely small number that has rare influence in SoftMax
+                infi_small = torch.tile(torch.tensor([-1e9], requires_grad=False),node_distmult.size()).to('cuda')
+                drops = random.sample([x for x in range(node_distmult.size()[1])], drop_dismult_num)
+                for index in drops:
+                    indices_to_drop = torch.tile(torch.tensor([index], requires_grad=False), (node_distmult.size()[0],)).to('cuda')
                     temp = F.one_hot(indices_to_drop, num_classes = node_distmult.size()[1]).to('cuda')
                     mask_drop = torch.logical_or(temp, mask_drop).to('cuda')
+
+                # for _ in range(drop_dismult_num):
+                #     indices_to_drop = torch.randint(0, node_distmult.size()[1], (node_distmult.size()[0],)).to('cuda')
+                #     temp = F.one_hot(indices_to_drop, num_classes = node_distmult.size()[1]).to('cuda')
+                #     mask_drop = torch.logical_or(temp, mask_drop).to('cuda')
 
                 mask_drop = torch.logical_not(mask_drop)
                 indices_to_preserve = data.edge_label_index[message_type][1,:].to('cuda')
                 mask_preserve = F.one_hot(indices_to_preserve.long(), num_classes = node_distmult.size()[1]).to('cuda')
                 mask_final = torch.logical_or(mask_drop, mask_preserve).to('cuda')
-                node_distmult = node_distmult * mask_final
-
+                node_distmult = node_distmult * mask_final + infi_small * torch.logical_not(mask_final)
+            
             attribute_nodes_label = torch.tile(data.node_label[message_type[2]], (len(name_nodes),))
-
             pred[message_type] = node_distmult
             true_attr_node_labels[message_type] = data.edge_label_index[message_type][1,:].long()
             pred_attribute_values[message_type] = attribute_nodes_label
@@ -100,8 +109,8 @@ class softmax_HeteroGNN(torch.nn.Module):
     def loss(self, pred, y):
         loss = 0
         for key in pred:
-            p = F.softmax(pred[key])
-            loss += self.loss_fn(p, y[key].long())
+            # p = F.softmax(pred[key])
+            loss += self.loss_fn(pred[key], y[key].long())
         return loss
 
     # initialize k-hop conv layers for different message/edge types

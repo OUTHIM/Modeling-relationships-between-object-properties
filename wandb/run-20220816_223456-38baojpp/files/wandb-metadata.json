@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.10.4",
+    "heartbeatAt": "2022-08-16T21:34:56.760948",
+    "startedAt": "2022-08-16T21:34:56.096788",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\yjn_1\\Documents\\GitHub\\Modeling-relationships-between-object-properties\\experiment\\train_experiment_model.py",
+    "codePath": "experiment\\train_experiment_model.py",
+    "git": {
+        "remote": "https://github.com/OUTHIM/Modeling-relationships-between-object-properties.git",
+        "commit": "667afa904ddc02bb682ba38edafcaf0482fc0ebc"
+    },
+    "email": "3023089269@qq.com",
+    "root": "C:/Users/yjn_1/Documents/GitHub/Modeling-relationships-between-object-properties",
+    "host": "Jiangnan",
+    "username": "yjn_1",
+    "executable": "C:\\Apps\\Anaconda\\envs\\fyp\\python.exe"
+}
