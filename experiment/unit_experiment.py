@@ -89,22 +89,22 @@ shop_vrb_attribute_values = {
     'disassembly': 3}
 
 amazon_attribute_values = {
-    'name': adjective_to_bin(dataset_name, 'name','bakingtray'),
+    'name': adjective_to_bin(dataset_name, 'name','hammer'),
     'Material': adjective_to_bin(dataset_name, 'Material','metal'),
     'Colour': adjective_to_bin(dataset_name, 'Colour','silver'),
     # 'Weight': value_to_bin(dataset_name, 'Volume', 8000), 
-    'Volume': value_to_bin(dataset_name, 'Volume', 1000), 
-    'Length': value_to_bin(dataset_name, 'Length', 20), 
-    'Width': value_to_bin(dataset_name, 'Width', 50), 
-    'Height': value_to_bin(dataset_name, 'Height', 12),
-    'Functionality': adjective_to_bin(dataset_name, 'Functionality','tool'), 
+    'Volume': value_to_bin(dataset_name, 'Volume', 7000), 
+    'Length': value_to_bin(dataset_name, 'Length', 80), 
+    'Width': value_to_bin(dataset_name, 'Width', 10), 
+    'Height': value_to_bin(dataset_name, 'Height', 10),
+    'Functionality': adjective_to_bin(dataset_name, 'Functionality','container'), 
     'Button':1, 
     'Lip':1, 
-    'Fillability':1, 
+    'Fillability':2, 
     'Washability':2, 
-    'Dismountability':2, 
-    'Shape':adjective_to_bin(dataset_name, 'Shape','other'), 
-    'Handle':2}
+    'Dismountability':1, 
+    'Shape':adjective_to_bin(dataset_name, 'Shape','circular'), 
+    'Handle':1}
 
 # %% Things that you don't have to change
 shop_vrb_split_types = [('name', 'name-color', 'color'), ('name', 'name-weight', 'weight'), ('name', 'name-movability', 'movability'), 

@@ -36,7 +36,7 @@ args = {
 
         'dataset_name': 'amazon',
 
-        'sampling_epoch': 1,
+        'sampling_epoch': 5,
         'evaluation_epoch': 200,
         'drop_softmax_ratio': None,
         'quantization_strategy': 'kmeans',

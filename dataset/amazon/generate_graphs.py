@@ -89,7 +89,7 @@ def generate_graphs(quantized_data_filepath, quantization_levels_filepath, save_
 
 
     # visualize graph 
-    # dataset_utils.visualize_graph(G, dataset_name='amazon')
+    dataset_utils.visualize_graph(G, dataset_name='amazon')
 
     # save node attribute to json file
     if save_file:
